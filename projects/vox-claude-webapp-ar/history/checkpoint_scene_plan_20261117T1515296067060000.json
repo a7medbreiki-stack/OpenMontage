@@ -1,0 +1,1118 @@
+{
+  "version": "1.0",
+  "project_id": "vox-claude-webapp-ar",
+  "pipeline_type": "animation",
+  "stage": "scene_plan",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-17T15:15:29.606706+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "scene_plan": {
+      "version": "1.0",
+      "style_playbook": "vox-ar-explainer (custom, generated at this stage \u2014 no preset in styles/ matches the design read)",
+      "scenes": [
+        {
+          "id": "sc1",
+          "type": "text_card",
+          "description": "A single short Arabic prompt line sits low-left in the safe area, paper-white on near-black. Words stamp in one at a time, no blur, each landing on a single step. A block cursor arrives at the end of the line and then simply holds, blinking on a slow 2-step cycle. Nothing else enters. The frame's job is to feel anticlimactic.",
+          "start_seconds": 0.0,
+          "end_seconds": 4.5,
+          "script_section_id": "s1",
+          "framing": "Body-scale type on a near-empty field; line sits at roughly 55% frame height, left-aligned in RTL terms (reading edge right)",
+          "movement": "Word-by-word stamp-in, then absolute stillness for the final 1.2s hold",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "overlay_notes": "label \u00ab\u0623\u0646\u062a\u00bb as a small mono eyebrow, top-right of the safe area",
+          "shot_intent": "The typed line itself \u2014 a live prompt field at body scale, nothing else in frame",
+          "narrative_role": "establish_context",
+          "information_role": "That what you did was tiny \u2014 one line, then waiting",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc1 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc2",
+          "type": "diagram",
+          "description": "The prompt line shrinks and docks to the top. A flat arrow draws rightward into an empty rectangle labelled \u00ab\u0623\u0645\u0631 \u0648\u0627\u062d\u062f\u00bb. The box stays conspicuously empty for a beat, then a single accent-yellow stroke strikes through it on the word \u00ab\u0644\u0645 \u064a\u0641\u0639\u0644\u00bb. The arrow does not retract \u2014 it is left pointing at a struck-out box.",
+          "start_seconds": 4.5,
+          "end_seconds": 9.0,
+          "script_section_id": "s2",
+          "framing": "Centred single object, wide negative field above and below; box occupies about a third of the frame width",
+          "movement": "Arrow line-draws left-to-right in RTL reading order, then one strike stroke; no easing on the strike",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "overlay_notes": "label \u00ab\u0645\u0627 \u062d\u062f\u062b \u0641\u0639\u0644\u0627\u064b\u00bb mono eyebrow top-right | docked prompt line from sc1 persists as a small header, 40% opacity",
+          "shot_intent": "The absent command \u2014 an empty box, the only object in the video that stays empty",
+          "narrative_role": "build_tension",
+          "information_role": "That their mental model is wrong before being told what is right",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc2 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc3",
+          "type": "animation",
+          "description": "Three nodes snap into an equilateral triangle, one per narrated phase, each arriving hard with no overshoot. Connecting arcs draw between them in reading order. Then the completed ring rotates exactly one full turn in silence, stepped at roughly 12fps so the rotation reads as a series of positions rather than a glide. It stops where it started and holds.",
+          "start_seconds": 9.0,
+          "end_seconds": 15.5,
+          "script_section_id": "s3",
+          "framing": "Centred, ring fills about 60% of the safe-area width, generous air around it; the three labels sit outside the ring so Arabic never rotates",
+          "movement": "Node-by-node snap-in on the narration beats, then one stepped 360\u00b0 rotation unspoken",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "overlay_notes": "three phase labels \u00ab\u064a\u0642\u0631\u0623\u00bb \u00ab\u064a\u0646\u0641\u0651\u0630\u00bb \u00ab\u064a\u062a\u062d\u0642\u0651\u0642\u00bb pinned outside the ring, upright, never rotating with it | label \u00ab\u064a\u0642\u0631\u0623 \u00b7 \u064a\u0646\u0641\u0651\u0630 \u00b7 \u064a\u062a\u062d\u0642\u0651\u0642\u00bb suppressed here \u2014 the ring labels already carry it",
+          "shot_intent": "THE RING \u2014 signature device, first of only two appearances",
+          "narrative_role": "introduce_subject",
+          "information_role": "The shape of the whole video in one object",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc3 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc4",
+          "type": "diagram",
+          "description": "A file tree fills the vertical frame top to bottom, far denser than it needs to be, near-black on near-black so it reads as texture. A thin search line sweeps down through it. Four files ignite in accent yellow as the line passes them; everything else stays dark. The sweep exits the bottom of the frame and the four lit files hold alone in the darkness.",
+          "start_seconds": 15.5,
+          "end_seconds": 22.0,
+          "script_section_id": "s4",
+          "framing": "Full-bleed vertical texture, edge to edge \u2014 the only full-bleed scene in the piece; lit files cluster in the middle third",
+          "movement": "Single downward sweep at constant speed, four discrete ignitions; no camera move, the sweep is the motion",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "overlay_notes": "label \u00abgrep\u00bb in the Latin mono face, dir=ltr, top-right | no phase label \u2014 the ring is deliberately absent from this scene",
+          "shot_intent": "A file tree \u2014 dense, data-driven, the only scene with hundreds of elements",
+          "narrative_role": "evidence",
+          "information_role": "That it searches rather than remembers \u2014 and that most of the project is never touched",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc4 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc5",
+          "type": "diagram",
+          "description": "A diff block assembles line by line in the centre of the frame. Added lines arrive in accent yellow with a left gutter mark; removed lines arrive already struck through in dim grey. Each line lands on a single step with no easing and no fade \u2014 stamped, like movable type. The block finishes slightly off-centre and is not corrected.",
+          "start_seconds": 22.0,
+          "end_seconds": 28.0,
+          "script_section_id": "s5",
+          "framing": "Centred block at about 70% safe-area width, code set dir=ltr in the mono face; air above and below, nothing in the corners",
+          "movement": "Sequential line stamp-in, roughly four lines per second, constant rhythm \u2014 deliberately mechanical",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "overlay_notes": "label \u00ab\u064a\u0639\u062f\u0651\u0644\u060c \u0644\u0627 \u064a\u0642\u062a\u0631\u062d\u00bb mono eyebrow top-right",
+          "shot_intent": "A diff \u2014 code lines as objects, the only scene containing Latin code",
+          "narrative_role": "evidence",
+          "information_role": "That it writes into the real files rather than handing over a suggestion",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc5 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc6",
+          "type": "animation",
+          "description": "One wide horizontal bar sits centred in the frame. It fills red, clears, fills red again, clears, then fills green \u2014 each fill landing on one of the four narrated verbs, the gap between fills shortening each time. On green it stops dead and holds longer than feels comfortable. A small pass counter ticks 1, 2, 3 beside it.",
+          "start_seconds": 28.0,
+          "end_seconds": 35.5,
+          "script_section_id": "s6",
+          "framing": "Single horizontal element at the vertical centre, spanning about 80% of safe-area width; counter sits beside its trailing edge",
+          "movement": "Three accelerating fills, hard stop on green, then a 2.2s hold with zero motion in frame",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "overlay_notes": "label \u00ab\u0623\u062d\u0645\u0631 \u2190 \u0623\u062e\u0636\u0631\u00bb mono eyebrow top-right | pass counter as a small mono numeral, not a label",
+          "shot_intent": "A test bar \u2014 a single horizontal element, the only scene whose subject changes colour",
+          "narrative_role": "deliver_payload",
+          "information_role": "That verification is something it does to itself, repeatedly, without being asked",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc6 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc7",
+          "type": "animation",
+          "description": "The ring returns at a larger scale than in sc3. It holds still, then a hard division runs through it: the \u00ab\u064a\u0642\u0631\u0623/\u064a\u0646\u0641\u0651\u0630\u00bb arc stays paper-white outline, the \u00ab\u064a\u062a\u062d\u0642\u0651\u0642\u00bb arc fills solid accent yellow. Nothing moves after the fill. This is a single held still frame for nearly two seconds \u2014 the most screenshot-able frame in the video and the only scene with no motion in its second half.",
+          "start_seconds": 35.5,
+          "end_seconds": 42.0,
+          "script_section_id": "s7",
+          "framing": "Centred, ring now at about 75% safe-area width \u2014 the largest object in the piece; the editorial line sits beneath it at display scale",
+          "movement": "One fill transition, then total stillness; the absence of motion is the emphasis",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "overlay_notes": "label \u00ab\u0646\u0635\u0641 \u0627\u0644\u0639\u0645\u0644\u00bb promoted from eyebrow to display scale beneath the ring \u2014 the only scene where the label outranks the eyebrow",
+          "shot_intent": "THE RING, SPLIT \u2014 signature device, second and final appearance; the hero moment",
+          "narrative_role": "emotional_beat",
+          "information_role": "The one opinion the video holds: the unglamorous half is the work",
+          "hero_moment": true,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc7 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc8",
+          "type": "animation",
+          "description": "No ring. Tally marks stamp into the frame in a grid, each one a completed pass of the loop, arriving faster and faster until the grid is dense. The acceleration is the content. On the last mark everything stops and a single row highlights in accent yellow to mark the pass that finished the task.",
+          "start_seconds": 42.0,
+          "end_seconds": 47.5,
+          "script_section_id": "s8",
+          "framing": "Grid building from the top of the safe area downward, filling about two-thirds of the frame height; final highlighted row sits at the grid's base",
+          "movement": "Accelerating stamp-in from roughly 2/sec to 8/sec, then a hard stop and one highlight",
+          "transition_in": "cut",
+          "transition_out": "whip_pan_left",
+          "overlay_notes": "label \u00ab\u062d\u062a\u0649 \u062a\u0646\u062a\u0647\u064a \u0627\u0644\u0645\u0647\u0645\u0629\u00bb mono eyebrow top-right",
+          "shot_intent": "A tally of completed passes \u2014 accumulation, the only scene that counts",
+          "narrative_role": "resolution",
+          "information_role": "That the loop runs as many times as it needs to, and then stops",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc8 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc9",
+          "type": "diagram",
+          "description": "After the whip, two objects sit side by side: an interrupt key, and a stack of file snapshots layered behind one another. The key presses down once and releases. The snapshot stack shifts to reveal that each layer predates the edit above it. Both objects are drawn, not photographic. A small human mark sits between them at the scale of a typographic character.",
+          "start_seconds": 47.5,
+          "end_seconds": 55.0,
+          "script_section_id": "s9",
+          "framing": "Two objects on a horizontal axis at mid-frame, roughly symmetrical, with the human mark small between them; this is the only two-subject composition in the piece",
+          "movement": "One press-and-release on the key, one lateral shift on the snapshot stack, offset by 0.4s so they do not move together",
+          "transition_in": "whip_pan_left",
+          "transition_out": "fade",
+          "overlay_notes": "label \u00ab\u0645\u0642\u0627\u0637\u0639\u0629 \u00b7 \u062a\u0639\u062f\u064a\u0644\u0627\u062a \u0645\u062d\u0641\u0648\u0638\u0629\u00bb mono eyebrow top-right, set as two clauses matching the two objects",
+          "shot_intent": "Two controls \u2014 the viewer's own handles, the only scene depicting the user's agency",
+          "narrative_role": "deliver_payload",
+          "information_role": "That they hold the controls \u2014 the fear of irreversible damage is answered",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc9 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc10",
+          "type": "text_card",
+          "description": "Full-bleed type for the first time since the open, but where sc1 was body-scale and low in the frame, this is display-scale and centred, set in the heavy Arabic display weight. Two clauses reveal word by word with a beat between them. The ring appears only as a small mark the size of a letterform beside the final clause \u2014 reduced from hero to punctuation. The watermark fades in during the closing hold.",
+          "start_seconds": 55.0,
+          "end_seconds": 60.0,
+          "script_section_id": "s10",
+          "framing": "Centred display-scale type filling the middle third; the reduced ring mark sits at the baseline of the final clause",
+          "movement": "Word-by-word reveal in two clauses, then a 2.5s hold with only the watermark fading",
+          "transition_in": "fade",
+          "transition_out": "cut",
+          "overlay_notes": "label \u00ab\u062d\u0644\u0642\u0629\u060c \u0644\u0627 \u0623\u0645\u0631\u00bb suppressed \u2014 the narration line IS the on-screen line in this scene only, by design | watermark a7med.breiki at 40% opacity, white on dark, fading in over the final 1.5s",
+          "shot_intent": "Type at display scale \u2014 the bookend, deliberately echoing sc1 at a different register",
+          "narrative_role": "resolution",
+          "information_role": "The sentence they repeat tomorrow",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "stepped",
+            "blur-free",
+            "square-cornered",
+            "high-contrast",
+            "ink-on-paper-inverted"
+          ],
+          "required_assets": [
+            {
+              "type": "composition",
+              "description": "Hand-authored HyperFrames clip for sc10 \u2014 authored HTML/CSS/GSAP, no registry block consumed as a scene",
+              "source": "generate"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "pipeline": "animation",
+        "stage": "scene_plan",
+        "concept_id": "c1",
+        "render_runtime": "hyperframes",
+        "composition_mode": "atelier (implicit \u2014 HyperFrames is inherently atelier per bespoke-composition.md)",
+        "renderer_family": "animation-first",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "total_duration_seconds": 60,
+        "five_aspect_checklist": {
+          "sc1": {
+            "primary_visual_subject": "The typed line itself \u2014 a live prompt field at body scale, nothing else in frame",
+            "subject": "The typed line itself \u2014 a live prompt field at body scale, nothing else in frame",
+            "subject_motion": "Word-by-word stamp-in, then absolute stillness for the final 1.2s hold",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Body-scale type on a near-empty field; line sits at roughly 55% frame height, left-aligned in RTL terms (reading edge right)",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00ab\u0623\u0646\u062a\u00bb as a small mono eyebrow, top-right of the safe area"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "That what you did was tiny \u2014 one line, then waiting",
+            "differs_from_neighbours": "Opens the piece. Differs from sc2 by having no object at all \u2014 only type and a cursor."
+          },
+          "sc2": {
+            "primary_visual_subject": "The absent command \u2014 an empty box, the only object in the video that stays empty",
+            "subject": "The absent command \u2014 an empty box, the only object in the video that stays empty",
+            "subject_motion": "Arrow line-draws left-to-right in RTL reading order, then one strike stroke; no easing on the strike",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Centred single object, wide negative field above and below; box occupies about a third of the frame width",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00ab\u0645\u0627 \u062d\u062f\u062b \u0641\u0639\u0644\u0627\u064b\u00bb mono eyebrow top-right",
+              "docked prompt line from sc1 persists as a small header, 40% opacity"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "That their mental model is wrong before being told what is right",
+            "differs_from_neighbours": "sc1 had no object; sc2 introduces the first object and leaves it empty. sc3 then fills the frame with a complex one. Scale steps up each time."
+          },
+          "sc3": {
+            "primary_visual_subject": "THE RING \u2014 signature device, first of only two appearances",
+            "subject": "THE RING \u2014 signature device, first of only two appearances",
+            "subject_motion": "Node-by-node snap-in on the narration beats, then one stepped 360\u00b0 rotation unspoken",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Centred, ring fills about 60% of the safe-area width, generous air around it; the three labels sit outside the ring so Arabic never rotates",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "three phase labels \u00ab\u064a\u0642\u0631\u0623\u00bb \u00ab\u064a\u0646\u0641\u0651\u0630\u00bb \u00ab\u064a\u062a\u062d\u0642\u0651\u0642\u00bb pinned outside the ring, upright, never rotating with it",
+              "label \u00ab\u064a\u0642\u0631\u0623 \u00b7 \u064a\u0646\u0641\u0651\u0630 \u00b7 \u064a\u062a\u062d\u0642\u0651\u0642\u00bb suppressed here \u2014 the ring labels already carry it"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "The shape of the whole video in one object",
+            "differs_from_neighbours": "sc2 was a single empty box, sc3 is a complete three-part system in motion. sc4 drops back to flat texture. Motion register goes still \u2192 rotating \u2192 sweeping."
+          },
+          "sc4": {
+            "primary_visual_subject": "A file tree \u2014 dense, data-driven, the only scene with hundreds of elements",
+            "subject": "A file tree \u2014 dense, data-driven, the only scene with hundreds of elements",
+            "subject_motion": "Single downward sweep at constant speed, four discrete ignitions; no camera move, the sweep is the motion",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Full-bleed vertical texture, edge to edge \u2014 the only full-bleed scene in the piece; lit files cluster in the middle third",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00abgrep\u00bb in the Latin mono face, dir=ltr, top-right",
+              "no phase label \u2014 the ring is deliberately absent from this scene"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "That it searches rather than remembers \u2014 and that most of the project is never touched",
+            "differs_from_neighbours": "The only full-bleed scene and the only one with hundreds of elements, between two scenes built on single centred objects. Palette emphasis inverts: mostly dark with four lit points."
+          },
+          "sc5": {
+            "primary_visual_subject": "A diff \u2014 code lines as objects, the only scene containing Latin code",
+            "subject": "A diff \u2014 code lines as objects, the only scene containing Latin code",
+            "subject_motion": "Sequential line stamp-in, roughly four lines per second, constant rhythm \u2014 deliberately mechanical",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Centred block at about 70% safe-area width, code set dir=ltr in the mono face; air above and below, nothing in the corners",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00ab\u064a\u0639\u062f\u0651\u0644\u060c \u0644\u0627 \u064a\u0642\u062a\u0631\u062d\u00bb mono eyebrow top-right"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "That it writes into the real files rather than handing over a suggestion",
+            "differs_from_neighbours": "sc4 was texture read as a mass; sc5 is discrete legible lines. It is also the only scene containing Latin code, and the only one with a left gutter structure."
+          },
+          "sc6": {
+            "primary_visual_subject": "A test bar \u2014 a single horizontal element, the only scene whose subject changes colour",
+            "subject": "A test bar \u2014 a single horizontal element, the only scene whose subject changes colour",
+            "subject_motion": "Three accelerating fills, hard stop on green, then a 2.2s hold with zero motion in frame",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Single horizontal element at the vertical centre, spanning about 80% of safe-area width; counter sits beside its trailing edge",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00ab\u0623\u062d\u0645\u0631 \u2190 \u0623\u062e\u0636\u0631\u00bb mono eyebrow top-right",
+              "pass counter as a small mono numeral, not a label"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "That verification is something it does to itself, repeatedly, without being asked",
+            "differs_from_neighbours": "sc5 was many lines stamping in; sc6 is one element changing colour. Reduction from many to one, and the only colour-state change in the video."
+          },
+          "sc7": {
+            "primary_visual_subject": "THE RING, SPLIT \u2014 signature device, second and final appearance; the hero moment",
+            "subject": "THE RING, SPLIT \u2014 signature device, second and final appearance; the hero moment",
+            "subject_motion": "One fill transition, then total stillness; the absence of motion is the emphasis",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Centred, ring now at about 75% safe-area width \u2014 the largest object in the piece; the editorial line sits beneath it at display scale",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00ab\u0646\u0635\u0641 \u0627\u0644\u0639\u0645\u0644\u00bb promoted from eyebrow to display scale beneath the ring \u2014 the only scene where the label outranks the eyebrow"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "The one opinion the video holds: the unglamorous half is the work",
+            "differs_from_neighbours": "Hero. Returns the ring at larger scale after four scenes without it, and is the only scene that ends in total stillness. Label is promoted to display scale here and nowhere else."
+          },
+          "sc8": {
+            "primary_visual_subject": "A tally of completed passes \u2014 accumulation, the only scene that counts",
+            "subject": "A tally of completed passes \u2014 accumulation, the only scene that counts",
+            "subject_motion": "Accelerating stamp-in from roughly 2/sec to 8/sec, then a hard stop and one highlight",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Grid building from the top of the safe area downward, filling about two-thirds of the frame height; final highlighted row sits at the grid's base",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00ab\u062d\u062a\u0649 \u062a\u0646\u062a\u0647\u064a \u0627\u0644\u0645\u0647\u0645\u0629\u00bb mono eyebrow top-right"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "That the loop runs as many times as it needs to, and then stops",
+            "differs_from_neighbours": "sc7 ended motionless; sc8 is the busiest accumulation in the piece. Deliberately NOT the ring spinning again \u2014 the ring has spent its two appearances."
+          },
+          "sc9": {
+            "primary_visual_subject": "Two controls \u2014 the viewer's own handles, the only scene depicting the user's agency",
+            "subject": "Two controls \u2014 the viewer's own handles, the only scene depicting the user's agency",
+            "subject_motion": "One press-and-release on the key, one lateral shift on the snapshot stack, offset by 0.4s so they do not move together",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Two objects on a horizontal axis at mid-frame, roughly symmetrical, with the human mark small between them; this is the only two-subject composition in the piece",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00ab\u0645\u0642\u0627\u0637\u0639\u0629 \u00b7 \u062a\u0639\u062f\u064a\u0644\u0627\u062a \u0645\u062d\u0641\u0648\u0638\u0629\u00bb mono eyebrow top-right, set as two clauses matching the two objects"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "That they hold the controls \u2014 the fear of irreversible damage is answered",
+            "differs_from_neighbours": "The only two-subject composition and the only scene depicting the viewer rather than the machine. Arrives after the only whip transition."
+          },
+          "sc10": {
+            "primary_visual_subject": "Type at display scale \u2014 the bookend, deliberately echoing sc1 at a different register",
+            "subject": "Type at display scale \u2014 the bookend, deliberately echoing sc1 at a different register",
+            "subject_motion": "Word-by-word reveal in two clauses, then a 2.5s hold with only the watermark fading",
+            "scene": "Near-black ink ground, flat, no depth cueing, no vignette. No time of day \u2014 this is a diagrammatic space, not a place.",
+            "spatial_framing": "Centred display-scale type filling the middle third; the reduced ring mark sits at the baseline of the final clause",
+            "camera": "N/A \u2014 pure motion graphics, no virtual camera. No lens, no DoF, no camera height, no steadiness. The only exception is the single whip between sc8 and sc9, which is a frame-level transition rather than a camera move within a scene.",
+            "overlays": [
+              "label \u00ab\u062d\u0644\u0642\u0629\u060c \u0644\u0627 \u0623\u0645\u0631\u00bb suppressed \u2014 the narration line IS the on-screen line in this scene only, by design",
+              "watermark a7med.breiki at 40% opacity, white on dark, fading in over the final 1.5s"
+            ],
+            "animation_mode": "motion_graphics",
+            "why_this_beat_exists": "The sentence they repeat tomorrow",
+            "differs_from_neighbours": "Bookends sc1 at a different register: display scale vs body scale, centred vs low-left, heavy weight vs regular. The ring returns reduced to punctuation \u2014 a deliberate demotion, not a third appearance."
+          }
+        },
+        "scene_distinctness_review": {
+          "inventory": [
+            {
+              "scene": "sc1",
+              "primary_subject": "The typed line itself \u2014 a live prompt field at body scale, nothing else in frame"
+            },
+            {
+              "scene": "sc2",
+              "primary_subject": "The absent command \u2014 an empty box, the only object in the video that stays empty"
+            },
+            {
+              "scene": "sc3",
+              "primary_subject": "THE RING \u2014 signature device, first of only two appearances"
+            },
+            {
+              "scene": "sc4",
+              "primary_subject": "A file tree \u2014 dense, data-driven, the only scene with hundreds of elements"
+            },
+            {
+              "scene": "sc5",
+              "primary_subject": "A diff \u2014 code lines as objects, the only scene containing Latin code"
+            },
+            {
+              "scene": "sc6",
+              "primary_subject": "A test bar \u2014 a single horizontal element, the only scene whose subject changes colour"
+            },
+            {
+              "scene": "sc7",
+              "primary_subject": "THE RING, SPLIT \u2014 signature device, second and final appearance; the hero moment"
+            },
+            {
+              "scene": "sc8",
+              "primary_subject": "A tally of completed passes \u2014 accumulation, the only scene that counts"
+            },
+            {
+              "scene": "sc9",
+              "primary_subject": "Two controls \u2014 the viewer's own handles, the only scene depicting the user's agency"
+            },
+            {
+              "scene": "sc10",
+              "primary_subject": "Type at display scale \u2014 the bookend, deliberately echoing sc1 at a different register"
+            }
+          ],
+          "any_two_scenes_share_primary_subject": "No two scenes share a primary visual subject. The closest pair is sc1 and sc10, which are both typographic \u2014 this is a deliberate bookend, and they are separated by scale (body vs display), position (low-left vs centred), weight (regular vs heavy) and function (a prompt being typed vs an assertion being made). Declared rather than hidden.",
+          "signature_device": "The ring (the three-phase cycle).",
+          "signature_device_appearances": [
+            "sc3 \u2014 introduction",
+            "sc7 \u2014 hero moment, split and filled"
+          ],
+          "signature_device_scarcity_check": "Two appearances, which is the maximum the skill allows. sc10 contains a reduced ring mark at letterform scale, counted as punctuation rather than a third appearance of the device.",
+          "hero_component_spine_check": "PASSED ONLY AFTER A RE-PLAN. The first draft of this plan put the ring in sc3, sc4, sc5, sc6, sc7 and sc8 \u2014 rotating it to indicate the current phase. That is exactly the hero-component spine the skill forbids: one striking visual reused every scene with different text under it. Re-planned so sc4, sc5, sc6 and sc8 each carry their own distinct subject (file tree / diff / test bar / tally grid) and the phase is carried by a small eyebrow label instead, which is an overlay rather than a subject.",
+          "removal_test": "For each of sc4, sc5, sc6, sc8, sc9: removing the signature device leaves the scene fully intact, which is why it is absent from them. For sc3 and sc7 the device IS the scene."
+        },
+        "animatic_rules": [
+          "One visual idea per scene; if two scenes could collapse without losing meaning, they should",
+          "Entrances land on a single step \u2014 no multi-frame eases on arrival",
+          "Nothing moves during a hold. The hold is an absence of motion, not slow motion",
+          "Arabic text never rotates, never scales during a reveal, and never splits below word level"
+        ],
+        "transition_rules": {
+          "families_used": [
+            "cut",
+            "whip_pan (once)",
+            "fade (once)"
+          ],
+          "policy": "Hard cut is the default and carries 8 of the 9 transitions. One whip_pan marks the single act break (machine \u2192 viewer, sc8\u2192sc9). One fade marks the close (sc9\u2192sc10). No transition idea is introduced more than once.",
+          "rejected": "No slides, no dissolves, no zoom transitions, no shader/distortion transitions from the HF registry \u2014 the Vox read depends on cuts, and a registry transition block consumed as a scene element would violate atelier mode."
+        },
+        "hold_rules": {
+          "total_hold_seconds": 16.6,
+          "longest_holds": [
+            "sc7 ~1.8s of total stillness (hero)",
+            "sc6 2.2s on green",
+            "sc10 2.5s closing"
+          ],
+          "policy": "Every scene ends on a hold long enough for its visual to finish. Narration never runs over a reveal \u2014 the pause policy in script.voice_performance is the contract."
+        },
+        "tool_path_map": {
+          "every_scene": "Hand-authored HyperFrames clip in a single project index.html (or sub-composition mounts once the clip count passes 4), rendered via video_compose with render_runtime=hyperframes, composition_mode=atelier, workspace_path=projects/vox-claude-webapp-ar/hf/",
+          "narration": "elevenlabs via the MCP connector \u2014 BLOCKED, connector returns a permissions error",
+          "music": "pixabay_music (free, available)",
+          "captions": "subtitle_gen \u2014 but see captions_vs_onscreen_text below",
+          "no_image_or_video_generation": "Every visual element is authored. Nothing is generated or sourced."
+        },
+        "reusable_motifs": [
+          "Accent-yellow assertion marker \u2014 appears only on the thing being claimed, never decoratively",
+          "Mono eyebrow label, top-right of the safe area, in every scene except sc3 and sc10 where it is deliberately suppressed",
+          "Single-step arrival with no motion blur, applied to every entering element",
+          "Strike-through stroke, used twice only: sc2 (the empty box) and sc5 (removed diff lines)"
+        ],
+        "captions_vs_onscreen_text": {
+          "decision": "On-screen text adds meaning the narration does not carry \u2014 it is never a transcript of it. Eyebrow labels name mechanisms (grep, \u0623\u062d\u0645\u0631 \u2190 \u0623\u062e\u0636\u0631) that the voice does not say.",
+          "consequence": "Burned captions are therefore OFF by default to avoid the doubled-phrase amateurism the skill warns about. subtitle_gen still produces a separate sidecar caption file for accessibility and sound-off viewing, delivered alongside the video rather than burned into it.",
+          "single_exception": "sc10 is the one scene where the on-screen line and the narration line are identical. Declared deliberately \u2014 it is the closing assertion, and the repetition is the point."
+        },
+        "arabic_text_rules": [
+          "Word-level reveals only \u2014 split on spaces, never per glyph",
+          "No letterSpacing on Arabic at any weight",
+          "Arabic containers dir=rtl; Latin tokens (grep, Claude Code) dir=ltr in the Latin mono face",
+          "Labels pinned outside the ring in sc3 and sc7 so no Arabic glyph ever rotates",
+          "Reveal direction verified under RTL before authoring \u2014 LTR-built typewriter patterns run backwards"
+        ],
+        "safe_area": {
+          "frame": "1080x1920",
+          "insets": "~270px top, ~670px bottom, ~65px sides (the widely-cited Meta 14/35/6 scheme; sources disagree and none cites a primary Meta page, so treat as approximate and verify on device)",
+          "consequence": "Every label, chart and line lives inside roughly the central 950x980 region. sc4 is the only full-bleed scene, and its lit files are kept inside the safe band even though its texture bleeds."
+        },
+        "open_blockers": [
+          "ElevenLabs connector returns a permissions error \u2014 narration cannot be produced, so scene timings stay provisional",
+          "faster-whisper not installed \u2014 needed to calibrate these boundaries against real narration audio",
+          "Timings here are structural. Every start/end will move once the voice track exists."
+        ]
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "vox-claude-webapp-ar",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "pipeline_selection",
+          "subject": "Pipeline for a Vox-style 60s vertical Arabic explainer",
+          "options_considered": [
+            {
+              "option_id": "animation",
+              "label": "animation (motion graphics, diagram-led explainers, kinetic typography)",
+              "score": 1.0,
+              "reason": "Vox style for a software topic is diagram, chart and type led \u2014 exactly this pipeline's remit, and its manifest recommends flat-motion-graphics playbooks."
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer (fully AI-produced from topic)",
+              "score": 0.4,
+              "reason": "Assumes generated narration plus generated visuals.",
+              "rejected_because": "Its asset path leans on image and video generation; 0 of 32 image and 0 of 36 video providers are configured, and generated imagery would fight the Vox vector vocabulary anyway."
+            },
+            {
+              "option_id": "cinematic",
+              "label": "cinematic (mood-led, footage-first)",
+              "score": 0.1,
+              "reason": "Built for supplied footage and trailers.",
+              "rejected_because": "No source footage and no mood-led brief; wrong grammar for an explainer."
+            }
+          ],
+          "selected": "animation",
+          "reason": "The brief is a diagram-and-type explainer with no footage and no generated imagery, which is the animation pipeline's core case.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.85,
+              "reason": "The selector routes kinetic typography and HTML/GSAP-native motion here, and the registry's motion-graphics guidance points the same way. Arabic shaping and RTL are native browser text layout rather than something to reimplement, and the stepped blur-free Vox cadence is straightforward in CSS/GSAP."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React components \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available after this session's dependency install. Owns word-level caption burn and the existing chart stack, and matches the user's existing tasmeem project, so patterns transfer.",
+              "rejected_because": "Recommended against, not rejected \u2014 the user decides. In atelier mode the existing chart stack is off-limits anyway, which removes Remotion's main advantage here, and React component authoring is more rigid than HTML/CSS for bespoke typographic motion."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Both runtimes are available, so the HARD RULE requires presenting both and waiting. Agent recommends HyperFrames for native Arabic/RTL text layout and HTML/GSAP-native stepped motion; Remotion is a legitimate pick, especially to reuse tasmeem patterns and word-level caption burn. Not written into production_plan until the user picks.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.6
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.9,
+              "reason": "The guide defaults hero work to atelier, and the request is for a specific recognisable house style. Stock cut-types are frozen looks that reintroduce sameness, which fails the taste profile's own distinctness gate."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes in the Explainer composition",
+              "score": 0.45,
+              "reason": "Faster, cheaper, more reliable; right for batch output and drafts.",
+              "rejected_because": "Recommended against: a Vox look assembled from the shared scene catalogue would read as the catalogue, not as Vox. Costs the user the one thing they asked for."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Agent recommends atelier and says plainly that it costs more tokens and iteration than templated, so the user opts in knowingly.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "provider_selection",
+          "subject": "Narration TTS provider",
+          "options_considered": [
+            {
+              "option_id": "elevenlabs_connector",
+              "label": "ElevenLabs via the attached MCP connector",
+              "score": 0.9,
+              "reason": "User's explicit choice at the preflight blocker gate. Best Arabic prosody of the available options and the only one with an auditionable voice library. Currently blocked: the connector returned a permissions error and needs reconnecting."
+            },
+            {
+              "option_id": "elevenlabs_key",
+              "label": "ElevenLabs via a direct API key in this container",
+              "score": 0.75,
+              "reason": "Would activate the in-registry tts_selector path with proper cost tracking.",
+              "rejected_because": "User chose the connector route instead."
+            },
+            {
+              "option_id": "piper_local",
+              "label": "piper_tts, ar_JO-kareem-medium, fully local and free",
+              "score": 0.5,
+              "reason": "Free, offline, installable now; confirmed Jordanian Arabic voice exists in the piper voice index.",
+              "rejected_because": "Held as the documented fallback, not executed. Audibly synthetic with a fixed accent \u2014 a real downgrade, and the no-unilateral-substitutions rule requires approval."
+            },
+            {
+              "option_id": "none",
+              "label": "No narration \u2014 caption-led",
+              "score": 0.4,
+              "reason": "Zero cost, nothing blocked, native to a sound-off feed.",
+              "rejected_because": "User chose a narrated path."
+            }
+          ],
+          "selected": "elevenlabs_connector",
+          "reason": "Explicit user choice at the narration gate. Recorded as blocked rather than silently substituted; the assets stage cannot start until it is reconnected or a fallback is approved.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Music bed source",
+          "options_considered": [
+            {
+              "option_id": "pixabay_music",
+              "label": "pixabay_music search (free, no key)",
+              "score": 0.8,
+              "reason": "The only configured music capability on this machine, free, and a sparse tense bed is all the design read wants."
+            },
+            {
+              "option_id": "music_gen",
+              "label": "Generated soundtrack (elevenlabs_soundtrack, suno, google and 5 others)",
+              "score": 0.0,
+              "reason": "Would allow a bed cut exactly to the beat structure.",
+              "rejected_because": "0 of 8 music generation providers configured."
+            }
+          ],
+          "selected": "pixabay_music",
+          "reason": "Only available option, free, and sufficient for a bed that must stay under Arabic narration.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.85
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "playbook_selection",
+          "subject": "Style playbook",
+          "options_considered": [
+            {
+              "option_id": "custom_vox_ar",
+              "label": "Custom generated playbook: vox-ar-explainer",
+              "score": 0.9,
+              "reason": "No preset encodes the load-bearing choices \u2014 square corners, single saturated accent on near-black, stepped blur-free motion, word-level Arabic reveals."
+            },
+            {
+              "option_id": "flat-motion-graphics",
+              "label": "flat-motion-graphics preset (manifest-recommended)",
+              "score": 0.5,
+              "reason": "Closest preset and officially recommended for this pipeline.",
+              "rejected_because": "Taste direction forbids letting preset availability override the design read; it carries none of the Arabic text constraints."
+            },
+            {
+              "option_id": "minimalist-diagram",
+              "label": "minimalist-diagram preset",
+              "score": 0.4,
+              "reason": "Diagram-led fit.",
+              "rejected_because": "Too restrained for the Vox stamped read; no accent logic."
+            }
+          ],
+          "selected": "custom_vox_ar",
+          "reason": "The Arabic constraints and the Vox cadence both need encoding in the playbook itself rather than being remembered per scene.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 diagram-led cycle",
+              "score": 0.9,
+              "reason": "Only concept whose central claim rests on a primary source; closes the clearest research gap; rotation is motion that means something."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep over a file tree",
+              "score": 0.8,
+              "reason": "Busts the most load-bearing misconception and is the most recognisably Vox moment available.",
+              "rejected_because": "Runner-up only. Its central claim rests on a secondary source, so it must be phrased as behaviour rather than architecture."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 two-bar divergence chart",
+              "score": 0.7,
+              "reason": "Best single number in the brief, from an RCT, and the canonical Vox chart moment.",
+              "rejected_because": "Runner-up. METR's caveat costs roughly a fifth of a 60-second word budget, and it is the least flattering frame for the subject."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking \u2014 stacking decision chips",
+              "score": 0.65,
+              "reason": "Closest to the audience's lived pain, cheapest to build, most Arabic-native.",
+              "rejected_because": "Runner-up. Teaches a caution rather than a mechanism, so the viewer leaves with less."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Four genuinely different concepts across four animation approaches and four narrative structures. Agent recommends c1; the user may select, mix or redirect.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.7
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.95,
+              "reason": "User's pick. Arabic shaping and RTL come free from native browser text layout; the stepped blur-free Vox cadence is straightforward in CSS/GSAP; the runtime selector routes kinetic typography here."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available and matches the user's tasmeem patterns; owns word-level caption burn.",
+              "rejected_because": "User chose HyperFrames. In atelier mode the stock Remotion chart stack is off-limits anyway, which removes its main advantage for this brief."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "REVISED \u2014 supersedes d-002's PENDING_USER_APPROVAL. User approved HyperFrames at the proposal gate after both available runtimes were presented with fit and tradeoff. Now locked and carried unchanged into edit_decisions.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.95,
+              "reason": "User's pick, knowing it costs more tokens and iteration. Stock scene-types are frozen looks that would make a 'Vox style' request read as the shared catalogue."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes",
+              "score": 0.45,
+              "reason": "Faster and cheaper.",
+              "rejected_because": "User chose atelier; templated would fail the distinctness gate implied by the request."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "REVISED \u2014 supersedes d-003's PENDING_USER_APPROVAL. Explicit user approval at the gate. Binds the build to skills/meta/bespoke-composition.md: stock cut-types, hyperframes-registry blocks and finished components are off-limits.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 rotating three-node cycle",
+              "score": 0.95,
+              "reason": "User's pick. Primary-sourced central claim, closes the clearest research gap, rotation is meaningful motion."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep",
+              "score": 0.8,
+              "reason": "Strong runner-up, most recognisably Vox.",
+              "rejected_because": "User chose c1; c2's claim rests on a secondary source."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 divergence chart",
+              "score": 0.7,
+              "reason": "Best single number, from an RCT.",
+              "rejected_because": "User chose c1; METR's caveat is expensive in a 60s budget."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking",
+              "score": 0.65,
+              "reason": "Cheapest and most Arabic-native.",
+              "rejected_because": "User chose c1; c4 teaches a caution rather than a mechanism."
+            }
+          ],
+          "selected": "c1",
+          "reason": "REVISED \u2014 supersedes d-007's PENDING_USER_APPROVAL. Explicit user selection at the gate.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.95,
+              "reason": "User's pick. Arabic shaping and RTL come free from native browser text layout; the stepped blur-free Vox cadence is straightforward in CSS/GSAP; the runtime selector routes kinetic typography here."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available and matches the user's tasmeem patterns; owns word-level caption burn.",
+              "rejected_because": "User chose HyperFrames. In atelier mode the stock Remotion chart stack is off-limits anyway, which removes its main advantage for this brief."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "REVISED \u2014 supersedes d-002's PENDING_USER_APPROVAL. User approved HyperFrames at the gate after both available runtimes were presented with fit and tradeoff. Now locked and carried unchanged into edit_decisions.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.95,
+              "reason": "User's pick, knowing it costs more tokens and iteration. Stock scene-types are frozen looks that would make a 'Vox style' request read as the shared catalogue."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes",
+              "score": 0.45,
+              "reason": "Faster and cheaper.",
+              "rejected_because": "User chose atelier; templated would fail the distinctness gate implied by the request."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "REVISED \u2014 supersedes d-003's PENDING_USER_APPROVAL. Explicit user approval at the gate. Binds the build to skills/meta/bespoke-composition.md: stock cut-types, hyperframes-registry blocks and finished components are off-limits.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 rotating three-node cycle",
+              "score": 0.95,
+              "reason": "User's pick. Primary-sourced central claim, closes the clearest research gap, rotation is meaningful motion."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep",
+              "score": 0.8,
+              "reason": "Strong runner-up, most recognisably Vox.",
+              "rejected_because": "User chose c1; c2's claim rests on a secondary source."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 divergence chart",
+              "score": 0.7,
+              "reason": "Best single number, from an RCT.",
+              "rejected_because": "User chose c1; METR's caveat is expensive in a 60s word budget."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking",
+              "score": 0.65,
+              "reason": "Cheapest and most Arabic-native.",
+              "rejected_because": "User chose c1; c4 teaches a caution rather than a mechanism."
+            }
+          ],
+          "selected": "c1",
+          "reason": "REVISED \u2014 supersedes d-007's PENDING_USER_APPROVAL. Explicit user selection at the gate.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "scene_plan",
+          "category": "motion_commitment",
+          "subject": "Signature device placement across scenes",
+          "options_considered": [
+            {
+              "option_id": "ring_two_beats",
+              "label": "Ring appears in sc3 (introduction) and sc7 (hero) only; other scenes carry their own subjects",
+              "score": 0.95,
+              "reason": "Satisfies the bespoke-composition scarcity rule \u2014 the signature device earns weight by being scarce \u2014 and gives every scene a distinct primary visual subject."
+            },
+            {
+              "option_id": "ring_as_spine",
+              "label": "Ring present in sc3-sc8, rotating to indicate the current phase",
+              "score": 0.2,
+              "reason": "Reads as a coherent system and is easier to author.",
+              "rejected_because": "This was my first draft and it is precisely the hero-component spine the skill forbids: one striking visual reused every scene with different text underneath, which is branded slides rather than a film. Caught at self-review and re-planned before writing the artifact."
+            }
+          ],
+          "selected": "ring_two_beats",
+          "reason": "The phase is now carried by a small mono eyebrow overlay instead of by the device, freeing sc4/sc5/sc6/sc8 to carry a file tree, a diff, a test bar and a tally grid as their own subjects.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.85
+        },
+        {
+          "decision_id": "d-012",
+          "stage": "scene_plan",
+          "category": "playbook_selection",
+          "subject": "Caption treatment",
+          "options_considered": [
+            {
+              "option_id": "sidecar_only",
+              "label": "Separate caption sidecar file, nothing burned in",
+              "score": 0.9,
+              "reason": "On-screen labels name mechanisms the narration never says, so burning a transcript on top would produce the doubled-phrase amateurism the skill warns about. The sidecar still serves sound-off and accessibility."
+            },
+            {
+              "option_id": "burned_captions",
+              "label": "Burn word-level Arabic captions into the frame",
+              "score": 0.3,
+              "reason": "Strong for sound-off feeds.",
+              "rejected_because": "Would collide with the eyebrow label system and double the text load in a vertical frame; also HyperFrames has no word-level caption-burn parity yet."
+            }
+          ],
+          "selected": "sidecar_only",
+          "reason": "Keeps one role per text element. sc10 is the single declared exception where on-screen line and narration line coincide.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        }
+      ]
+    }
+  },
+  "review": {
+    "reviewer": "scene-director self-review",
+    "verdict": "pass_awaiting_human",
+    "notes": [
+      "All 10 scenes have explicit timing intent, framing, movement, transitions and information_role \u2014 PASS",
+      "5-aspect checklist satisfied per scene in metadata.five_aspect_checklist, with Camera explicitly N/A for motion graphics (single whip declared as a frame-level transition, not an in-scene camera move) \u2014 PASS",
+      "Overlays listed under overlay_notes and metadata overlays arrays, never inside the framing description \u2014 PASS",
+      "Transition system limited and meaningful: 8 cuts, 1 whip at the single act break, 1 fade at the close; no family used twice for different meanings \u2014 PASS",
+      "Tool path explicit for every scene: hand-authored HyperFrames clip; nothing generated or sourced \u2014 PASS",
+      "CAUGHT AND FIXED AT SELF-REVIEW: the first draft used the ring in sc3-sc8 as a phase indicator, which is the hero-component spine the skill forbids. Re-planned so each of sc4/sc5/sc6/sc8 carries its own primary subject and the phase moved to an overlay. Logged as d-011 with the rejected option recorded.",
+      "scene_distinctness: no two scenes share a primary visual subject; sc1/sc10 declared as a deliberate bookend separated by scale, position, weight and function",
+      "Signature device appears in exactly 2 beats, the maximum allowed; the sc10 mark is counted as punctuation and declared",
+      "Captions decision logged (d-012): sidecar only, not burned, to avoid doubling the eyebrow label system",
+      "Per-scene plan written as a first-class artifact before any composition code exists, as atelier mode requires",
+      "OPEN: timings provisional; narration blocked on the ElevenLabs connector; faster-whisper needed for calibration"
+    ]
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.255,
+    "budget_remaining_usd": 1.745
+  }
+}

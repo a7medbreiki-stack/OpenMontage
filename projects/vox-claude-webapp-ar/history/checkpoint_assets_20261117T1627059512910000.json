@@ -1,0 +1,910 @@
+{
+  "version": "1.0",
+  "project_id": "vox-claude-webapp-ar",
+  "pipeline_type": "animation",
+  "stage": "assets",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-17T16:27:05.951291+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "asset_manifest": {
+      "version": "1.0",
+      "assets": [
+        {
+          "id": "comp-sc1",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc1.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc1",
+          "duration_seconds": 4.5,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "The typed line itself \u2014 a live prompt field at body scale, nothing else in frame",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc1",
+          "type": "image",
+          "path": "snapshots/sc1.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc1",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc2",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc2.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc2",
+          "duration_seconds": 4.5,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "The absent command \u2014 an empty box, the only object in the video that stays empty",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc2",
+          "type": "image",
+          "path": "snapshots/sc2.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc2",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc3",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc3.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc3",
+          "duration_seconds": 6.5,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "THE RING \u2014 signature device, first of only two appearances",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc3",
+          "type": "image",
+          "path": "snapshots/sc3.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc3",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc4",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc4.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc4",
+          "duration_seconds": 6.5,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "A file tree \u2014 dense, data-driven, the only scene with hundreds of elements",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc4",
+          "type": "image",
+          "path": "snapshots/sc4.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc4",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc5",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc5.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc5",
+          "duration_seconds": 6.0,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "A diff \u2014 code lines as objects, the only scene containing Latin code",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc5",
+          "type": "image",
+          "path": "snapshots/sc5.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc5",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc6",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc6.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc6",
+          "duration_seconds": 7.5,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "A test bar \u2014 a single horizontal element, the only scene whose subject changes colour",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc6",
+          "type": "image",
+          "path": "snapshots/sc6.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc6",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc7",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc7.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc7",
+          "duration_seconds": 6.5,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "THE RING, SPLIT \u2014 signature device, second and final appearance; the hero moment",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc7",
+          "type": "image",
+          "path": "snapshots/sc7.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc7",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc8",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc8.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc8",
+          "duration_seconds": 5.5,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "A tally of completed passes \u2014 accumulation, the only scene that counts",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc8",
+          "type": "image",
+          "path": "snapshots/sc8.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc8",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc9",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc9.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc9",
+          "duration_seconds": 7.5,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "Two controls \u2014 the viewer's own handles, the only scene depicting the user's agency",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc9",
+          "type": "image",
+          "path": "snapshots/sc9.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc9",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "comp-sc10",
+          "type": "animation",
+          "path": "hyperframes/compositions/sc10.html",
+          "source_tool": "hand-authored (atelier)",
+          "scene_id": "sc10",
+          "duration_seconds": 5.0,
+          "resolution": "1080x1920",
+          "format": "html",
+          "cost_usd": 0.0,
+          "subtype": "bespoke_composition",
+          "generation_summary": "Type at display scale \u2014 the bookend, deliberately echoing sc1 at a different register",
+          "provider": "none \u2014 authored, not generated"
+        },
+        {
+          "id": "still-sc10",
+          "type": "image",
+          "path": "snapshots/sc10.png",
+          "source_tool": "hyperframes snapshot",
+          "scene_id": "sc10",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0.0,
+          "subtype": "filmstrip_still",
+          "generation_summary": "Mid-scene still rendered from the authored composition for the assets-gate filmstrip",
+          "provider": "local"
+        },
+        {
+          "id": "vendor-gsap",
+          "type": "code_snippet",
+          "path": "hyperframes/vendor/gsap.min.js",
+          "source_tool": "npm / Google Fonts (fetched server-side)",
+          "scene_id": "all",
+          "cost_usd": 0.0,
+          "subtype": "vendored_dependency",
+          "provider": "local",
+          "generation_summary": "Vendored locally because the render browser has no tunnel to jsdelivr or gstatic; without this the composition renders unstyled and Arabic falls back to a non-shaping face."
+        },
+        {
+          "id": "vendor-cairo-ar",
+          "type": "font",
+          "path": "hyperframes/vendor/Cairo-var-ar.woff2",
+          "source_tool": "npm / Google Fonts (fetched server-side)",
+          "scene_id": "all",
+          "cost_usd": 0.0,
+          "subtype": "vendored_dependency",
+          "provider": "local",
+          "generation_summary": "Vendored locally because the render browser has no tunnel to jsdelivr or gstatic; without this the composition renders unstyled and Arabic falls back to a non-shaping face."
+        },
+        {
+          "id": "vendor-cairo-lat",
+          "type": "font",
+          "path": "hyperframes/vendor/Cairo-var-lat.woff2",
+          "source_tool": "npm / Google Fonts (fetched server-side)",
+          "scene_id": "all",
+          "cost_usd": 0.0,
+          "subtype": "vendored_dependency",
+          "provider": "local",
+          "generation_summary": "Vendored locally because the render browser has no tunnel to jsdelivr or gstatic; without this the composition renders unstyled and Arabic falls back to a non-shaping face."
+        },
+        {
+          "id": "vendor-jbmono",
+          "type": "font",
+          "path": "hyperframes/vendor/JetBrainsMono-var-lat.woff2",
+          "source_tool": "npm / Google Fonts (fetched server-side)",
+          "scene_id": "all",
+          "cost_usd": 0.0,
+          "subtype": "vendored_dependency",
+          "provider": "local",
+          "generation_summary": "Vendored locally because the render browser has no tunnel to jsdelivr or gstatic; without this the composition renders unstyled and Arabic falls back to a non-shaping face."
+        }
+      ],
+      "metadata": {
+        "pipeline": "animation",
+        "stage": "assets",
+        "render_runtime": "hyperframes",
+        "composition_mode": "atelier",
+        "workspace": "projects/vox-claude-webapp-ar/hyperframes/",
+        "layer3_skills_read": [
+          "skills/meta/bespoke-composition.md",
+          "skills/meta/animation-runtime-selector.md",
+          "skills/meta/taste-direction.md",
+          "skills/core/hyperframes.md",
+          "hyperframes dist/docs: data-attributes.md, compositions.md, gsap.md"
+        ],
+        "generation_tools_used": "none \u2014 no image, video, music or TTS provider was called, so no Layer 3 generation skill applies",
+        "total_cost_usd": 0.0,
+        "audio": {
+          "status": "ABSENT BY USER DIRECTION",
+          "narration": "blocked \u2014 ElevenLabs connector returns a permissions error",
+          "music": "not yet sourced \u2014 pixabay_music is available and free",
+          "consequence": "hyperframes check reports film_silent; this is the one open warning and it is expected"
+        },
+        "verification": {
+          "lint": "0 errors, 0 warnings",
+          "check": "passed \u2014 0 errors; 15/15 text checks pass WCAG AA; 1 warning (film_silent)",
+          "safe_zone": "reels \u2014 clean. TikTok and YouTube Shorts flag right/top edges; re-targeting them needs a re-layout, not a re-export",
+          "visual_review": "every scene inspected as a rendered still; 8 defects found and fixed (see metadata.defects_fixed)"
+        },
+        "defects_fixed": [
+          "sc3 ring rotated about 475,490 while its centre was 475,520 \u2014 a 30px wobble through the whole spin",
+          "sc3 labels stayed lit and static during the spin, pointing at nothing \u2014 now dim to 0.18 and restore on landing",
+          "sc3 ring was too small and its labels collided with their nodes \u2014 radius 285\u2192330, per-node label anchors",
+          "sc4 file tree only covered the left 46% of the frame, reading as unfinished rather than textural",
+          "sc5 diff gutter was on the right of left-aligned LTR code \u2014 moved to the left",
+          "sc8 tally accelerated too slowly to fill the grid inside the scene \u2014 retuned",
+          "sc10 closing clause wrapped to two lines, stranding the ring mark alone on the second \u2014 set to one line",
+          "sc2 strike-through dived out of the box's lower-left corner \u2014 re-anchored inside the box and tilted the other way"
+        ],
+        "known_limitations": [
+          "Scene timings are structural, not calibrated to narration \u2014 every boundary moves once audio exists",
+          "faster-whisper is not installed; it is needed for that calibration",
+          "The piece is silent, so the Vox narration-plus-label interplay cannot be judged yet"
+        ]
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "vox-claude-webapp-ar",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "pipeline_selection",
+          "subject": "Pipeline for a Vox-style 60s vertical Arabic explainer",
+          "options_considered": [
+            {
+              "option_id": "animation",
+              "label": "animation (motion graphics, diagram-led explainers, kinetic typography)",
+              "score": 1.0,
+              "reason": "Vox style for a software topic is diagram, chart and type led \u2014 exactly this pipeline's remit, and its manifest recommends flat-motion-graphics playbooks."
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer (fully AI-produced from topic)",
+              "score": 0.4,
+              "reason": "Assumes generated narration plus generated visuals.",
+              "rejected_because": "Its asset path leans on image and video generation; 0 of 32 image and 0 of 36 video providers are configured, and generated imagery would fight the Vox vector vocabulary anyway."
+            },
+            {
+              "option_id": "cinematic",
+              "label": "cinematic (mood-led, footage-first)",
+              "score": 0.1,
+              "reason": "Built for supplied footage and trailers.",
+              "rejected_because": "No source footage and no mood-led brief; wrong grammar for an explainer."
+            }
+          ],
+          "selected": "animation",
+          "reason": "The brief is a diagram-and-type explainer with no footage and no generated imagery, which is the animation pipeline's core case.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.85,
+              "reason": "The selector routes kinetic typography and HTML/GSAP-native motion here, and the registry's motion-graphics guidance points the same way. Arabic shaping and RTL are native browser text layout rather than something to reimplement, and the stepped blur-free Vox cadence is straightforward in CSS/GSAP."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React components \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available after this session's dependency install. Owns word-level caption burn and the existing chart stack, and matches the user's existing tasmeem project, so patterns transfer.",
+              "rejected_because": "Recommended against, not rejected \u2014 the user decides. In atelier mode the existing chart stack is off-limits anyway, which removes Remotion's main advantage here, and React component authoring is more rigid than HTML/CSS for bespoke typographic motion."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Both runtimes are available, so the HARD RULE requires presenting both and waiting. Agent recommends HyperFrames for native Arabic/RTL text layout and HTML/GSAP-native stepped motion; Remotion is a legitimate pick, especially to reuse tasmeem patterns and word-level caption burn. Not written into production_plan until the user picks.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.6
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.9,
+              "reason": "The guide defaults hero work to atelier, and the request is for a specific recognisable house style. Stock cut-types are frozen looks that reintroduce sameness, which fails the taste profile's own distinctness gate."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes in the Explainer composition",
+              "score": 0.45,
+              "reason": "Faster, cheaper, more reliable; right for batch output and drafts.",
+              "rejected_because": "Recommended against: a Vox look assembled from the shared scene catalogue would read as the catalogue, not as Vox. Costs the user the one thing they asked for."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Agent recommends atelier and says plainly that it costs more tokens and iteration than templated, so the user opts in knowingly.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "provider_selection",
+          "subject": "Narration TTS provider",
+          "options_considered": [
+            {
+              "option_id": "elevenlabs_connector",
+              "label": "ElevenLabs via the attached MCP connector",
+              "score": 0.9,
+              "reason": "User's explicit choice at the preflight blocker gate. Best Arabic prosody of the available options and the only one with an auditionable voice library. Currently blocked: the connector returned a permissions error and needs reconnecting."
+            },
+            {
+              "option_id": "elevenlabs_key",
+              "label": "ElevenLabs via a direct API key in this container",
+              "score": 0.75,
+              "reason": "Would activate the in-registry tts_selector path with proper cost tracking.",
+              "rejected_because": "User chose the connector route instead."
+            },
+            {
+              "option_id": "piper_local",
+              "label": "piper_tts, ar_JO-kareem-medium, fully local and free",
+              "score": 0.5,
+              "reason": "Free, offline, installable now; confirmed Jordanian Arabic voice exists in the piper voice index.",
+              "rejected_because": "Held as the documented fallback, not executed. Audibly synthetic with a fixed accent \u2014 a real downgrade, and the no-unilateral-substitutions rule requires approval."
+            },
+            {
+              "option_id": "none",
+              "label": "No narration \u2014 caption-led",
+              "score": 0.4,
+              "reason": "Zero cost, nothing blocked, native to a sound-off feed.",
+              "rejected_because": "User chose a narrated path."
+            }
+          ],
+          "selected": "elevenlabs_connector",
+          "reason": "Explicit user choice at the narration gate. Recorded as blocked rather than silently substituted; the assets stage cannot start until it is reconnected or a fallback is approved.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Music bed source",
+          "options_considered": [
+            {
+              "option_id": "pixabay_music",
+              "label": "pixabay_music search (free, no key)",
+              "score": 0.8,
+              "reason": "The only configured music capability on this machine, free, and a sparse tense bed is all the design read wants."
+            },
+            {
+              "option_id": "music_gen",
+              "label": "Generated soundtrack (elevenlabs_soundtrack, suno, google and 5 others)",
+              "score": 0.0,
+              "reason": "Would allow a bed cut exactly to the beat structure.",
+              "rejected_because": "0 of 8 music generation providers configured."
+            }
+          ],
+          "selected": "pixabay_music",
+          "reason": "Only available option, free, and sufficient for a bed that must stay under Arabic narration.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.85
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "playbook_selection",
+          "subject": "Style playbook",
+          "options_considered": [
+            {
+              "option_id": "custom_vox_ar",
+              "label": "Custom generated playbook: vox-ar-explainer",
+              "score": 0.9,
+              "reason": "No preset encodes the load-bearing choices \u2014 square corners, single saturated accent on near-black, stepped blur-free motion, word-level Arabic reveals."
+            },
+            {
+              "option_id": "flat-motion-graphics",
+              "label": "flat-motion-graphics preset (manifest-recommended)",
+              "score": 0.5,
+              "reason": "Closest preset and officially recommended for this pipeline.",
+              "rejected_because": "Taste direction forbids letting preset availability override the design read; it carries none of the Arabic text constraints."
+            },
+            {
+              "option_id": "minimalist-diagram",
+              "label": "minimalist-diagram preset",
+              "score": 0.4,
+              "reason": "Diagram-led fit.",
+              "rejected_because": "Too restrained for the Vox stamped read; no accent logic."
+            }
+          ],
+          "selected": "custom_vox_ar",
+          "reason": "The Arabic constraints and the Vox cadence both need encoding in the playbook itself rather than being remembered per scene.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 diagram-led cycle",
+              "score": 0.9,
+              "reason": "Only concept whose central claim rests on a primary source; closes the clearest research gap; rotation is motion that means something."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep over a file tree",
+              "score": 0.8,
+              "reason": "Busts the most load-bearing misconception and is the most recognisably Vox moment available.",
+              "rejected_because": "Runner-up only. Its central claim rests on a secondary source, so it must be phrased as behaviour rather than architecture."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 two-bar divergence chart",
+              "score": 0.7,
+              "reason": "Best single number in the brief, from an RCT, and the canonical Vox chart moment.",
+              "rejected_because": "Runner-up. METR's caveat costs roughly a fifth of a 60-second word budget, and it is the least flattering frame for the subject."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking \u2014 stacking decision chips",
+              "score": 0.65,
+              "reason": "Closest to the audience's lived pain, cheapest to build, most Arabic-native.",
+              "rejected_because": "Runner-up. Teaches a caution rather than a mechanism, so the viewer leaves with less."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Four genuinely different concepts across four animation approaches and four narrative structures. Agent recommends c1; the user may select, mix or redirect.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.7
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.95,
+              "reason": "User's pick. Arabic shaping and RTL come free from native browser text layout; the stepped blur-free Vox cadence is straightforward in CSS/GSAP; the runtime selector routes kinetic typography here."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available and matches the user's tasmeem patterns; owns word-level caption burn.",
+              "rejected_because": "User chose HyperFrames. In atelier mode the stock Remotion chart stack is off-limits anyway, which removes its main advantage for this brief."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "REVISED \u2014 supersedes d-002's PENDING_USER_APPROVAL. User approved HyperFrames at the proposal gate after both available runtimes were presented with fit and tradeoff. Now locked and carried unchanged into edit_decisions.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.95,
+              "reason": "User's pick, knowing it costs more tokens and iteration. Stock scene-types are frozen looks that would make a 'Vox style' request read as the shared catalogue."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes",
+              "score": 0.45,
+              "reason": "Faster and cheaper.",
+              "rejected_because": "User chose atelier; templated would fail the distinctness gate implied by the request."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "REVISED \u2014 supersedes d-003's PENDING_USER_APPROVAL. Explicit user approval at the gate. Binds the build to skills/meta/bespoke-composition.md: stock cut-types, hyperframes-registry blocks and finished components are off-limits.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 rotating three-node cycle",
+              "score": 0.95,
+              "reason": "User's pick. Primary-sourced central claim, closes the clearest research gap, rotation is meaningful motion."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep",
+              "score": 0.8,
+              "reason": "Strong runner-up, most recognisably Vox.",
+              "rejected_because": "User chose c1; c2's claim rests on a secondary source."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 divergence chart",
+              "score": 0.7,
+              "reason": "Best single number, from an RCT.",
+              "rejected_because": "User chose c1; METR's caveat is expensive in a 60s budget."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking",
+              "score": 0.65,
+              "reason": "Cheapest and most Arabic-native.",
+              "rejected_because": "User chose c1; c4 teaches a caution rather than a mechanism."
+            }
+          ],
+          "selected": "c1",
+          "reason": "REVISED \u2014 supersedes d-007's PENDING_USER_APPROVAL. Explicit user selection at the gate.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.95,
+              "reason": "User's pick. Arabic shaping and RTL come free from native browser text layout; the stepped blur-free Vox cadence is straightforward in CSS/GSAP; the runtime selector routes kinetic typography here."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available and matches the user's tasmeem patterns; owns word-level caption burn.",
+              "rejected_because": "User chose HyperFrames. In atelier mode the stock Remotion chart stack is off-limits anyway, which removes its main advantage for this brief."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "REVISED \u2014 supersedes d-002's PENDING_USER_APPROVAL. User approved HyperFrames at the gate after both available runtimes were presented with fit and tradeoff. Now locked and carried unchanged into edit_decisions.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.95,
+              "reason": "User's pick, knowing it costs more tokens and iteration. Stock scene-types are frozen looks that would make a 'Vox style' request read as the shared catalogue."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes",
+              "score": 0.45,
+              "reason": "Faster and cheaper.",
+              "rejected_because": "User chose atelier; templated would fail the distinctness gate implied by the request."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "REVISED \u2014 supersedes d-003's PENDING_USER_APPROVAL. Explicit user approval at the gate. Binds the build to skills/meta/bespoke-composition.md: stock cut-types, hyperframes-registry blocks and finished components are off-limits.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 rotating three-node cycle",
+              "score": 0.95,
+              "reason": "User's pick. Primary-sourced central claim, closes the clearest research gap, rotation is meaningful motion."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep",
+              "score": 0.8,
+              "reason": "Strong runner-up, most recognisably Vox.",
+              "rejected_because": "User chose c1; c2's claim rests on a secondary source."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 divergence chart",
+              "score": 0.7,
+              "reason": "Best single number, from an RCT.",
+              "rejected_because": "User chose c1; METR's caveat is expensive in a 60s word budget."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking",
+              "score": 0.65,
+              "reason": "Cheapest and most Arabic-native.",
+              "rejected_because": "User chose c1; c4 teaches a caution rather than a mechanism."
+            }
+          ],
+          "selected": "c1",
+          "reason": "REVISED \u2014 supersedes d-007's PENDING_USER_APPROVAL. Explicit user selection at the gate.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "scene_plan",
+          "category": "motion_commitment",
+          "subject": "Signature device placement across scenes",
+          "options_considered": [
+            {
+              "option_id": "ring_two_beats",
+              "label": "Ring appears in sc3 (introduction) and sc7 (hero) only; other scenes carry their own subjects",
+              "score": 0.95,
+              "reason": "Satisfies the bespoke-composition scarcity rule \u2014 the signature device earns weight by being scarce \u2014 and gives every scene a distinct primary visual subject."
+            },
+            {
+              "option_id": "ring_as_spine",
+              "label": "Ring present in sc3-sc8, rotating to indicate the current phase",
+              "score": 0.2,
+              "reason": "Reads as a coherent system and is easier to author.",
+              "rejected_because": "This was my first draft and it is precisely the hero-component spine the skill forbids: one striking visual reused every scene with different text underneath, which is branded slides rather than a film. Caught at self-review and re-planned before writing the artifact."
+            }
+          ],
+          "selected": "ring_two_beats",
+          "reason": "The phase is now carried by a small mono eyebrow overlay instead of by the device, freeing sc4/sc5/sc6/sc8 to carry a file tree, a diff, a test bar and a tally grid as their own subjects.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.85
+        },
+        {
+          "decision_id": "d-012",
+          "stage": "scene_plan",
+          "category": "playbook_selection",
+          "subject": "Caption treatment",
+          "options_considered": [
+            {
+              "option_id": "sidecar_only",
+              "label": "Separate caption sidecar file, nothing burned in",
+              "score": 0.9,
+              "reason": "On-screen labels name mechanisms the narration never says, so burning a transcript on top would produce the doubled-phrase amateurism the skill warns about. The sidecar still serves sound-off and accessibility."
+            },
+            {
+              "option_id": "burned_captions",
+              "label": "Burn word-level Arabic captions into the frame",
+              "score": 0.3,
+              "reason": "Strong for sound-off feeds.",
+              "rejected_because": "Would collide with the eyebrow label system and double the text load in a vertical frame; also HyperFrames has no word-level caption-burn parity yet."
+            }
+          ],
+          "selected": "sidecar_only",
+          "reason": "Keeps one role per text element. sc10 is the single declared exception where on-screen line and narration line coincide.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-013",
+          "stage": "assets",
+          "category": "fallback_decision",
+          "subject": "Runtime dependency delivery (GSAP and fonts)",
+          "options_considered": [
+            {
+              "option_id": "vendored",
+              "label": "Vendor GSAP and the Cairo/JetBrains Mono woff2 subsets into the workspace",
+              "score": 0.95,
+              "reason": "The render browser has no tunnel to jsdelivr or gstatic \u2014 validate failed with ERR_TUNNEL_CONNECTION_FAILED and the timeline never constructed. Vendoring also makes the render deterministic and offline-safe."
+            },
+            {
+              "option_id": "cdn",
+              "label": "Load GSAP from jsdelivr and fonts from Google Fonts at render time",
+              "score": 0.0,
+              "reason": "Standard HyperFrames pattern.",
+              "rejected_because": "Blocked by this environment's network policy inside headless Chrome. Would have rendered an unstyled composition with Arabic falling back to a non-shaping face."
+            }
+          ],
+          "selected": "vendored",
+          "reason": "Fetched server-side where the proxy allows it, then referenced locally. Cairo is declared as a single variable face per subset with font-weight:200 1000 \u2014 declaring fixed weights against the same variable file silently flattened 900 to 400.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        }
+      ]
+    }
+  },
+  "review": {
+    "reviewer": "asset-director self-review",
+    "verdict": "pass_awaiting_human",
+    "notes": [
+      "Asset production path explicit per scene: every scene is a hand-authored HyperFrames sub-composition; nothing generated or sourced \u2014 PASS",
+      "All referenced asset files exist on disk (verified) \u2014 PASS",
+      "Total cost $0.00 against the $2.00 approved budget \u2014 PASS",
+      "layer3_skills_read recorded; no generation tool was called, so no provider prompting skill applies \u2014 PASS",
+      "Atelier constraints honoured: no stock cut-type, no hyperframes-registry block consumed as a scene, no fixture; art-direction.md written before authoring \u2014 PASS",
+      "hyperframes lint: 0 errors 0 warnings. check: passed, 0 errors, 15/15 WCAG AA \u2014 PASS",
+      "Per-scene stills rendered into snapshots/ so the assets-gate filmstrip shows real frames \u2014 PASS",
+      "VISUAL SELF-REVIEW FOUND 8 DEFECTS, ALL FIXED \u2014 listed in asset_manifest.metadata.defects_fixed. Most serious: the sc3 ring rotated about the wrong centre (30px wobble through the entire spin) and its labels stayed lit and static during the rotation, pointing at nothing.",
+      "OPEN WARNING (expected): film_silent \u2014 the piece has no audio, by the user's explicit direction to build without sound",
+      "OPEN: timings structural, not calibrated; faster-whisper not installed; ElevenLabs connector still blocked",
+      "SAFE-ZONE SCOPE: clean for Instagram Reels. TikTok and YouTube Shorts flag the right and top edges; re-targeting either needs a re-layout."
+    ]
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  }
+}

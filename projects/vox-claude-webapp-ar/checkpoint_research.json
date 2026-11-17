@@ -1,0 +1,573 @@
+{
+  "version": "1.0",
+  "project_id": "vox-claude-webapp-ar",
+  "pipeline_type": "animation",
+  "stage": "research",
+  "status": "completed",
+  "timestamp": "2026-11-17T14:37:09.205253+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "research_brief": {
+      "version": "1.0",
+      "topic": "How Claude builds a web app \u2014 Vox-style 60s vertical Arabic explainer",
+      "research_date": "2026-11-17",
+      "research_summary": "The most important content insight: the existing landscape is saturated with 'look what I built in 10 minutes' tool-demo content, and almost none of it shows the one thing beginners actually ask about \u2014 the loop. Claude Code's own documentation frames it as three blending phases (gather context, take action, verify results) repeating until done, with no vector index and no embeddings; it searches with grep and file reads. That loop is the underserved gap and it is inherently animatable: a cycle diagram that spins, a test bar that goes red then green, a file tree that lights up as it is read. The sharpest available tension is the METR randomized trial, where 16 experienced developers were 19% slower with AI yet still believed they were 20% faster \u2014 a perfect Vox 'expectation vs reality' two-bar moment. The most promising animation approach is diagram-led motion graphics authored in code (Remotion or HyperFrames) rather than generated footage: the Vox look is built from flat vector type, charts, annotated UI and hard cuts, which is exactly what a code-authored composition does well and which sidesteps this machine having zero image/video generation providers configured. Arabic imposes one hard technique constraint confirmed by independent sources: per-letter animation breaks Arabic glyph joining, so every reveal must be word-level or whole-shape.",
+      "landscape": {
+        "existing_content": [
+          {
+            "title": "I Made Vox-Style Motion Graphics Using Only Claude Code & Remotion",
+            "url": "https://videohighlight.com/v/7wuYBfE131U",
+            "source": "youtube (via summary page)",
+            "angle": "Tool demo \u2014 'I replicated a premium look with code'",
+            "what_it_covers": "Chapters cover planning script and visual style, building scenes in Claude Code with Remotion, assembling the edit, then voiceover, music and final render. Confirms the exact runtime pairing we are considering is viable for Vox styling.",
+            "what_it_misses": "It is about making Vox-style video, not about explaining how the agent works. English only, horizontal, and the process is the subject rather than the content.",
+            "engagement_signal": "Could not confirm view count or publish date from available sources"
+          },
+          {
+            "title": "How I Built a High-End Animated Website in 10 Minutes Using Claude Code",
+            "url": "https://medium.com/write-a-catalyst/how-i-built-a-high-end-animated-website-in-10-minutes-using-claude-code-7e48ab8b0974",
+            "source": "blog",
+            "angle": "Speed flex \u2014 elapsed-time hook",
+            "what_it_covers": "The 'ten minutes' framing that dominates this topic: prompt in, finished site out.",
+            "what_it_misses": "Nothing about what the agent did in between. No mention of verification, iteration, or the decisions made on the author's behalf.",
+            "engagement_signal": "Member-only story"
+          },
+          {
+            "title": "We made our launch video with Claude Code (and open-sourced the tool)",
+            "url": "https://kiln.tech/blog/we_made_our_launch_video_in_claude_code",
+            "source": "blog / Hacker News",
+            "angle": "Practitioner report with honest caveats",
+            "what_it_covers": "Notes the agent can read the app's own code and animate the live UI rather than a screen recording, and states plainly that the first version Claude writes is not the finished video.",
+            "what_it_misses": "Aimed at a technical English-speaking audience; no visual explanation of the loop itself.",
+            "engagement_signal": "Surfaced via Hacker News reader mirrors"
+          },
+          {
+            "title": "Vibe Coding Gets You a Demo. Not a Production App",
+            "url": "https://reflex.dev/blog/vibe-coding-gets-you-a-demo-not-a-production-app/",
+            "source": "blog (vendor)",
+            "angle": "Contrarian corrective",
+            "what_it_covers": "The gap between a working demo and a production app; apps breaking after later changes.",
+            "what_it_misses": "Vendor interest, and it argues the point in prose rather than showing the mechanism.",
+            "engagement_signal": "Unknown"
+          },
+          {
+            "title": "Everything that can go wrong when you vibe code an app",
+            "url": "https://www.softr.io/blog/what-can-go-wrong-when-you-vibe-code",
+            "source": "blog (vendor)",
+            "angle": "Failure catalogue",
+            "what_it_covers": "Hidden decisions the AI makes unseen (database setup, API keys), missing version control, security mistakes.",
+            "what_it_misses": "No positive model of how the loop actually works when it works.",
+            "engagement_signal": "Unknown"
+          }
+        ],
+        "saturated_angles": [
+          "'I built X in N minutes' elapsed-time flex",
+          "Generic 'what is vibe coding' definitional explainers",
+          "Tool-versus-tool comparison (Copilot vs Cursor vs Claude Code) market-share content",
+          "Doom framing: 'AI will replace developers'",
+          "Prompt-pack listicles ('10 prompts that build any app')"
+        ],
+        "underserved_gaps": [
+          "Nobody animates the loop itself \u2014 gather context, act, verify, repeat \u2014 even though it is the single mechanism that explains every other behaviour",
+          "The verification half is almost never shown: the agent running tests, reading the failure, and fixing it is the part that separates an agent from autocomplete",
+          "Almost nothing in Arabic explains agentic coding visually rather than as a screen recording with a talking voice over it",
+          "The honest tension (people feel faster than they measurably are) is reported in text but never charted for a general audience",
+          "Beginners are never shown the decisions made silently on their behalf, which is the actual source of their later confusion"
+        ]
+      },
+      "trending": {
+        "recent_developments": [
+          {
+            "headline": "JetBrains 2026 survey: ~90% of professional developers use AI coding agents at work at least weekly, ~68% daily",
+            "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+            "date": "2026-08-18 (fieldwork May\u2013July 2026)",
+            "relevance": "Establishes that the audience is no longer being introduced to the idea \u2014 they are already using it, which means the video can skip 'what is it' and go straight to 'how does it actually work'."
+          },
+          {
+            "headline": "Stack Overflow 2026 survey results published, with contested daily-use figures across denominators",
+            "url": "https://survey.stackoverflow.co/2026/",
+            "date": "2026-10",
+            "relevance": "Reinforces adoption but the figures do not reconcile across sources, so the script must not lean on a single precise percentage."
+          }
+        ],
+        "active_discussions": [
+          {
+            "platform": "blogs / hackernews",
+            "topic_or_url": "https://hackernews-dynamic.seasondane.workers.dev/news/48223369",
+            "sentiment": "Pragmatic enthusiasm mixed with 'expect iteration' realism",
+            "key_quotes": [
+              "the first version Claude writes isn't your finished video",
+              "the agent can read the app's code and animate the live UI rather than a screen recording"
+            ]
+          },
+          {
+            "platform": "tutorial blogs (Reddit threads did not surface in search)",
+            "topic_or_url": "https://www.softr.io/blog/what-can-go-wrong-when-you-vibe-code",
+            "sentiment": "Confusion and retroactive frustration \u2014 things work, then break",
+            "key_quotes": [
+              "what the AI silently decides on your behalf",
+              "the app looks fine... and then out of nowhere, your whole app crashes"
+            ]
+          }
+        ],
+        "timeliness_window": "evergreen with a 2026 adoption hook \u2014 the mechanism does not expire, the percentages do"
+      },
+      "data_points": [
+        {
+          "claim": "Claude Code works through three blending phases \u2014 gather context, take action, verify results \u2014 repeating until the task is complete, and the user can interrupt at any point.",
+          "source_url": "https://code.claude.com/docs/en/how-claude-code-works",
+          "source_name": "Claude Code documentation, 'How Claude Code works'",
+          "credibility": "primary_source",
+          "surprise_factor": "notable",
+          "usable_as": "script_anchor \u2014 this is the spine of the whole video and the central animated diagram"
+        },
+        {
+          "claim": "Claude Code does not index the codebase: no vector database and no embeddings. It uses file-based agentic search \u2014 grep/ripgrep plus file reads \u2014 orchestrated by the model.",
+          "source_url": "https://samy-portfolio.pages.dev/blog/2026/how-claude-code-works",
+          "source_name": "Third-party architecture write-up (corroborated in part by official docs' description of search tools)",
+          "credibility": "secondary_source",
+          "surprise_factor": "surprising",
+          "usable_as": "stat_card / myth-buster beat \u2014 most people assume the model 'has read your whole repo'"
+        },
+        {
+          "claim": "In a METR randomized controlled trial, 16 experienced developers took 19% longer to complete 246 real tasks with AI tools, while still believing afterwards that they had been 20% faster. Beforehand they predicted a 24% speed-up.",
+          "source_url": "https://newsletter.getdx.com/p/metr-study-on-how-ai-affects-developer-productivity",
+          "source_name": "METR randomized controlled trial, 2025 (summarized by DX)",
+          "credibility": "primary_source",
+          "surprise_factor": "counterintuitive",
+          "usable_as": "hook or closing punch \u2014 the strongest two-bar 'felt vs measured' chart in the brief"
+        },
+        {
+          "claim": "In the same trial, developers accepted fewer than 44% of AI-generated code, with most saying they had to make major changes to clean it up.",
+          "source_url": "https://newsletter.getdx.com/p/metr-study-on-how-ai-affects-developer-productivity",
+          "source_name": "METR randomized controlled trial, 2025",
+          "credibility": "primary_source",
+          "surprise_factor": "notable",
+          "usable_as": "stat_card supporting the 'review is your job' beat"
+        },
+        {
+          "claim": "As of May\u2013July 2026 fieldwork across 15,000+ developers, about 90% used AI coding agents at work at least weekly and about 68% daily.",
+          "source_url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+          "source_name": "JetBrains Developer Ecosystem / AI agent adoption research 2026",
+          "credibility": "primary_source",
+          "surprise_factor": "expected",
+          "usable_as": "opening context card \u2014 establishes 'everyone is already doing this' in one frame"
+        },
+        {
+          "claim": "Per-letter text animation breaks Arabic: letters join and change shape by position, so splitting text into individual glyphs severs those connections before the animation even begins.",
+          "source_url": "https://www.framer.com/community/marketplace/components/horizontal-text-flow/",
+          "source_name": "Framer component author on shape-safe Arabic text animation",
+          "credibility": "secondary_source",
+          "surprise_factor": "notable",
+          "usable_as": "production constraint \u2014 binds every text reveal in the composition to word-level motion"
+        },
+        {
+          "claim": "Instagram's vertical safe area is widely given as 14% top / 35% bottom / 6% sides \u2014 roughly 270px top, 670px bottom and 65px per side on a 1080\u00d71920 frame \u2014 though sources disagree and none cite a primary Meta page.",
+          "source_url": "https://www.hopperhq.com/blog/instagram-reel-size/",
+          "source_name": "Aggregated Instagram Reels spec guides, 2026",
+          "credibility": "secondary_source",
+          "surprise_factor": "expected",
+          "usable_as": "layout constraint \u2014 defines where type and charts may live in the frame"
+        },
+        {
+          "claim": "Claude Code snapshots affected files before editing, so edits are reversible independently of git, and 'Plan' mode gates the loop so the agent proposes without touching source files.",
+          "source_url": "https://code.claude.com/docs/en/how-claude-code-works",
+          "source_name": "Claude Code documentation",
+          "credibility": "primary_source",
+          "surprise_factor": "surprising",
+          "usable_as": "reassurance beat \u2014 directly answers the 'what if it wrecks my project' fear"
+        }
+      ],
+      "audience_insights": {
+        "common_questions": [
+          "Does it actually read my whole project, or is it guessing?",
+          "What if it breaks something \u2014 can I undo it?",
+          "Why does it work the first time and then break after I add a feature?",
+          "Do I still need to know how to code?",
+          "What is it deciding for me that I never see? (databases, auth, API keys)",
+          "Is one big prompt better than many small ones?",
+          "Is it actually faster, or does it just feel faster?"
+        ],
+        "misconceptions": [
+          {
+            "myth": "The model has read and memorized your entire repository.",
+            "reality": "It searches the files it needs with grep and reads a handful \u2014 there is no index, no vector database, no embeddings.",
+            "source": "https://samy-portfolio.pages.dev/blog/2026/how-claude-code-works"
+          },
+          {
+            "myth": "You describe the app once and it comes out finished.",
+            "reality": "It is a loop with you inside it. One giant prompt leaves requirements missed; practitioners report the first version is never the final one.",
+            "source": "https://www.softr.io/blog/what-can-go-wrong-when-you-vibe-code"
+          },
+          {
+            "myth": "If it compiles and runs, it is done.",
+            "reality": "A demo is not a production app; auth, data access and security are the easiest things to get silently wrong.",
+            "source": "https://reflex.dev/blog/vibe-coding-gets-you-a-demo-not-a-production-app/"
+          },
+          {
+            "myth": "AI assistance always makes an experienced developer faster.",
+            "reality": "In METR's trial the same developers were 19% slower on familiar codebases while feeling 20% faster.",
+            "source": "https://newsletter.getdx.com/p/metr-study-on-how-ai-affects-developer-productivity"
+          },
+          {
+            "myth": "Writing the code is the hard part, so the agent does the hard part.",
+            "reality": "Verification is half the loop \u2014 running the tests, reading the failure, fixing, running again. That is where the work moved to.",
+            "source": "https://code.claude.com/docs/en/how-claude-code-works"
+          }
+        ],
+        "knowledge_level": "Arabic-speaking Instagram audience that already knows AI can write code and has probably tried a chat-based tool. Already known: prompting, 'AI writes code', the ten-minutes-to-an-app genre. New to them: that it is a loop rather than a single generation; that search is grep rather than memory; that verification is the agent's own job; that edits are snapshotted and reversible; that the felt speed-up is measurably contested. Assume no familiarity with CLI tooling and no patience for jargon \u2014 zero English technical terms unglossed, and the Latin product name 'Claude Code' kept LTR.",
+        "pain_points": [
+          "Builds something that works, then cannot fix it when it breaks",
+          "Cannot tell what was decided for them versus what they chose",
+          "No mental model for why the agent sometimes takes many steps",
+          "Fear of the agent destroying work with no way back",
+          "Arabic technical content is scarce, so they learn from English material they only half follow"
+        ]
+      },
+      "expert_voices": [
+        {
+          "name": "METR (research org)",
+          "title_or_affiliation": "Ran the randomized controlled trial on AI developer productivity",
+          "position": "The 19% figure is a 'point-in-time measurement'; the findings do not suggest the tools are useless, only that current tools may fall short in complex environments where developers have deep expertise.",
+          "source_url": "https://newsletter.getdx.com/p/metr-study-on-how-ai-affects-developer-productivity",
+          "contrarian": true
+        },
+        {
+          "name": "Claude Code documentation",
+          "title_or_affiliation": "Primary product documentation",
+          "position": "'Delegate, don't dictate' \u2014 give context and direction and let the agent work out which files to read and which commands to run.",
+          "source_url": "https://code.claude.com/docs/en/how-claude-code-works",
+          "contrarian": false
+        }
+      ],
+      "visual_references": [
+        {
+          "description": "Vox's choppy, reduced-frame-rate motion \u2014 graphics stepped at roughly 12fps against smooth footage, with motion blur deliberately removed from graphics, text and even footage of people to create contrast",
+          "url": "https://recapio.com/digest/how-to-create-vox-style-transitions-in-5-easy-steps-by-sean-dykink",
+          "what_works": "The stepped cadence reads as handmade and deliberate rather than templated, and killing motion blur makes type feel stamped onto the frame instead of floating over it. Both are trivially reproducible in a code-authored composition by quantizing the frame used for interpolation."
+        },
+        {
+          "description": "Board-based structure: each scene is one visual idea, one narration line, one on-screen label, and the label never repeats the voice",
+          "url": "https://videoai.me/blog/vox-style-explainer-scripts-2026",
+          "what_works": "It forces the script and the visuals to carry different information, which doubles the information density without raising the cognitive load. At 60 seconds this is the difference between 12 clear beats and 12 redundant ones. Note: single vendor source with commercial interest \u2014 treat as a working heuristic, not as Vox's documented practice."
+        },
+        {
+          "description": "The element vocabulary third parties consistently name: clean flat motion graphics, maps, the highlighter/marker sweep, charts, bold typography, and animated archival collage",
+          "url": "https://contra.com/s/WZggPY3k-vox-style-motion-graphics-modern-journalism",
+          "what_works": "A small, fixed vocabulary reused across scenes is what makes the style legible as a style. For this brief the maps and archival collage do not apply, which leaves highlighter sweep, charts, bold type and annotated UI \u2014 all vector, all authorable in code, none requiring the image/video generation providers this machine lacks."
+        },
+        {
+          "description": "Community-reverse-engineered Vox design tokens: saturated yellow primary, near-black ink, 0px border radius (square corners), Balto display / Harriet serif / Roboto Mono eyebrows",
+          "url": "https://www.shadcn.io/design/vox",
+          "what_works": "Square corners and a single saturated accent against near-black are the load-bearing choices and they translate directly to Arabic type. Important caveat: this is a third-party reading of vox.com, not Vox Media brand material, and nothing in research confirmed 'bold condensed' as official Vox identity \u2014 so the palette is an interpretation to approve, not a spec to match."
+        },
+        {
+          "description": "Kinetic typography discipline: readable with the sound off, used sparingly alongside icons, with roughly 20% negative space around elements; it fails when motion becomes necessary to understand the words",
+          "url": "https://wyzowl.com/kinetic-typography/",
+          "what_works": "Directly applicable to a sound-off Instagram feed, and it sets the test for every text beat: freeze any frame and it should still read."
+        },
+        {
+          "description": "Arabic-safe motion: animate whole words or connected shapes, never individual glyphs; verify reveal direction under RTL because LTR-built presets such as typewriter run the wrong way",
+          "url": "https://aescripts.com/arabictext",
+          "what_works": "This is the constraint that decides the entire text-animation system for this video, and it matches the rule already enforced in the user's tasmeem project (split on spaces only, no letterSpacing)."
+        }
+      ],
+      "angles_discovered": [
+        {
+          "name": "The loop you never see",
+          "hook": "You typed one sentence. It made forty decisions \u2014 here is the loop it ran while you waited.",
+          "type": "evergreen",
+          "why_now": "This is the brief's clearest underserved gap: the official documentation defines the agentic loop as gather context, take action, verify results, repeating until done, yet none of the five landscape entries animates it. Animation fit: diagram-led motion graphics \u2014 a three-node cycle that physically spins, with the file tree lighting up on 'gather', a diff stamping in on 'act', and a test bar flipping red to green on 'verify'. Maps to code-authored vector motion (Remotion or HyperFrames), which the technique research confirms is a proven pairing for Vox styling and which needs none of the generation providers this machine lacks.",
+          "grounded_in": [
+            "data_point: three blending phases, repeating until complete (primary, Claude Code docs)",
+            "data_point: snapshots before editing and Plan mode gating",
+            "audience_question: 'Why does it take so many steps?'",
+            "misconception: 'you describe it once and it comes out finished'",
+            "underserved_gap: nobody animates the loop; verification half never shown"
+          ]
+        },
+        {
+          "name": "It doesn't know your code \u2014 it looks",
+          "hook": "It never read your project. It greps for the four files it needs, like you would.",
+          "type": "contrarian",
+          "why_now": "The single most load-bearing misconception in the audience research, and the one that explains both the agent's strengths and its blind spots. Reported in text by one secondary source and corroborated by the official docs' description of search tooling, but visualized nowhere. Animation fit: annotated-UI plus highlighter sweep \u2014 a file tree where a grep query sweeps through and four files illuminate while hundreds stay dark, then those four expand into the context window as a filling bar. This is the Vox highlighter-marker vocabulary applied to a code tree instead of a map, and it is pure vector work.",
+          "grounded_in": [
+            "data_point: no vector database, no embeddings, grep plus file reads",
+            "misconception: 'the model has memorized your repo'",
+            "audience_question: 'Does it actually read my whole project, or is it guessing?'",
+            "pain_point: no mental model for the agent's behaviour"
+          ]
+        },
+        {
+          "name": "Felt faster, measured slower",
+          "hook": "Sixteen experienced developers felt 20% faster. The stopwatch said 19% slower.",
+          "type": "data_driven",
+          "why_now": "The strongest single number in the brief and the only genuinely counterintuitive one, from a randomized controlled trial rather than a vendor survey \u2014 against a 2026 backdrop where ~90% of developers already use these agents weekly, so the audience has a felt experience to contradict. Animation fit: chart-led motion graphics \u2014 two bars racing from a shared baseline, the 'felt' bar overshooting while the 'measured' bar sinks below the line, held long enough to land. Stat-card and chart work, the most mechanically reliable thing to author in code and the most legible beat in a vertical frame.",
+          "grounded_in": [
+            "data_point: METR 19% slower, 20% believed faster, 24% predicted",
+            "data_point: fewer than 44% of AI code accepted without major changes",
+            "data_point: ~90% weekly / ~68% daily adoption, JetBrains 2026",
+            "audience_question: 'Is it actually faster, or does it just feel faster?'"
+          ]
+        },
+        {
+          "name": "What it decided while you weren't looking",
+          "hook": "'Add a login.' It picked your database, your session rules and where your secrets live.",
+          "type": "narrative",
+          "why_now": "This is the audience's actual lived pain \u2014 the research repeatedly surfaces hidden decisions and the later crash as the beginner's defining experience \u2014 and it has a natural narrative shape: one short prompt, then an unfolding stack of consequences. Animation fit: kinetic typography plus progressive diagram build \u2014 one Arabic line of prompt at the top, then silent decision chips stacking beneath it one by one until they overflow the frame. Word-level Arabic reveals only, which satisfies the glyph-joining constraint while still giving the stepped Vox cadence.",
+          "grounded_in": [
+            "misconception: 'if it compiles and runs, it is done'",
+            "audience_question: 'What is it deciding for me that I never see?'",
+            "pain_point: 'works, then breaks, and I cannot tell what changed'",
+            "landscape: vibe-coding failure catalogues name database setup and API keys as the unseen choices"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/how-claude-code-works",
+          "title": "How Claude Code works \u2014 official documentation",
+          "used_for": "data_points (the loop, search tooling, checkpoints, Plan mode), expert_voices, angle 1",
+          "reliability": "primary"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/agent-sdk/agent-loop",
+          "title": "Agent SDK \u2014 agent loop",
+          "used_for": "Corroborating the loop definition",
+          "reliability": "primary"
+        },
+        {
+          "url": "https://newsletter.getdx.com/p/metr-study-on-how-ai-affects-developer-productivity",
+          "title": "METR's study on how AI affects developer productivity",
+          "used_for": "data_points (19% slower, 20% felt faster, 24% predicted, <44% acceptance), angle 3, misconceptions",
+          "reliability": "primary"
+        },
+        {
+          "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+          "title": "JetBrains research \u2014 AI coding agent adoption 2026",
+          "used_for": "trending, adoption data_point",
+          "reliability": "primary"
+        },
+        {
+          "url": "https://survey.stackoverflow.co/2026/",
+          "title": "Stack Overflow Developer Survey 2026",
+          "used_for": "trending (noted as non-reconciling across denominators)",
+          "reliability": "primary"
+        },
+        {
+          "url": "https://samy-portfolio.pages.dev/blog/2026/how-claude-code-works",
+          "title": "How Claude Code actually works under the hood",
+          "used_for": "data_point (no index/embeddings, grep-based agentic search), angle 2",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://www.softr.io/blog/what-can-go-wrong-when-you-vibe-code",
+          "title": "Everything that can go wrong when you vibe code an app",
+          "used_for": "audience_insights (hidden decisions, later crashes), landscape",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://reflex.dev/blog/vibe-coding-gets-you-a-demo-not-a-production-app/",
+          "title": "Vibe coding gets you a demo, not a production app",
+          "used_for": "misconceptions, landscape",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://kiln.tech/blog/we_made_our_launch_video_in_claude_code",
+          "title": "We made our launch video with Claude Code (and open-sourced the tool)",
+          "used_for": "landscape, iteration realism",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://videohighlight.com/v/7wuYBfE131U",
+          "title": "I Made Vox-Style Motion Graphics Using Only Claude Code & Remotion",
+          "used_for": "landscape, technique feasibility for the exact runtime pairing",
+          "reliability": "anecdotal"
+        },
+        {
+          "url": "https://recapio.com/digest/how-to-create-vox-style-transitions-in-5-easy-steps-by-sean-dykink",
+          "title": "How to create Vox-style transitions in 5 easy steps",
+          "used_for": "visual_references (12fps stepping, motion blur removal)",
+          "reliability": "anecdotal"
+        },
+        {
+          "url": "https://videoai.me/blog/vox-style-explainer-scripts-2026",
+          "title": "How to write Vox-style explainer scripts (2026)",
+          "used_for": "visual_references (board structure, one idea per scene)",
+          "reliability": "anecdotal"
+        },
+        {
+          "url": "https://contra.com/s/WZggPY3k-vox-style-motion-graphics-modern-journalism",
+          "title": "Vox-style motion graphics \u2014 'Modern journalism'",
+          "used_for": "visual_references (element vocabulary)",
+          "reliability": "anecdotal"
+        },
+        {
+          "url": "https://www.shadcn.io/design/vox",
+          "title": "Vox design system (community reverse-engineered)",
+          "used_for": "visual_references (palette, square corners, type stack) \u2014 explicitly not official Vox brand material",
+          "reliability": "anecdotal"
+        },
+        {
+          "url": "https://wyzowl.com/kinetic-typography/",
+          "title": "Kinetic typography: 50+ examples and principles",
+          "used_for": "visual_references (sound-off legibility, negative space, restraint)",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://aescripts.com/arabictext",
+          "title": "Arabic Text \u2014 RTL text handling and preset limitations",
+          "used_for": "visual_references, data_point (Arabic reveal direction and glyph constraints)",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://www.framer.com/community/marketplace/components/horizontal-text-flow/",
+          "title": "Shape-safe Arabic text animation component",
+          "used_for": "data_point (per-letter animation breaks Arabic)",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://www.hopperhq.com/blog/instagram-reel-size/",
+          "title": "Instagram Reel size 2026: dimensions, aspect ratio and safe zones",
+          "used_for": "data_point (vertical safe area), layout constraints",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://nofilmschool.com/how-create-vox-style-map-animations-after-effects",
+          "title": "How to create Vox-style map animations in After Effects",
+          "used_for": "Technique research \u2014 ruled map vocabulary out for this brief",
+          "reliability": "anecdotal"
+        },
+        {
+          "url": "https://easy-peasy.ai/blog/how-to-make-vox-style-videos-with-ai",
+          "title": "How to make Vox-style videos with AI",
+          "used_for": "visual_references (script formula plus visual language framing)",
+          "reliability": "anecdotal"
+        }
+      ],
+      "metadata": {
+        "pipeline": "animation",
+        "stage": "research",
+        "brief": {
+          "duration_seconds": 60,
+          "resolution": "1080x1920",
+          "fps": 30,
+          "narration_language": "ar",
+          "platform": "instagram_reels",
+          "style_request": "Vox explainer"
+        },
+        "searches_executed": 16,
+        "schema_note": "The animation research-director skill mandates an `animation_fit` field on each angle, but research_brief.schema.json defines angles_discovered with additionalProperties:false and no such field. Animation fit is therefore recorded inside each angle's why_now text and mirrored in animation_fit_by_angle below. Flagging as a schema/skill mismatch rather than silently dropping a mandated field.",
+        "animation_fit_by_angle": {
+          "The loop you never see": {
+            "modes": [
+              "motion_graphics",
+              "remotion"
+            ],
+            "technique": "progressive diagram build \u2014 three-node cycle, file tree illumination, red-to-green test bar",
+            "complexity": "moderate",
+            "novelty": "not done for this topic"
+          },
+          "It doesn't know your code \u2014 it looks": {
+            "modes": [
+              "motion_graphics",
+              "remotion"
+            ],
+            "technique": "highlighter/marker sweep over a file tree, then context-window fill",
+            "complexity": "moderate",
+            "novelty": "not done for this topic"
+          },
+          "Felt faster, measured slower": {
+            "modes": [
+              "motion_graphics"
+            ],
+            "technique": "two-bar divergence chart from a shared baseline with a long hold",
+            "complexity": "simple",
+            "novelty": "number is widely reported, never charted for a general audience"
+          },
+          "What it decided while you weren't looking": {
+            "modes": [
+              "motion_graphics",
+              "illustrative"
+            ],
+            "technique": "kinetic typography with stacking decision chips, word-level Arabic reveals",
+            "complexity": "simple",
+            "novelty": "pain is widely described, never visualized"
+          }
+        },
+        "animation_technique_references": [
+          {
+            "technique": "Frame-rate stepping to ~12fps for graphics against smooth footage",
+            "mode": "motion_graphics",
+            "complexity": "simple",
+            "source": "https://recapio.com/digest/how-to-create-vox-style-transitions-in-5-easy-steps-by-sean-dykink"
+          },
+          {
+            "technique": "Deliberate removal of motion blur from type and graphics for a stamped feel",
+            "mode": "motion_graphics",
+            "complexity": "simple",
+            "source": "https://recapio.com/digest/how-to-create-vox-style-transitions-in-5-easy-steps-by-sean-dykink"
+          },
+          {
+            "technique": "Highlighter / marker sweep annotation over a held frame",
+            "mode": "motion_graphics",
+            "complexity": "moderate",
+            "source": "https://contra.com/s/WZggPY3k-vox-style-motion-graphics-modern-journalism"
+          },
+          {
+            "technique": "Board structure \u2014 one visual idea, one narration line, one non-redundant label per scene",
+            "mode": "motion_graphics",
+            "complexity": "simple",
+            "source": "https://videoai.me/blog/vox-style-explainer-scripts-2026"
+          },
+          {
+            "technique": "Word-level (never glyph-level) Arabic text reveals with RTL-verified direction",
+            "mode": "remotion",
+            "complexity": "simple",
+            "source": "https://aescripts.com/arabictext"
+          },
+          {
+            "technique": "Code-authored Vox styling end to end in Remotion, timed to a finished voiceover",
+            "mode": "remotion",
+            "complexity": "complex",
+            "source": "https://videohighlight.com/v/7wuYBfE131U"
+          }
+        ],
+        "blocked_research": [
+          "premiumbeat.com (the most substantive 12fps Vox breakdown) does not resolve from this session \u2014 the host is outside the allowed network domains. The 12fps and motion-blur findings rest on the Recapio summary of a Vox-style transitions tutorial instead."
+        ],
+        "accuracy_guardrails": [
+          "No Claude model performance numbers, prices or digital specs \u2014 qualitative description only, per the user's standing content-accuracy rule",
+          "Adoption percentages vary by denominator across surveys; attribute to the named survey and year on screen rather than stating a bare number",
+          "The Vox palette is a community reverse-engineering of vox.com, not official brand material \u2014 present as interpretation",
+          "METR's own caveat (point-in-time, familiar codebases, 16 developers) must survive into the script if the 19% figure is used"
+        ]
+      }
+    }
+  },
+  "review": {
+    "reviewer": "research-director self-review",
+    "verdict": "pass",
+    "notes": [
+      "Landscape: 5 existing pieces with gap analysis (min 3) \u2014 PASS",
+      "Data points: 8 sourced with credibility ratings (min 3, target 5-8) \u2014 PASS",
+      "Animation technique references: 6 with mode + complexity (min 2, target 4-6) \u2014 PASS",
+      "Angles: 4 differentiated, each with animation fit grounded in technique research (min 3) \u2014 PASS",
+      "Sources: 20 with URLs, 5 primary (min 5 total, min 2 primary) \u2014 PASS",
+      "Searches: 16 (min 12, target 18-22) \u2014 PASS but under target; one fetch blocked by network policy, recorded in metadata.blocked_research",
+      "Angle diversity checklist satisfied: surprising-data, evergreen, contrarian, narrative; no repeated hook structure",
+      "KNOWN GAP: research_brief.schema.json defines angles_discovered with additionalProperties:false and no animation_fit field, which the animation research-director mandates. Recorded in metadata.animation_fit_by_angle and in each why_now rather than dropped."
+    ]
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  },
+  "metadata": {
+    "searches_executed": 16,
+    "provider_cost": "none \u2014 web search only"
+  }
+}

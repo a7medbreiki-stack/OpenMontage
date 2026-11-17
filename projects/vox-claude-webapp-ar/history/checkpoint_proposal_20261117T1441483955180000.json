@@ -1,0 +1,708 @@
+{
+  "version": "1.0",
+  "project_id": "vox-claude-webapp-ar",
+  "pipeline_type": "animation",
+  "stage": "proposal",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-17T14:41:48.395518+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "proposal_packet": {
+      "version": "1.0",
+      "concept_options": [
+        {
+          "id": "c1",
+          "title": "\u0627\u0644\u062d\u0644\u0642\u0629 \u0627\u0644\u062a\u064a \u0644\u0627 \u062a\u0631\u0627\u0647\u0627  \u2014  The Loop You Never See",
+          "hook": "\u0643\u062a\u0628\u062a\u064e \u0633\u0637\u0631\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b. \u0647\u0648 \u0627\u062a\u062e\u0630 \u0623\u0631\u0628\u0639\u064a\u0646 \u0642\u0631\u0627\u0631\u0627\u064b. \u0647\u0630\u0647 \u0627\u0644\u062d\u0644\u0642\u0629 \u0627\u0644\u062a\u064a \u062f\u0627\u0631\u062a \u0648\u0623\u0646\u062a \u062a\u0646\u062a\u0638\u0631.",
+          "narrative_structure": "problem_solution",
+          "visual_approach": "Diagram-led motion graphics: a three-node cycle (\u064a\u0642\u0631\u0623 / \u064a\u0646\u0641\u0651\u0630 / \u064a\u062a\u062d\u0642\u0651\u0642) that physically rotates, with a file tree illuminating on 'read', a diff stamping in on 'act', and a test bar flipping red\u2192green on 'verify'. Each rotation is faster than the last until it stops on a green frame. Pure vector \u2014 no generated imagery. Frame-stepped to ~12fps for the Vox stamped cadence; motion blur deliberately absent.",
+          "suggested_playbook": "custom: vox-ar-explainer (atelier art direction)",
+          "target_audience": "Arabic-speaking developers and builders who have already tried an AI coding tool and don't have a mental model for why it takes many steps",
+          "target_platform": "instagram",
+          "target_duration_seconds": 60,
+          "key_points": [
+            "Claude Code runs three blending phases \u2014 gather context, take action, verify results \u2014 repeating until the task is done (official documentation)",
+            "Verification is half the loop: it runs the tests, reads the failure, fixes, runs again",
+            "You are inside the loop \u2014 you can interrupt at any point",
+            "Edits are snapshotted before they happen, so they are reversible independently of git"
+          ],
+          "core_message": "\u0644\u064a\u0633\u062a \u0623\u0645\u0631\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b \u064a\u0646\u0641\u064e\u0651\u0630 \u2014 \u0628\u0644 \u062d\u0644\u0642\u0629 \u062a\u062f\u0648\u0631\u060c \u0648\u0623\u0646\u062a \u062f\u0627\u062e\u0644\u0647\u0627.",
+          "cta": "\u0627\u0633\u0623\u0644\u0647 \u0623\u0646 \u064a\u0634\u0631\u062d \u0627\u0644\u062d\u0644\u0642\u0629 \u0639\u0644\u0649 \u0645\u0634\u0631\u0648\u0639\u0643 \u0623\u0646\u062a",
+          "tone": "Calm authority. Explanatory, not promotional. No hype adjectives.",
+          "grounded_in": [
+            "data_point: three blending phases repeating until complete (primary \u2014 Claude Code docs)",
+            "data_point: snapshots before editing; Plan mode gates the loop",
+            "underserved_gap: nobody animates the loop; the verification half is never shown",
+            "audience_question: 'Why does it take so many steps?'",
+            "misconception: 'you describe it once and it comes out finished'"
+          ],
+          "why_this_works": "This is the brief's clearest underserved gap: the loop is defined in primary documentation and is the single mechanism that explains every other behaviour, yet none of the five landscape entries animates it. It also answers two of the audience's top questions at once, and the cycle is the most animatable structure in the brief \u2014 rotation is motion that carries meaning rather than decoration."
+        },
+        {
+          "id": "c2",
+          "title": "\u0644\u0645 \u064a\u0642\u0631\u0623 \u0645\u0634\u0631\u0648\u0639\u0643  \u2014  It Never Read Your Code",
+          "hook": "\u0644\u0645 \u064a\u0642\u0631\u0623 \u0645\u0634\u0631\u0648\u0639\u0643 \u0623\u0628\u062f\u0627\u064b. \u064a\u0628\u062d\u062b \u0639\u0646 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0623\u0631\u0628\u0639\u0629 \u0627\u0644\u062a\u064a \u064a\u062d\u062a\u0627\u062c\u0647\u0627\u060c \u0643\u0645\u0627 \u062a\u0641\u0639\u0644 \u0623\u0646\u062a.",
+          "narrative_structure": "myth_busting",
+          "visual_approach": "Annotated-UI with the Vox highlighter sweep: a dense file tree fills the vertical frame, a grep query sweeps across it like a marker, four files ignite in the accent yellow while hundreds stay near-black, then those four lift out and pour into a context-window bar that fills partway and stops. The myth is stamped on screen then struck through. Vector only; the file tree is generated as data, not as an image.",
+          "suggested_playbook": "custom: vox-ar-explainer (atelier art direction)",
+          "target_audience": "Arabic-speaking users who assume the model has memorized their repository and are confused when it misses context",
+          "target_platform": "instagram",
+          "target_duration_seconds": 60,
+          "key_points": [
+            "There is no vector database and no embeddings \u2014 it does not index your codebase",
+            "It searches with grep and reads a handful of files, orchestrated by the model",
+            "This is why it can work across a whole project but still miss what you never pointed it at",
+            "Giving it direction beats giving it everything \u2014 'delegate, don't dictate'"
+          ],
+          "core_message": "\u0644\u0627 \u064a\u062d\u0641\u0638 \u0645\u0634\u0631\u0648\u0639\u0643 \u2014 \u064a\u0628\u062d\u062b \u0641\u064a\u0647. \u0648\u0644\u0647\u0630\u0627 \u064a\u0647\u0645\u0651 \u0645\u0627 \u062a\u0634\u064a\u0631 \u0625\u0644\u064a\u0647.",
+          "cta": "\u062c\u0631\u0651\u0628: \u0623\u062e\u0628\u0631\u0647 \u0623\u064a\u0646 \u0627\u0644\u0645\u0634\u0643\u0644\u0629\u060c \u0644\u0627 \u0643\u064a\u0641 \u064a\u062d\u0644\u0651\u0647\u0627",
+          "tone": "Corrective but generous. Never smug about the misconception.",
+          "grounded_in": [
+            "data_point: no vector database, no embeddings, grep plus file reads",
+            "misconception: 'the model has memorized your repo'",
+            "audience_question: 'Does it actually read my whole project, or is it guessing?'",
+            "visual_reference: highlighter/marker sweep annotation over a held frame"
+          ],
+          "why_this_works": "The most load-bearing misconception in the audience research, and the one that explains both the agent's reach and its blind spots. It maps one-to-one onto the Vox highlighter vocabulary \u2014 the marker sweep applied to a code tree instead of a map \u2014 which is the most recognisably 'Vox' moment available for a software topic. Caveat carried from research: the no-index claim is a secondary source corroborated by the official docs' description of search tooling, so on screen it is phrased as behaviour, not as an internal architecture claim."
+        },
+        {
+          "id": "c3",
+          "title": "\u0623\u0633\u0631\u0639 \u0628\u0627\u0644\u0625\u062d\u0633\u0627\u0633\u060c \u0623\u0628\u0637\u0623 \u0628\u0627\u0644\u0633\u0627\u0639\u0629  \u2014  Felt Faster, Measured Slower",
+          "hook": "\u0633\u062a\u0629 \u0639\u0634\u0631 \u0645\u0637\u0648\u0651\u0631\u0627\u064b \u062e\u0628\u064a\u0631\u0627\u064b \u0623\u062d\u0633\u0651\u0648\u0627 \u0623\u0646\u0647\u0645 \u0623\u0633\u0631\u0639 \u0628\u064020%. \u0627\u0644\u0633\u0627\u0639\u0629 \u0642\u0627\u0644\u062a: \u0623\u0628\u0637\u0623 \u0628\u064019%.",
+          "narrative_structure": "data_narrative",
+          "visual_approach": "Chart-led motion graphics: two bars race up from a shared baseline \u2014 '\u0627\u0644\u0625\u062d\u0633\u0627\u0633' overshoots into the accent yellow while '\u0627\u0644\u0642\u064a\u0627\u0633' sinks below the line in near-black \u2014 held long enough to land, then annotated with the study's own caveat in small type. Supporting beat: a 44% acceptance ring. The most mechanically reliable thing to author in code and the most legible in a vertical frame.",
+          "suggested_playbook": "custom: vox-ar-explainer (atelier art direction)",
+          "target_audience": "Arabic-speaking developers already using these agents weekly who have a felt experience the data contradicts",
+          "target_platform": "instagram",
+          "target_duration_seconds": 60,
+          "key_points": [
+            "In METR's randomized controlled trial, 16 experienced developers took 19% longer across 246 real tasks",
+            "They had predicted a 24% speed-up beforehand, and still believed they were 20% faster afterwards",
+            "They accepted fewer than 44% of the generated code, most saying it needed major changes",
+            "METR's own caveat: a point-in-time measurement, on codebases the developers knew deeply"
+          ],
+          "core_message": "\u0627\u0644\u0625\u062d\u0633\u0627\u0633 \u0628\u0627\u0644\u0633\u0631\u0639\u0629 \u0644\u064a\u0633 \u0642\u064a\u0627\u0633\u0627\u064b \u0644\u0647\u0627 \u2014 \u0648\u0627\u0644\u0641\u0631\u0642 \u0647\u0648 \u062d\u064a\u062b \u064a\u0630\u0647\u0628 \u0648\u0642\u062a\u0643 \u0641\u0639\u0644\u0627\u064b.",
+          "cta": "\u0642\u0650\u0633 \u0645\u0631\u0651\u0629 \u0628\u0646\u0641\u0633\u0643 \u0642\u0628\u0644 \u0623\u0646 \u062a\u062d\u0643\u0645",
+          "tone": "Sober, non-triumphalist. Neither boosterish nor doom.",
+          "grounded_in": [
+            "data_point: METR 19% slower, 20% believed faster, 24% predicted (primary, RCT)",
+            "data_point: fewer than 44% of AI code accepted without major changes",
+            "data_point: ~90% weekly / ~68% daily adoption, JetBrains 2026",
+            "audience_question: 'Is it actually faster, or does it just feel faster?'"
+          ],
+          "why_this_works": "The only genuinely counterintuitive number in the brief, and the only one from a randomized controlled trial rather than a vendor survey. Expectation-versus-reality as two diverging bars is the canonical Vox chart moment. Risk to weigh: it is the least flattering angle to the subject and the hardest to land honestly in 60 seconds \u2014 METR's caveat must survive into the script, which costs roughly a fifth of the word budget."
+        },
+        {
+          "id": "c4",
+          "title": "\u0645\u0627 \u0642\u0631\u0651\u0631\u0647 \u0648\u0623\u0646\u062a \u0644\u0627 \u062a\u0646\u0638\u0631  \u2014  What It Decided While You Weren't Looking",
+          "hook": "\u00ab\u0623\u0636\u0641 \u062a\u0633\u062c\u064a\u0644 \u062f\u062e\u0648\u0644.\u00bb \u0641\u0627\u062e\u062a\u0627\u0631 \u0642\u0627\u0639\u062f\u0629 \u0628\u064a\u0627\u0646\u0627\u062a\u0643\u060c \u0648\u0642\u0648\u0627\u0639\u062f \u062c\u0644\u0633\u0627\u062a\u0643\u060c \u0648\u0645\u0643\u0627\u0646 \u0623\u0633\u0631\u0627\u0631\u0643.",
+          "narrative_structure": "story",
+          "visual_approach": "Kinetic Arabic typography plus a progressive stack build: one short prompt line sits at the top of the frame, then silent decision chips stack beneath it one at a time \u2014 \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a\u060c \u0627\u0644\u062a\u062d\u0642\u0651\u0642\u060c \u0627\u0644\u062c\u0644\u0633\u0627\u062a\u060c \u0645\u0641\u0627\u062a\u064a\u062d \u0627\u0644\u0623\u0633\u0631\u0627\u0631 \u2014 accelerating until they overflow the bottom of the frame, then the whole stack snaps into a single highlighted row: '\u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0647\u0645\u0651\u062a\u0643'. Word-level Arabic reveals only, stepped cadence.",
+          "suggested_playbook": "custom: vox-ar-explainer (atelier art direction)",
+          "target_audience": "Arabic-speaking first-time builders who shipped something that worked and then could not fix it",
+          "target_platform": "instagram",
+          "target_duration_seconds": 60,
+          "key_points": [
+            "A short prompt expands into decisions you never see \u2014 database setup, auth, session rules, where secrets live",
+            "A demo is not a production app; auth and data access are the easiest things to get silently wrong",
+            "This is why it works, then breaks after the next change",
+            "Review is the part that did not get automated"
+          ],
+          "core_message": "\u0627\u0644\u0643\u0648\u062f \u0635\u0627\u0631 \u0631\u062e\u064a\u0635\u0627\u064b. \u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629 \u0647\u064a \u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0630\u064a \u0628\u0642\u064a \u0644\u0643.",
+          "cta": "\u0627\u0637\u0644\u0628 \u0645\u0646\u0647 \u0623\u0646 \u064a\u0633\u0631\u062f \u0645\u0627 \u0642\u0631\u0651\u0631\u0647 \u0642\u0628\u0644 \u0623\u0646 \u062a\u0642\u0628\u0644",
+          "tone": "Warm and non-judgemental. Speaking to someone who got burned, not scolding them.",
+          "grounded_in": [
+            "audience_question: 'What is it deciding for me that I never see?'",
+            "pain_point: 'works, then breaks, and I cannot tell what changed'",
+            "misconception: 'if it compiles and runs, it is done'",
+            "landscape: vibe-coding failure catalogues name database setup and API keys as the unseen choices"
+          ],
+          "why_this_works": "This is the audience's actual lived pain rather than a fact about the tool, and it has a natural narrative shape \u2014 one line in, an unfolding stack of consequences out. It is also the cheapest and most Arabic-native concept: it is carried almost entirely by typography, so the glyph-joining constraint costs nothing and the frame never fights the vertical crop. Weakness to weigh: it is the least mechanistic of the four, so the viewer learns a caution rather than a model."
+        }
+      ],
+      "selected_concept": {
+        "concept_id": "c1",
+        "rationale": "AGENT RECOMMENDATION, PENDING USER CONFIRMATION \u2014 not yet a user choice. c1 ('the loop you never see') is recommended because it is the only concept grounded in a primary source for its central claim, it closes the brief's clearest underserved gap, it answers two of the audience's top questions in one structure, and a rotating cycle is the one shape where motion carries the meaning rather than decorating it. c2 is the strongest runner-up and the most recognisably Vox; c3 carries the best single number but the least flattering frame and an expensive caveat; c4 is the cheapest and most Arabic-native but teaches a caution rather than a model.",
+        "modifications": []
+      },
+      "production_plan": {
+        "pipeline": "animation",
+        "playbook": "custom: vox-ar-explainer (to be generated at scene_plan; no preset in styles/ matches the design read)",
+        "taste_profile": {
+          "design_read": "Arabic newsroom explainer for a sound-off vertical feed: stamped, evidential, and unhurried in the holds while sharp on the cuts. It should read as journalism about a tool, not as marketing for one \u2014 the authority comes from showing the mechanism, never from adjectives.",
+          "visual_variance": 3,
+          "motion_intensity": 6,
+          "information_density": 4,
+          "palette_discipline": "Near-black ink ground, one saturated accent used only on the thing being asserted, paper-white for type. Zero gradients, zero glow, zero rounded corners. Nothing is decorative \u2014 if an element is coloured, it is the claim.",
+          "layout_variation": "Two scene families only: full-frame typographic assertion, and annotated object (tree, cycle, chart, stack) held in the vertical safe area with its label above it. Alternate between them so no two adjacent beats share a family.",
+          "reference_strategy": "No AI reference stills needed or available \u2014 every element is authored as vector. Instead: one layout still exported per scene family before the full build, checked for Arabic shaping and safe-area fit at 1080\u00d71920.",
+          "anti_patterns": [
+            "Per-letter Arabic animation of any kind \u2014 breaks glyph joining",
+            "letterSpacing on Arabic text",
+            "Generic AI-purple or corporate-blue gradients",
+            "Smooth eased motion blur \u2014 the Vox read depends on stepped, blur-free motion",
+            "Rounded corners and soft shadows",
+            "On-screen labels that merely repeat the narration line",
+            "Terminal/code-rain clich\u00e9 as a stand-in for 'AI coding'"
+          ],
+          "quality_gates": [
+            "Freeze any frame: it must still read with the sound off",
+            "Every Arabic reveal is word-level (split on spaces only), direction verified under RTL",
+            "All type and charts inside the vertical safe area \u2014 ~270px top, ~670px bottom, ~65px sides",
+            "Latin tokens ('Claude Code', 'grep', 'METR') set dir=ltr in the Latin face",
+            "Could this video belong to any other topic with the title swapped? If yes, the direction failed",
+            "No Claude model performance numbers, prices, or digital specs anywhere on screen"
+          ]
+        },
+        "stages": [
+          {
+            "stage": "script",
+            "tools": [],
+            "approach": "Write in Vox board structure: one visual idea, one narration line, one non-redundant on-screen label per beat. 60s at Arabic narration pace targets ~130-150 words across ~12 beats. Latin product names kept LTR. METR's caveat budgeted into the word count if c3 is selected.",
+            "fallback_if_unavailable": "n/a \u2014 creative work, no tools"
+          },
+          {
+            "stage": "scene_plan",
+            "tools": [],
+            "approach": "Lock the two scene families, the transition family (hard cut plus one directional whip per act break), per-scene animation mode, and the generated custom playbook. Timings left provisional until the narration audio exists, then calibrated to it.",
+            "fallback_if_unavailable": "n/a \u2014 planning work, no tools"
+          },
+          {
+            "stage": "assets",
+            "tools": [
+              {
+                "tool_name": "tts_selector",
+                "role": "Route Arabic narration to an available TTS provider",
+                "provider": "selector",
+                "available": false,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Mandated entry point \u2014 the guide forbids calling provider TTS tools directly. Currently unavailable because 0 of 20 TTS providers are configured."
+              },
+              {
+                "tool_name": "elevenlabs_tts",
+                "role": "Arabic narration voice (user's approved path)",
+                "provider": "elevenlabs",
+                "available": false,
+                "estimated_cost_usd": 0.255,
+                "why_this_provider": "User chose to reconnect the ElevenLabs connector. Best Arabic prosody of the options and the only one with a voice library to audition. Blocked until the connector is reconnected with the access it asked for."
+              },
+              {
+                "tool_name": "pixabay_music",
+                "role": "Music bed \u2014 tense, sparse, no melody competing with Arabic narration",
+                "provider": "pixabay",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "The only configured music capability on this machine, and free. No music generation provider is configured (0 of 8)."
+              },
+              {
+                "tool_name": "subtitle_gen",
+                "role": "Arabic caption track for sound-off viewing",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Local and free; the design read requires the video to work muted."
+              }
+            ],
+            "approach": "Narration first, then timings calibrated to the real audio rather than estimated \u2014 the same discipline as the user's tasmeem project. All visual elements authored as vector in the composition, so no image or video generation is required: this is why the brief survives having 0 of 32 image providers and 0 of 36 video providers configured.",
+            "fallback_if_unavailable": "If the ElevenLabs connector stays blocked: piper_tts is a free fully-local path with a Jordanian Arabic voice (ar_JO-kareem-medium), installable with `pip install piper-tts` plus a voice download. Quality is audibly synthetic and the accent is Jordanian \u2014 a real downgrade, not an equivalent. Per the no-unilateral-substitutions rule this is NOT executed without explicit approval. Second fallback: caption-led with no voice at all."
+          },
+          {
+            "stage": "edit",
+            "tools": [],
+            "approach": "Preserve the long holds the Vox read depends on; quantize interpolation to ~12fps for graphics so motion steps rather than glides; no motion blur. Duck the music bed under narration. One directional whip per act break, hard cuts elsewhere.",
+            "fallback_if_unavailable": "n/a \u2014 planning work, no tools"
+          },
+          {
+            "stage": "compose",
+            "tools": [
+              {
+                "tool_name": "video_compose",
+                "role": "Render the composition to 1080\u00d71920 @30fps",
+                "provider": "ffmpeg",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Core local renderer; all three engines (ffmpeg, remotion, hyperframes) report available after installing remotion-composer dependencies this session."
+              },
+              {
+                "tool_name": "audio_mixer",
+                "role": "Mix narration and music bed with ducking",
+                "provider": "ffmpeg",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Only configured audio_processing path; local and free."
+              }
+            ],
+            "approach": "Render via the authoring mode and runtime approved at this gate. Mandatory post-render self-review: extract keyframes, inspect every scene for Arabic shaping, safe-area violations and type sharpness, and flag weak frames before showing the user.",
+            "fallback_if_unavailable": "Escalate rather than swap runtimes \u2014 a silent runtime change at compose time is a contract violation."
+          },
+          {
+            "stage": "publish",
+            "tools": [],
+            "approach": "Export bundle with Arabic metadata, caption file, and a thumbnail concept taken from the strongest typographic frame. Watermark convention from the user's tasmeem project (a7med.breiki at 40%, white on dark) carried over if wanted.",
+            "fallback_if_unavailable": "n/a \u2014 metadata work"
+          }
+        ],
+        "quality_tradeoffs": [
+          {
+            "tradeoff": "ElevenLabs Arabic narration (~$0.26, blocked on connector reconnect) vs piper_tts ar_JO-kareem local (free, available after a pip install) vs no narration at all (free, available now)",
+            "recommendation": "Hold for the ElevenLabs reconnect, as chosen. Arabic prosody is where cheap TTS fails most audibly, and a 60-second piece lives or dies on the voice.",
+            "quality_impact": "ElevenLabs: natural prosody, auditionable voices. Piper: intelligible but audibly synthetic, Jordanian accent, no voice choice. No narration: forces every idea through type, which suits a muted feed but loses the Vox narration-plus-label interplay that makes the board structure work."
+          },
+          {
+            "tradeoff": "Atelier authoring (hand-authored scenes, bespoke theme) vs templated authoring (stock cut-types and the existing chart stack)",
+            "recommendation": "Atelier. The guide defaults hero work to atelier, and a recognisable house style is precisely what templated stock scene-types cannot produce \u2014 they are frozen looks that reintroduce sameness.",
+            "quality_impact": "Atelier costs materially more tokens and iteration and has no reusable creative components. Templated would be faster and cheaper but would make this look like every other OpenMontage video, which fails the taste profile's own last quality gate."
+          },
+          {
+            "tradeoff": "Zero paid visual assets (all vector, authored) vs AI-generated stills or clips for texture",
+            "recommendation": "Zero paid visuals \u2014 and not merely because no provider is configured: flat authored vector IS the Vox vocabulary for a software topic. Generated imagery would actively fight the style.",
+            "quality_impact": "No photographic or archival texture, which real Vox uses heavily. For a code topic that vocabulary does not apply anyway \u2014 there is no archive of 'an agent reading a file tree'."
+          }
+        ],
+        "alternative_paths": [
+          {
+            "description": "Approved path: atelier Vox styling, ElevenLabs Arabic narration, free music bed, local render",
+            "total_cost_usd": 0.255,
+            "quality_level": "premium"
+          },
+          {
+            "description": "Fully local: atelier Vox styling, piper_tts ar_JO-kareem narration, free music bed, local render",
+            "total_cost_usd": 0.0,
+            "quality_level": "standard"
+          },
+          {
+            "description": "Caption-led, no voice: atelier Vox styling carried by kinetic Arabic type over a free music bed",
+            "total_cost_usd": 0.0,
+            "quality_level": "standard"
+          },
+          {
+            "description": "Templated: stock cut-types and the existing Remotion chart stack with ElevenLabs narration",
+            "total_cost_usd": 0.255,
+            "quality_level": "budget"
+          }
+        ],
+        "decision_log_ref": "/home/user/OpenMontage/projects/vox-claude-webapp-ar/decision_log.json"
+      },
+      "cost_estimate": {
+        "total_estimated_usd": 0.255,
+        "line_items": [
+          {
+            "tool": "elevenlabs_tts",
+            "operation": "Arabic narration, single run (~850 characters for ~140 words)",
+            "quantity": 1,
+            "estimated_usd": 0.255,
+            "notes": "Read live from the tool's estimate_cost at proposal time, not from memory. Blocked until the connector is reconnected."
+          },
+          {
+            "tool": "pixabay_music",
+            "operation": "Music bed search and download",
+            "quantity": 1,
+            "estimated_usd": 0.0,
+            "notes": "Free, no API key. Live estimate_cost returned 0.0."
+          },
+          {
+            "tool": "subtitle_gen",
+            "operation": "Arabic caption track",
+            "quantity": 1,
+            "estimated_usd": 0.0,
+            "notes": "Local, free."
+          },
+          {
+            "tool": "video_compose + audio_mixer",
+            "operation": "Local composition and render to 1080\u00d71920 @30fps",
+            "quantity": 1,
+            "estimated_usd": 0.0,
+            "notes": "Local rendering is free. Atelier authoring costs agent tokens and wall time, not provider spend."
+          },
+          {
+            "tool": "image/video generation",
+            "operation": "Not used \u2014 every visual element is authored as vector",
+            "quantity": 0,
+            "estimated_usd": 0.0,
+            "notes": "0 of 32 image and 0 of 36 video providers configured; the concept is designed so this costs nothing creatively."
+          }
+        ],
+        "budget_cap_usd": 2.0,
+        "budget_verdict": "within_budget",
+        "savings_options": [
+          "Swap narration to piper_tts ar_JO-kareem for a fully free run ($0.00) at a real quality cost",
+          "Drop narration entirely and go caption-led ($0.00)",
+          "Headroom: $1.745 of the $2.00 default budget remains for narration retakes \u2014 roughly six more full takes"
+        ]
+      },
+      "approval": {
+        "status": "pending"
+      },
+      "metadata": {
+        "pipeline": "animation",
+        "stage": "proposal",
+        "brief": {
+          "duration_seconds": 60,
+          "resolution": "1080x1920",
+          "fps": 30,
+          "narration_language": "ar",
+          "platform": "instagram_reels",
+          "style_request": "Vox explainer"
+        },
+        "render_runtime": "NOT LOCKED \u2014 awaiting user approval per AGENT_GUIDE 'Present Both Composition Runtimes (HARD RULE)'. Both remotion and hyperframes report available; agent recommends hyperframes.",
+        "renderer_family": "motion_graphics",
+        "composition_mode": "NOT LOCKED \u2014 agent recommends atelier per AGENT_GUIDE 'Composition Authoring Mode' default for hero work.",
+        "animation_mode": "motion_graphics (diagram-led, vector-authored)",
+        "reuse_strategy": {
+          "recurring_motifs": [
+            "accent-yellow assertion marker",
+            "near-black ink ground",
+            "stepped 12fps cadence",
+            "label-above-object layout",
+            "struck-through myth stamp"
+          ],
+          "layout_system": "Two scene families \u2014 full-frame typographic assertion, and annotated object held in the vertical safe area",
+          "transition_family": "Hard cuts throughout, one directional whip per act break",
+          "typography_hierarchy": "Arabic display (Cairo 900) for assertions / Arabic body (Cairo 400) for labels / Latin mono (dir=ltr) for code tokens and product names",
+          "estimated_unique_scenes": 4,
+          "estimated_reusable_templates": 2
+        },
+        "audio_architecture": "single_narrator",
+        "provider_comparison": [
+          {
+            "capability": "tts",
+            "provider": "elevenlabs via connector",
+            "cost_usd": 0.255,
+            "available": false,
+            "note": "User's chosen path. Blocked: connector requires reconnection with additional access."
+          },
+          {
+            "capability": "tts",
+            "provider": "piper (ar_JO-kareem-medium, local)",
+            "cost_usd": 0.0,
+            "available": false,
+            "note": "Installable now with pip install piper-tts plus voice download. Free, offline, audibly synthetic, Jordanian accent."
+          },
+          {
+            "capability": "tts",
+            "provider": "elevenlabs via direct API key",
+            "cost_usd": 0.255,
+            "available": false,
+            "note": "Alternative to the connector \u2014 registry reports it needs ELEVENLABS_API_KEY."
+          },
+          {
+            "capability": "tts",
+            "provider": "azure / openai / google / fal and 16 others",
+            "cost_usd": null,
+            "available": false,
+            "note": "All unconfigured; 0 of 20 TTS providers available on this machine."
+          },
+          {
+            "capability": "music",
+            "provider": "pixabay_music",
+            "cost_usd": 0.0,
+            "available": true,
+            "note": "Free, no key. The only configured music capability."
+          },
+          {
+            "capability": "music",
+            "provider": "elevenlabs_soundtrack / suno / google and 5 others",
+            "cost_usd": null,
+            "available": false,
+            "note": "0 of 8 music generation providers configured."
+          },
+          {
+            "capability": "composition",
+            "provider": "remotion",
+            "cost_usd": 0.0,
+            "available": true,
+            "note": "Available after installing remotion-composer dependencies this session."
+          },
+          {
+            "capability": "composition",
+            "provider": "hyperframes",
+            "cost_usd": 0.0,
+            "available": true,
+            "note": "Available; CLI fetched via npx on first use."
+          },
+          {
+            "capability": "composition",
+            "provider": "ffmpeg",
+            "cost_usd": 0.0,
+            "available": true,
+            "note": "Available; concat/trim only, insufficient for this brief."
+          }
+        ],
+        "accuracy_guardrails": [
+          "No Claude model performance numbers, prices or digital specs on screen \u2014 qualitative only, per the user's standing content rule",
+          "Survey percentages attributed to the named survey and year on screen",
+          "METR's own caveat (point-in-time, 16 developers, familiar codebases) survives into the script if the 19% figure is used",
+          "The Vox palette is a community reverse-engineering of vox.com, not Vox brand material \u2014 presented as interpretation",
+          "The no-index/no-embeddings claim phrased on screen as observed behaviour, not as an internal architecture claim"
+        ],
+        "blocked": [
+          "tts_selector and all 20 TTS providers unavailable \u2014 narration cannot be produced until the ElevenLabs connector is reconnected or a fallback is approved",
+          "transcriber (faster-whisper) missing its python dependency \u2014 the narration-timing calibration workflow needs `pip install faster-whisper` before the assets stage",
+          "premiumbeat.com unreachable from this session (outside allowed network domains) \u2014 the most substantive 12fps Vox breakdown; findings rest on a secondary summary instead"
+        ]
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "vox-claude-webapp-ar",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "pipeline_selection",
+          "subject": "Pipeline for a Vox-style 60s vertical Arabic explainer",
+          "options_considered": [
+            {
+              "option_id": "animation",
+              "label": "animation (motion graphics, diagram-led explainers, kinetic typography)",
+              "score": 1.0,
+              "reason": "Vox style for a software topic is diagram, chart and type led \u2014 exactly this pipeline's remit, and its manifest recommends flat-motion-graphics playbooks."
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer (fully AI-produced from topic)",
+              "score": 0.4,
+              "reason": "Assumes generated narration plus generated visuals.",
+              "rejected_because": "Its asset path leans on image and video generation; 0 of 32 image and 0 of 36 video providers are configured, and generated imagery would fight the Vox vector vocabulary anyway."
+            },
+            {
+              "option_id": "cinematic",
+              "label": "cinematic (mood-led, footage-first)",
+              "score": 0.1,
+              "reason": "Built for supplied footage and trailers.",
+              "rejected_because": "No source footage and no mood-led brief; wrong grammar for an explainer."
+            }
+          ],
+          "selected": "animation",
+          "reason": "The brief is a diagram-and-type explainer with no footage and no generated imagery, which is the animation pipeline's core case.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.85,
+              "reason": "The selector routes kinetic typography and HTML/GSAP-native motion here, and the registry's motion-graphics guidance points the same way. Arabic shaping and RTL are native browser text layout rather than something to reimplement, and the stepped blur-free Vox cadence is straightforward in CSS/GSAP."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React components \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available after this session's dependency install. Owns word-level caption burn and the existing chart stack, and matches the user's existing tasmeem project, so patterns transfer.",
+              "rejected_because": "Recommended against, not rejected \u2014 the user decides. In atelier mode the existing chart stack is off-limits anyway, which removes Remotion's main advantage here, and React component authoring is more rigid than HTML/CSS for bespoke typographic motion."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Both runtimes are available, so the HARD RULE requires presenting both and waiting. Agent recommends HyperFrames for native Arabic/RTL text layout and HTML/GSAP-native stepped motion; Remotion is a legitimate pick, especially to reuse tasmeem patterns and word-level caption burn. Not written into production_plan until the user picks.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.6
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.9,
+              "reason": "The guide defaults hero work to atelier, and the request is for a specific recognisable house style. Stock cut-types are frozen looks that reintroduce sameness, which fails the taste profile's own distinctness gate."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes in the Explainer composition",
+              "score": 0.45,
+              "reason": "Faster, cheaper, more reliable; right for batch output and drafts.",
+              "rejected_because": "Recommended against: a Vox look assembled from the shared scene catalogue would read as the catalogue, not as Vox. Costs the user the one thing they asked for."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Agent recommends atelier and says plainly that it costs more tokens and iteration than templated, so the user opts in knowingly.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "provider_selection",
+          "subject": "Narration TTS provider",
+          "options_considered": [
+            {
+              "option_id": "elevenlabs_connector",
+              "label": "ElevenLabs via the attached MCP connector",
+              "score": 0.9,
+              "reason": "User's explicit choice at the preflight blocker gate. Best Arabic prosody of the available options and the only one with an auditionable voice library. Currently blocked: the connector returned a permissions error and needs reconnecting."
+            },
+            {
+              "option_id": "elevenlabs_key",
+              "label": "ElevenLabs via a direct API key in this container",
+              "score": 0.75,
+              "reason": "Would activate the in-registry tts_selector path with proper cost tracking.",
+              "rejected_because": "User chose the connector route instead."
+            },
+            {
+              "option_id": "piper_local",
+              "label": "piper_tts, ar_JO-kareem-medium, fully local and free",
+              "score": 0.5,
+              "reason": "Free, offline, installable now; confirmed Jordanian Arabic voice exists in the piper voice index.",
+              "rejected_because": "Held as the documented fallback, not executed. Audibly synthetic with a fixed accent \u2014 a real downgrade, and the no-unilateral-substitutions rule requires approval."
+            },
+            {
+              "option_id": "none",
+              "label": "No narration \u2014 caption-led",
+              "score": 0.4,
+              "reason": "Zero cost, nothing blocked, native to a sound-off feed.",
+              "rejected_because": "User chose a narrated path."
+            }
+          ],
+          "selected": "elevenlabs_connector",
+          "reason": "Explicit user choice at the narration gate. Recorded as blocked rather than silently substituted; the assets stage cannot start until it is reconnected or a fallback is approved.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Music bed source",
+          "options_considered": [
+            {
+              "option_id": "pixabay_music",
+              "label": "pixabay_music search (free, no key)",
+              "score": 0.8,
+              "reason": "The only configured music capability on this machine, free, and a sparse tense bed is all the design read wants."
+            },
+            {
+              "option_id": "music_gen",
+              "label": "Generated soundtrack (elevenlabs_soundtrack, suno, google and 5 others)",
+              "score": 0.0,
+              "reason": "Would allow a bed cut exactly to the beat structure.",
+              "rejected_because": "0 of 8 music generation providers configured."
+            }
+          ],
+          "selected": "pixabay_music",
+          "reason": "Only available option, free, and sufficient for a bed that must stay under Arabic narration.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.85
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "playbook_selection",
+          "subject": "Style playbook",
+          "options_considered": [
+            {
+              "option_id": "custom_vox_ar",
+              "label": "Custom generated playbook: vox-ar-explainer",
+              "score": 0.9,
+              "reason": "No preset encodes the load-bearing choices \u2014 square corners, single saturated accent on near-black, stepped blur-free motion, word-level Arabic reveals."
+            },
+            {
+              "option_id": "flat-motion-graphics",
+              "label": "flat-motion-graphics preset (manifest-recommended)",
+              "score": 0.5,
+              "reason": "Closest preset and officially recommended for this pipeline.",
+              "rejected_because": "Taste direction forbids letting preset availability override the design read; it carries none of the Arabic text constraints."
+            },
+            {
+              "option_id": "minimalist-diagram",
+              "label": "minimalist-diagram preset",
+              "score": 0.4,
+              "reason": "Diagram-led fit.",
+              "rejected_because": "Too restrained for the Vox stamped read; no accent logic."
+            }
+          ],
+          "selected": "custom_vox_ar",
+          "reason": "The Arabic constraints and the Vox cadence both need encoding in the playbook itself rather than being remembered per scene.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 diagram-led cycle",
+              "score": 0.9,
+              "reason": "Only concept whose central claim rests on a primary source; closes the clearest research gap; rotation is motion that means something."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep over a file tree",
+              "score": 0.8,
+              "reason": "Busts the most load-bearing misconception and is the most recognisably Vox moment available.",
+              "rejected_because": "Runner-up only. Its central claim rests on a secondary source, so it must be phrased as behaviour rather than architecture."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 two-bar divergence chart",
+              "score": 0.7,
+              "reason": "Best single number in the brief, from an RCT, and the canonical Vox chart moment.",
+              "rejected_because": "Runner-up. METR's caveat costs roughly a fifth of a 60-second word budget, and it is the least flattering frame for the subject."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking \u2014 stacking decision chips",
+              "score": 0.65,
+              "reason": "Closest to the audience's lived pain, cheapest to build, most Arabic-native.",
+              "rejected_because": "Runner-up. Teaches a caution rather than a mechanism, so the viewer leaves with less."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Four genuinely different concepts across four animation approaches and four narrative structures. Agent recommends c1; the user may select, mix or redirect.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.7
+        }
+      ]
+    }
+  },
+  "review": {
+    "reviewer": "proposal-director self-review",
+    "verdict": "pass_awaiting_human",
+    "notes": [
+      "4 concept_options, genuinely different: 4 animation approaches (cycle diagram / highlighter annotation / divergence chart / kinetic type stack) and 4 narrative structures (problem_solution / myth_busting / data_narrative / story) \u2014 PASS",
+      "Every concept achievable with free/local tools only for the visual layer; no concept depends on an unconfigured image or video provider \u2014 PASS",
+      "One concept leverages the most surprising data point (c3, METR RCT) \u2014 PASS",
+      "Both runtimes presented with brief-specific fit and honest tradeoff; render_runtime deliberately NOT written into production_plan; render_runtime_selection logged with all three engines in options_considered \u2014 PASS (HARD RULE satisfied)",
+      "composition_mode presented as its own decision (atelier vs templated) with the token/iteration cost stated \u2014 PASS",
+      "provider_comparison table has 9 rows across tts/music/composition, every cost read live from estimate_cost at proposal time \u2014 PASS",
+      "audio_architecture set: single_narrator \u2014 PASS",
+      "taste_profile written with design read, three dials, anti-patterns and quality gates per taste-direction \u2014 PASS",
+      "Cost itemized: $0.255 total against a $2.00 cap, within_budget, with two zero-cost savings options \u2014 PASS",
+      "Blockers surfaced honestly rather than designed around silently: TTS 0/20 with the connector permissions error, faster-whisper missing for timing calibration, premiumbeat.com unreachable \u2014 PASS",
+      "MOOD BOARD GAP: Step 3d asks for 3-5 reference images. Not produced \u2014 no image provider is configured and web image reference fetching is constrained here. Substituted a written taste_profile plus a per-scene-family layout-still check before the full build. Flagged rather than silently skipped.",
+      "selected_concept is required by schema but holds an agent recommendation explicitly marked PENDING USER CONFIRMATION, not a user choice."
+    ]
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.255,
+    "budget_remaining_usd": 1.745
+  }
+}

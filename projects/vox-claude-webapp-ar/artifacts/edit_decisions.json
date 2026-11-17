@@ -1,0 +1,120 @@
+{
+  "version": "1.0",
+  "render_runtime": "hyperframes",
+  "renderer_family": "animation-first",
+  "composition_mode": "atelier",
+  "cuts": [
+    {
+      "id": "sc1",
+      "source": "comp-sc1",
+      "in_seconds": 0.0,
+      "out_seconds": 4.5,
+      "layer": "primary"
+    },
+    {
+      "id": "sc2",
+      "source": "comp-sc2",
+      "in_seconds": 4.5,
+      "out_seconds": 9.0,
+      "layer": "primary"
+    },
+    {
+      "id": "sc3",
+      "source": "comp-sc3",
+      "in_seconds": 9.0,
+      "out_seconds": 15.5,
+      "layer": "primary"
+    },
+    {
+      "id": "sc4",
+      "source": "comp-sc4",
+      "in_seconds": 15.5,
+      "out_seconds": 22.0,
+      "layer": "primary"
+    },
+    {
+      "id": "sc5",
+      "source": "comp-sc5",
+      "in_seconds": 22.0,
+      "out_seconds": 28.0,
+      "layer": "primary"
+    },
+    {
+      "id": "sc6",
+      "source": "comp-sc6",
+      "in_seconds": 28.0,
+      "out_seconds": 35.5,
+      "layer": "primary"
+    },
+    {
+      "id": "sc7",
+      "source": "comp-sc7",
+      "in_seconds": 35.5,
+      "out_seconds": 42.0,
+      "layer": "primary"
+    },
+    {
+      "id": "sc8",
+      "source": "comp-sc8",
+      "in_seconds": 42.0,
+      "out_seconds": 47.5,
+      "layer": "primary"
+    },
+    {
+      "id": "sc9",
+      "source": "comp-sc9",
+      "in_seconds": 47.5,
+      "out_seconds": 55.0,
+      "layer": "primary"
+    },
+    {
+      "id": "sc10",
+      "source": "comp-sc10",
+      "in_seconds": 55.0,
+      "out_seconds": 60.0,
+      "layer": "primary"
+    }
+  ],
+  "bespoke": {
+    "entry": "projects/vox-claude-webapp-ar/hyperframes/index.html",
+    "composition_id": "root",
+    "art_direction": "projects/vox-claude-webapp-ar/hyperframes/art-direction.md"
+  },
+  "transitions": [
+    {
+      "type": "whip_pan",
+      "at_seconds": 47.5,
+      "duration_seconds": 0.22
+    },
+    {
+      "type": "fade",
+      "at_seconds": 55.0,
+      "duration_seconds": 0.35
+    }
+  ],
+  "audio": {
+    "music": {
+      "asset_id": "score",
+      "volume": 1.0,
+      "fade_in_seconds": 0.35,
+      "fade_out_seconds": 0.8
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "metadata": {
+    "playbook": "vox-ar-explainer (custom; art direction in art-direction.md, CSS tokens authored in the composition)",
+    "workspace_path": "projects/vox-claude-webapp-ar/hyperframes",
+    "subtitles_rationale": "Deliberate (d-012): on-screen labels name mechanisms the voice never says, so burning a transcript on top would double the text. A sidecar caption file ships once narration exists.",
+    "transition_rationale": {
+      "47.5s whip_pan": "The single act break, machine → viewer; authored inside sc9's own timeline as an incoming x-slide so there is no clip overlap.",
+      "55.0s fade": "The close; authored as sc9 fading out at its tail and sc10 fading in at its head."
+    },
+    "hold_preservation": "Deliberate stillness marked data-hold on the held element in sc5, sc6, sc7, sc8, sc9, sc10",
+    "motion_character": "Every move uses ease:'steps(n)'. No motion blur. Arrivals land on a single step.",
+    "audio_architecture": "score_only — no narration; the ElevenLabs connector is still blocked",
+    "score": "Authored locally, not sourced: pixabay_music is configured and free but its host is proxy-blocked (403 at the tunnel). Every hit sits on an exact GSAP cue time read back out of the compositions.",
+    "render_runtime_carried_unchanged": "hyperframes, as locked at proposal (d-008). No swap."
+  }
+}

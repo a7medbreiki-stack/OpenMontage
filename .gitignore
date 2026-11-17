@@ -26,7 +26,16 @@ pipeline/
 tests/qa/output/
 
 # Project workspaces (generated assets, renders — all regenerable)
-projects/
+# NOTE: this is `projects/*`, not `projects/`, so a single project can be
+# re-included below. git cannot re-include anything inside a directory that is
+# itself excluded, so excluding the children instead of the directory is what
+# makes the negation work at all.
+projects/*
+# ...except this one: an atelier HyperFrames piece whose compositions, build
+# scripts, vendored fonts and pipeline artifacts are hand-authored source, not
+# regenerable output. Its own projects/vox-claude-webapp-ar/.gitignore excludes
+# the audio intermediates and CLI caches.
+!projects/vox-claude-webapp-ar/
 
 # Corpus directories (downloaded stock clips, thumbnails, embeddings —
 # regenerable from source APIs via corpus_builder). Explicit rule even

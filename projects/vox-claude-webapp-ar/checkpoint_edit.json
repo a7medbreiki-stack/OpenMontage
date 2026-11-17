@@ -1,0 +1,702 @@
+{
+  "version": "1.0",
+  "project_id": "vox-claude-webapp-ar",
+  "pipeline_type": "animation",
+  "stage": "edit",
+  "status": "completed",
+  "timestamp": "2026-11-17T16:34:12.468255+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "edit_decisions": {
+      "version": "1.0",
+      "render_runtime": "hyperframes",
+      "renderer_family": "animation-first",
+      "composition_mode": "atelier",
+      "cuts": [
+        {
+          "id": "sc1",
+          "source": "comp-sc1",
+          "in_seconds": 0.0,
+          "out_seconds": 4.5,
+          "layer": "primary"
+        },
+        {
+          "id": "sc2",
+          "source": "comp-sc2",
+          "in_seconds": 4.5,
+          "out_seconds": 9.0,
+          "layer": "primary"
+        },
+        {
+          "id": "sc3",
+          "source": "comp-sc3",
+          "in_seconds": 9.0,
+          "out_seconds": 15.5,
+          "layer": "primary"
+        },
+        {
+          "id": "sc4",
+          "source": "comp-sc4",
+          "in_seconds": 15.5,
+          "out_seconds": 22.0,
+          "layer": "primary"
+        },
+        {
+          "id": "sc5",
+          "source": "comp-sc5",
+          "in_seconds": 22.0,
+          "out_seconds": 28.0,
+          "layer": "primary"
+        },
+        {
+          "id": "sc6",
+          "source": "comp-sc6",
+          "in_seconds": 28.0,
+          "out_seconds": 35.5,
+          "layer": "primary"
+        },
+        {
+          "id": "sc7",
+          "source": "comp-sc7",
+          "in_seconds": 35.5,
+          "out_seconds": 42.0,
+          "layer": "primary"
+        },
+        {
+          "id": "sc8",
+          "source": "comp-sc8",
+          "in_seconds": 42.0,
+          "out_seconds": 47.5,
+          "layer": "primary"
+        },
+        {
+          "id": "sc9",
+          "source": "comp-sc9",
+          "in_seconds": 47.5,
+          "out_seconds": 55.0,
+          "layer": "primary"
+        },
+        {
+          "id": "sc10",
+          "source": "comp-sc10",
+          "in_seconds": 55.0,
+          "out_seconds": 60.0,
+          "layer": "primary"
+        }
+      ],
+      "bespoke": {
+        "entry": "projects/vox-claude-webapp-ar/hyperframes/index.html",
+        "composition_id": "root",
+        "art_direction": "projects/vox-claude-webapp-ar/hyperframes/art-direction.md"
+      },
+      "transitions": [
+        {
+          "type": "whip_pan",
+          "at_seconds": 47.5,
+          "duration_seconds": 0.22
+        },
+        {
+          "type": "fade",
+          "at_seconds": 55.0,
+          "duration_seconds": 0.35
+        }
+      ],
+      "audio": {
+        "music": {
+          "asset_id": "score",
+          "volume": 1.0,
+          "fade_in_seconds": 0.35,
+          "fade_out_seconds": 0.8
+        }
+      },
+      "subtitles": {
+        "enabled": false
+      },
+      "metadata": {
+        "playbook": "vox-ar-explainer (custom; art direction in art-direction.md, CSS tokens authored in the composition)",
+        "workspace_path": "projects/vox-claude-webapp-ar/hyperframes",
+        "subtitles_rationale": "Deliberate (d-012): on-screen labels name mechanisms the voice never says, so burning a transcript on top would double the text. A sidecar caption file ships once narration exists.",
+        "transition_rationale": {
+          "47.5s whip_pan": "The single act break, machine \u2192 viewer; authored inside sc9's own timeline as an incoming x-slide so there is no clip overlap.",
+          "55.0s fade": "The close; authored as sc9 fading out at its tail and sc10 fading in at its head."
+        },
+        "hold_preservation": "Deliberate stillness marked data-hold on the held element in sc5, sc6, sc7, sc8, sc9, sc10",
+        "motion_character": "Every move uses ease:'steps(n)'. No motion blur. Arrivals land on a single step.",
+        "audio_architecture": "score_only \u2014 no narration; the ElevenLabs connector is still blocked",
+        "score": "Authored locally, not sourced: pixabay_music is configured and free but its host is proxy-blocked (403 at the tunnel). Every hit sits on an exact GSAP cue time read back out of the compositions.",
+        "render_runtime_carried_unchanged": "hyperframes, as locked at proposal (d-008). No swap."
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "vox-claude-webapp-ar",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "pipeline_selection",
+          "subject": "Pipeline for a Vox-style 60s vertical Arabic explainer",
+          "options_considered": [
+            {
+              "option_id": "animation",
+              "label": "animation (motion graphics, diagram-led explainers, kinetic typography)",
+              "score": 1.0,
+              "reason": "Vox style for a software topic is diagram, chart and type led \u2014 exactly this pipeline's remit, and its manifest recommends flat-motion-graphics playbooks."
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer (fully AI-produced from topic)",
+              "score": 0.4,
+              "reason": "Assumes generated narration plus generated visuals.",
+              "rejected_because": "Its asset path leans on image and video generation; 0 of 32 image and 0 of 36 video providers are configured, and generated imagery would fight the Vox vector vocabulary anyway."
+            },
+            {
+              "option_id": "cinematic",
+              "label": "cinematic (mood-led, footage-first)",
+              "score": 0.1,
+              "reason": "Built for supplied footage and trailers.",
+              "rejected_because": "No source footage and no mood-led brief; wrong grammar for an explainer."
+            }
+          ],
+          "selected": "animation",
+          "reason": "The brief is a diagram-and-type explainer with no footage and no generated imagery, which is the animation pipeline's core case.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.85,
+              "reason": "The selector routes kinetic typography and HTML/GSAP-native motion here, and the registry's motion-graphics guidance points the same way. Arabic shaping and RTL are native browser text layout rather than something to reimplement, and the stepped blur-free Vox cadence is straightforward in CSS/GSAP."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React components \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available after this session's dependency install. Owns word-level caption burn and the existing chart stack, and matches the user's existing tasmeem project, so patterns transfer.",
+              "rejected_because": "Recommended against, not rejected \u2014 the user decides. In atelier mode the existing chart stack is off-limits anyway, which removes Remotion's main advantage here, and React component authoring is more rigid than HTML/CSS for bespoke typographic motion."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Both runtimes are available, so the HARD RULE requires presenting both and waiting. Agent recommends HyperFrames for native Arabic/RTL text layout and HTML/GSAP-native stepped motion; Remotion is a legitimate pick, especially to reuse tasmeem patterns and word-level caption burn. Not written into production_plan until the user picks.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.6
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.9,
+              "reason": "The guide defaults hero work to atelier, and the request is for a specific recognisable house style. Stock cut-types are frozen looks that reintroduce sameness, which fails the taste profile's own distinctness gate."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes in the Explainer composition",
+              "score": 0.45,
+              "reason": "Faster, cheaper, more reliable; right for batch output and drafts.",
+              "rejected_because": "Recommended against: a Vox look assembled from the shared scene catalogue would read as the catalogue, not as Vox. Costs the user the one thing they asked for."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Agent recommends atelier and says plainly that it costs more tokens and iteration than templated, so the user opts in knowingly.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "provider_selection",
+          "subject": "Narration TTS provider",
+          "options_considered": [
+            {
+              "option_id": "elevenlabs_connector",
+              "label": "ElevenLabs via the attached MCP connector",
+              "score": 0.9,
+              "reason": "User's explicit choice at the preflight blocker gate. Best Arabic prosody of the available options and the only one with an auditionable voice library. Currently blocked: the connector returned a permissions error and needs reconnecting."
+            },
+            {
+              "option_id": "elevenlabs_key",
+              "label": "ElevenLabs via a direct API key in this container",
+              "score": 0.75,
+              "reason": "Would activate the in-registry tts_selector path with proper cost tracking.",
+              "rejected_because": "User chose the connector route instead."
+            },
+            {
+              "option_id": "piper_local",
+              "label": "piper_tts, ar_JO-kareem-medium, fully local and free",
+              "score": 0.5,
+              "reason": "Free, offline, installable now; confirmed Jordanian Arabic voice exists in the piper voice index.",
+              "rejected_because": "Held as the documented fallback, not executed. Audibly synthetic with a fixed accent \u2014 a real downgrade, and the no-unilateral-substitutions rule requires approval."
+            },
+            {
+              "option_id": "none",
+              "label": "No narration \u2014 caption-led",
+              "score": 0.4,
+              "reason": "Zero cost, nothing blocked, native to a sound-off feed.",
+              "rejected_because": "User chose a narrated path."
+            }
+          ],
+          "selected": "elevenlabs_connector",
+          "reason": "Explicit user choice at the narration gate. Recorded as blocked rather than silently substituted; the assets stage cannot start until it is reconnected or a fallback is approved.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Music bed source",
+          "options_considered": [
+            {
+              "option_id": "pixabay_music",
+              "label": "pixabay_music search (free, no key)",
+              "score": 0.8,
+              "reason": "The only configured music capability on this machine, free, and a sparse tense bed is all the design read wants."
+            },
+            {
+              "option_id": "music_gen",
+              "label": "Generated soundtrack (elevenlabs_soundtrack, suno, google and 5 others)",
+              "score": 0.0,
+              "reason": "Would allow a bed cut exactly to the beat structure.",
+              "rejected_because": "0 of 8 music generation providers configured."
+            }
+          ],
+          "selected": "pixabay_music",
+          "reason": "Only available option, free, and sufficient for a bed that must stay under Arabic narration.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.85
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "playbook_selection",
+          "subject": "Style playbook",
+          "options_considered": [
+            {
+              "option_id": "custom_vox_ar",
+              "label": "Custom generated playbook: vox-ar-explainer",
+              "score": 0.9,
+              "reason": "No preset encodes the load-bearing choices \u2014 square corners, single saturated accent on near-black, stepped blur-free motion, word-level Arabic reveals."
+            },
+            {
+              "option_id": "flat-motion-graphics",
+              "label": "flat-motion-graphics preset (manifest-recommended)",
+              "score": 0.5,
+              "reason": "Closest preset and officially recommended for this pipeline.",
+              "rejected_because": "Taste direction forbids letting preset availability override the design read; it carries none of the Arabic text constraints."
+            },
+            {
+              "option_id": "minimalist-diagram",
+              "label": "minimalist-diagram preset",
+              "score": 0.4,
+              "reason": "Diagram-led fit.",
+              "rejected_because": "Too restrained for the Vox stamped read; no accent logic."
+            }
+          ],
+          "selected": "custom_vox_ar",
+          "reason": "The Arabic constraints and the Vox cadence both need encoding in the playbook itself rather than being remembered per scene.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 diagram-led cycle",
+              "score": 0.9,
+              "reason": "Only concept whose central claim rests on a primary source; closes the clearest research gap; rotation is motion that means something."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep over a file tree",
+              "score": 0.8,
+              "reason": "Busts the most load-bearing misconception and is the most recognisably Vox moment available.",
+              "rejected_because": "Runner-up only. Its central claim rests on a secondary source, so it must be phrased as behaviour rather than architecture."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 two-bar divergence chart",
+              "score": 0.7,
+              "reason": "Best single number in the brief, from an RCT, and the canonical Vox chart moment.",
+              "rejected_because": "Runner-up. METR's caveat costs roughly a fifth of a 60-second word budget, and it is the least flattering frame for the subject."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking \u2014 stacking decision chips",
+              "score": 0.65,
+              "reason": "Closest to the audience's lived pain, cheapest to build, most Arabic-native.",
+              "rejected_because": "Runner-up. Teaches a caution rather than a mechanism, so the viewer leaves with less."
+            }
+          ],
+          "selected": "PENDING_USER_APPROVAL",
+          "reason": "Four genuinely different concepts across four animation approaches and four narrative structures. Agent recommends c1; the user may select, mix or redirect.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.7
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.95,
+              "reason": "User's pick. Arabic shaping and RTL come free from native browser text layout; the stepped blur-free Vox cadence is straightforward in CSS/GSAP; the runtime selector routes kinetic typography here."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available and matches the user's tasmeem patterns; owns word-level caption burn.",
+              "rejected_because": "User chose HyperFrames. In atelier mode the stock Remotion chart stack is off-limits anyway, which removes its main advantage for this brief."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "REVISED \u2014 supersedes d-002's PENDING_USER_APPROVAL. User approved HyperFrames at the proposal gate after both available runtimes were presented with fit and tradeoff. Now locked and carried unchanged into edit_decisions.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.95,
+              "reason": "User's pick, knowing it costs more tokens and iteration. Stock scene-types are frozen looks that would make a 'Vox style' request read as the shared catalogue."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes",
+              "score": 0.45,
+              "reason": "Faster and cheaper.",
+              "rejected_because": "User chose atelier; templated would fail the distinctness gate implied by the request."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "REVISED \u2014 supersedes d-003's PENDING_USER_APPROVAL. Explicit user approval at the gate. Binds the build to skills/meta/bespoke-composition.md: stock cut-types, hyperframes-registry blocks and finished components are off-limits.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 rotating three-node cycle",
+              "score": 0.95,
+              "reason": "User's pick. Primary-sourced central claim, closes the clearest research gap, rotation is meaningful motion."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep",
+              "score": 0.8,
+              "reason": "Strong runner-up, most recognisably Vox.",
+              "rejected_because": "User chose c1; c2's claim rests on a secondary source."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 divergence chart",
+              "score": 0.7,
+              "reason": "Best single number, from an RCT.",
+              "rejected_because": "User chose c1; METR's caveat is expensive in a 60s budget."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking",
+              "score": 0.65,
+              "reason": "Cheapest and most Arabic-native.",
+              "rejected_because": "User chose c1; c4 teaches a caution rather than a mechanism."
+            }
+          ],
+          "selected": "c1",
+          "reason": "REVISED \u2014 supersedes d-007's PENDING_USER_APPROVAL. Explicit user selection at the gate.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames (HTML/CSS/GSAP \u2192 MP4)",
+              "score": 0.95,
+              "reason": "User's pick. Arabic shaping and RTL come free from native browser text layout; the stepped blur-free Vox cadence is straightforward in CSS/GSAP; the runtime selector routes kinetic typography here."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion (React \u2192 MP4)",
+              "score": 0.7,
+              "reason": "Available and matches the user's tasmeem patterns; owns word-level caption burn.",
+              "rejected_because": "User chose HyperFrames. In atelier mode the stock Remotion chart stack is off-limits anyway, which removes its main advantage for this brief."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg concat only",
+              "score": 0.05,
+              "reason": "Available.",
+              "rejected_because": "No composition layer; cannot build animated diagrams, charts or type."
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "REVISED \u2014 supersedes d-002's PENDING_USER_APPROVAL. User approved HyperFrames at the gate after both available runtimes were presented with fit and tradeoff. Now locked and carried unchanged into edit_decisions.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier \u2014 hand-authored scenes, one-off theme and motion",
+              "score": 0.95,
+              "reason": "User's pick, knowing it costs more tokens and iteration. Stock scene-types are frozen looks that would make a 'Vox style' request read as the shared catalogue."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated \u2014 stock cut.type scenes",
+              "score": 0.45,
+              "reason": "Faster and cheaper.",
+              "rejected_because": "User chose atelier; templated would fail the distinctness gate implied by the request."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "REVISED \u2014 supersedes d-003's PENDING_USER_APPROVAL. Explicit user approval at the gate. Binds the build to skills/meta/bespoke-composition.md: stock cut-types, hyperframes-registry blocks and finished components are off-limits.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept direction",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The loop you never see \u2014 rotating three-node cycle",
+              "score": 0.95,
+              "reason": "User's pick. Primary-sourced central claim, closes the clearest research gap, rotation is meaningful motion."
+            },
+            {
+              "option_id": "c2",
+              "label": "It never read your code \u2014 highlighter sweep",
+              "score": 0.8,
+              "reason": "Strong runner-up, most recognisably Vox.",
+              "rejected_because": "User chose c1; c2's claim rests on a secondary source."
+            },
+            {
+              "option_id": "c3",
+              "label": "Felt faster, measured slower \u2014 divergence chart",
+              "score": 0.7,
+              "reason": "Best single number, from an RCT.",
+              "rejected_because": "User chose c1; METR's caveat is expensive in a 60s word budget."
+            },
+            {
+              "option_id": "c4",
+              "label": "What it decided while you weren't looking",
+              "score": 0.65,
+              "reason": "Cheapest and most Arabic-native.",
+              "rejected_because": "User chose c1; c4 teaches a caution rather than a mechanism."
+            }
+          ],
+          "selected": "c1",
+          "reason": "REVISED \u2014 supersedes d-007's PENDING_USER_APPROVAL. Explicit user selection at the gate.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "scene_plan",
+          "category": "motion_commitment",
+          "subject": "Signature device placement across scenes",
+          "options_considered": [
+            {
+              "option_id": "ring_two_beats",
+              "label": "Ring appears in sc3 (introduction) and sc7 (hero) only; other scenes carry their own subjects",
+              "score": 0.95,
+              "reason": "Satisfies the bespoke-composition scarcity rule \u2014 the signature device earns weight by being scarce \u2014 and gives every scene a distinct primary visual subject."
+            },
+            {
+              "option_id": "ring_as_spine",
+              "label": "Ring present in sc3-sc8, rotating to indicate the current phase",
+              "score": 0.2,
+              "reason": "Reads as a coherent system and is easier to author.",
+              "rejected_because": "This was my first draft and it is precisely the hero-component spine the skill forbids: one striking visual reused every scene with different text underneath, which is branded slides rather than a film. Caught at self-review and re-planned before writing the artifact."
+            }
+          ],
+          "selected": "ring_two_beats",
+          "reason": "The phase is now carried by a small mono eyebrow overlay instead of by the device, freeing sc4/sc5/sc6/sc8 to carry a file tree, a diff, a test bar and a tally grid as their own subjects.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.85
+        },
+        {
+          "decision_id": "d-012",
+          "stage": "scene_plan",
+          "category": "playbook_selection",
+          "subject": "Caption treatment",
+          "options_considered": [
+            {
+              "option_id": "sidecar_only",
+              "label": "Separate caption sidecar file, nothing burned in",
+              "score": 0.9,
+              "reason": "On-screen labels name mechanisms the narration never says, so burning a transcript on top would produce the doubled-phrase amateurism the skill warns about. The sidecar still serves sound-off and accessibility."
+            },
+            {
+              "option_id": "burned_captions",
+              "label": "Burn word-level Arabic captions into the frame",
+              "score": 0.3,
+              "reason": "Strong for sound-off feeds.",
+              "rejected_because": "Would collide with the eyebrow label system and double the text load in a vertical frame; also HyperFrames has no word-level caption-burn parity yet."
+            }
+          ],
+          "selected": "sidecar_only",
+          "reason": "Keeps one role per text element. sc10 is the single declared exception where on-screen line and narration line coincide.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-013",
+          "stage": "assets",
+          "category": "fallback_decision",
+          "subject": "Runtime dependency delivery (GSAP and fonts)",
+          "options_considered": [
+            {
+              "option_id": "vendored",
+              "label": "Vendor GSAP and the Cairo/JetBrains Mono woff2 subsets into the workspace",
+              "score": 0.95,
+              "reason": "The render browser has no tunnel to jsdelivr or gstatic \u2014 validate failed with ERR_TUNNEL_CONNECTION_FAILED and the timeline never constructed. Vendoring also makes the render deterministic and offline-safe."
+            },
+            {
+              "option_id": "cdn",
+              "label": "Load GSAP from jsdelivr and fonts from Google Fonts at render time",
+              "score": 0.0,
+              "reason": "Standard HyperFrames pattern.",
+              "rejected_because": "Blocked by this environment's network policy inside headless Chrome. Would have rendered an unstyled composition with Arabic falling back to a non-shaping face."
+            }
+          ],
+          "selected": "vendored",
+          "reason": "Fetched server-side where the proxy allows it, then referenced locally. Cairo is declared as a single variable face per subset with font-weight:200 1000 \u2014 declaring fixed weights against the same variable file silently flattened 900 to 400.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-014",
+          "stage": "edit",
+          "category": "music_source",
+          "subject": "Music bed source",
+          "options_considered": [
+            {
+              "option_id": "authored_score",
+              "label": "Author the score locally (numpy synthesis + ffmpeg), every hit on an exact animation cue",
+              "score": 0.9,
+              "reason": "Pixabay's host is proxy-blocked so the approved stock path cannot run. Authoring also fits the design read better: a sparse synthesised drone with motion-locked transients and no melody to fight narration later."
+            },
+            {
+              "option_id": "pixabay_music",
+              "label": "pixabay_music stock search (approved at proposal, d-005)",
+              "score": 0.0,
+              "reason": "Free, no key, already approved.",
+              "rejected_because": "BLOCKED: 'Tunnel connection failed: 403 Forbidden'. Allowing pixabay.com in the environment's network settings would unblock it."
+            },
+            {
+              "option_id": "generated_music",
+              "label": "A music-generation provider",
+              "score": 0.0,
+              "reason": "Would allow a bed cut to the beat structure.",
+              "rejected_because": "0 of 8 music generation providers configured."
+            },
+            {
+              "option_id": "sfx_provider",
+              "label": "A sound-effects provider for the motion hits",
+              "score": 0.0,
+              "reason": "Purpose-built for this.",
+              "rejected_because": "0 of 1 sound_effects providers configured."
+            }
+          ],
+          "selected": "authored_score",
+          "reason": "REVISED \u2014 supersedes d-005 (same category and subject). The user asked for tones and sounds harmonised to the motion; the approved stock path is proxy-blocked, so the score is authored. Zero cost, deterministic, -16.4 LUFS integrated.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.85
+        }
+      ]
+    }
+  },
+  "review": {
+    "reviewer": "edit-director self-review",
+    "verdict": "pass",
+    "notes": [
+      "Hold times and staggered reveals preserved, declared with data-hold \u2014 PASS",
+      "Motion serves hierarchy: stepped arrivals, no blur, accent only on the asserted thing \u2014 PASS",
+      "Timeline consistent: 10 sequential clips, no overlap, sums to exactly 60.000s \u2014 PASS",
+      "render_runtime carried forward unchanged from the proposal lock \u2014 PASS",
+      "Music source changed from the approved pixabay path to an authored score because the host is proxy-blocked \u2014 logged as d-014 revising d-005, not silently swapped"
+    ]
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  }
+}

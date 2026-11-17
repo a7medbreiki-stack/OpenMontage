@@ -1,0 +1,435 @@
+{
+  "version": "1.0",
+  "title": "الحلقة التي لا تراها — The Loop You Never See",
+  "total_duration_seconds": 60,
+  "voice_performance": {
+    "performance_intent": "Arabic newsroom explainer, not a product pitch. A narrator who already knows the answer and is unhurried about it — authority from the mechanism, never from adjectives. No vocal smile, no hype, no rising sell on any line.",
+    "pacing_profile": "technical",
+    "energy_curve": "Flat and cold on the open (s1-s2), lifting into the reveal (s3), level and explanatory through the three phases (s4-s6) with s6 as the only accelerating line, dropping deliberately for the editorial beat (s7), building with the rotation (s8), warming for the reassurance (s9), then closing back down to the flatness it started on (s10).",
+    "pause_policy": "Silence belongs to the animation. Every beat ends with a pause long enough for its visual to finish — longest after s3 (the cycle turns once unspoken), s6 (holding on green) and s7 (the split-ring still frame). Never speak over a reveal.",
+    "sample_section_id": "s6",
+    "provider_notes": {
+      "elevenlabs": "Audition on s6 first — four verbs accelerating is where Arabic TTS prosody fails most audibly. Pick a voice with a neutral pan-Arab register, not a regional broadcast accent. provider_text carries SSML break tags; drop to plain punctuation if the chosen model ignores them.",
+      "piper_fallback": "If the ar_JO-kareem fallback is ever approved, expect the SSML breaks to be ignored and the accent to read as Jordanian — s6 and s7 would need their timings re-cut by hand against the flat delivery."
+    }
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "label": "أنت",
+      "text": "كتبتَ سطراً واحداً، ثم انتظرت.",
+      "start_seconds": 0.0,
+      "end_seconds": 4.5,
+      "speaker_directions": "Open cold. No rising inflection. The whole hook is the smallness of the thing you did.",
+      "delivery_cues": {
+        "pace": "measured",
+        "energy": "low, almost flat — a stated fact, not a tease",
+        "emphasis_words": [
+          "سطراً واحداً"
+        ],
+        "pause_before_seconds": 0.0,
+        "pause_after_seconds": 0.6,
+        "delivery_note": "Open cold. No rising inflection. The whole hook is the smallness of the thing you did.",
+        "provider_text": "كتبتَ سطراً واحداً، ثم انتظرت."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "Full-frame typographic assertion: one short Arabic prompt line, paper-white on near-black ink, stamped in word by word with no blur. A cursor holds at the end of the line and does nothing — the stillness is the point.",
+          "timestamp_seconds": 0.0
+        }
+      ],
+      "source_ref": "selected_concept.hook (c1)"
+    },
+    {
+      "id": "s2",
+      "label": "ما حدث فعلاً",
+      "text": "تظنّ أنه نفّذ أمراً. لم يفعل.",
+      "start_seconds": 4.5,
+      "end_seconds": 9.0,
+      "speaker_directions": "The second sentence is the turn. Land «لم يفعل» short and closed, then let the pause carry it.",
+      "delivery_cues": {
+        "pace": "measured",
+        "energy": "slight drop on the correction",
+        "emphasis_words": [
+          "لم يفعل"
+        ],
+        "pause_before_seconds": 0.3,
+        "pause_after_seconds": 0.7,
+        "delivery_note": "The second sentence is the turn. Land «لم يفعل» short and closed, then let the pause carry it.",
+        "provider_text": "تظنّ أنه نفّذ أمراً. <break time=\"0.4s\"/> لم يفعل."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "The same line, now with a single flat arrow pointing to an empty box labelled «أمر واحد» — the box is struck through in the accent yellow on the beat of «لم يفعل».",
+          "timestamp_seconds": 4.5
+        }
+      ],
+      "source_ref": "audience_insights.misconceptions — 'you describe it once and it comes out finished'"
+    },
+    {
+      "id": "s3",
+      "label": "يقرأ · ينفّذ · يتحقّق",
+      "text": "أدار حلقة: يقرأ، ينفّذ، يتحقّق — وتتكرّر.",
+      "start_seconds": 9.0,
+      "end_seconds": 15.5,
+      "speaker_directions": "Name the three phases on three distinct beats, evenly spaced, so each node can land under its own word. Then stop talking and let the cycle turn once in silence.",
+      "delivery_cues": {
+        "pace": "measured",
+        "energy": "lifts — this is the reveal the whole piece rests on",
+        "emphasis_words": [
+          "حلقة"
+        ],
+        "pause_before_seconds": 0.4,
+        "pause_after_seconds": 1.0,
+        "delivery_note": "Name the three phases on three distinct beats, evenly spaced, so each node can land under its own word. Then stop talking and let the cycle turn once in silence.",
+        "provider_text": "أدار حلقة: <break time=\"0.25s\"/> يقرأ، <break time=\"0.25s\"/> ينفّذ، <break time=\"0.25s\"/> يتحقّق — وتتكرّر."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "Annotated object: three nodes snap into a triangle, one per narrated phase, then the whole cycle rotates once — stepped, roughly twelve frames a second, no motion blur. Holds on the completed ring.",
+          "timestamp_seconds": 9.0
+        }
+      ],
+      "source_ref": "data_point: three blending phases repeating until complete — code.claude.com/docs/en/how-claude-code-works"
+    },
+    {
+      "id": "s4",
+      "label": "grep",
+      "text": "يقرأ: لا يحفظ مشروعك، بل يبحث فيه ويفتح ما يحتاجه.",
+      "start_seconds": 15.5,
+      "end_seconds": 22.0,
+      "speaker_directions": "This corrects the audience's biggest wrong assumption, so keep it generous rather than clever. No smugness on «لا يحفظ».",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "matter-of-fact, explanatory",
+        "emphasis_words": [
+          "لا يحفظ",
+          "يبحث"
+        ],
+        "pause_before_seconds": 0.3,
+        "pause_after_seconds": 0.5,
+        "delivery_note": "This corrects the audience's biggest wrong assumption, so keep it generous rather than clever. No smugness on «لا يحفظ».",
+        "provider_text": "يقرأ: <break time=\"0.2s\"/> لا يحفظ مشروعك، بل يبحث فيه ويفتح ما يحتاجه."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "The cycle rotates to put «يقرأ» on top. A dense file tree fills the frame; a search sweep crosses it and four files ignite in accent yellow while the rest stay near-black.",
+          "timestamp_seconds": 15.5
+        }
+      ],
+      "source_ref": "data_point: no vector database, no embeddings — grep plus file reads (secondary, phrased as behaviour not architecture)"
+    },
+    {
+      "id": "s5",
+      "label": "يعدّل، لا يقترح",
+      "text": "ينفّذ: يعدّل الملفات نفسها، لا يقترح نصاً تنسخه.",
+      "start_seconds": 22.0,
+      "end_seconds": 28.0,
+      "speaker_directions": "Short and unceremonious. This beat is the least surprising, so do not inflate it.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "steady",
+        "emphasis_words": [
+          "الملفات نفسها"
+        ],
+        "pause_before_seconds": 0.3,
+        "pause_after_seconds": 0.5,
+        "delivery_note": "Short and unceremonious. This beat is the least surprising, so do not inflate it.",
+        "provider_text": "ينفّذ: يعدّل الملفات نفسها، لا يقترح نصاً تنسخه."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "Cycle rotates to «ينفّذ». A diff stamps into the frame line by line — added lines in accent yellow, removed lines struck through — with no easing, each line arriving on a single step.",
+          "timestamp_seconds": 22.0
+        }
+      ],
+      "source_ref": "data_point: it edits the file directly rather than giving you a snippet — code.claude.com/docs/en/how-claude-code-works"
+    },
+    {
+      "id": "s6",
+      "label": "أحمر ← أخضر",
+      "text": "يتحقّق: يشغّل الاختبارات، يقرأ الخطأ، يصلحه، ويعيد التشغيل.",
+      "start_seconds": 28.0,
+      "end_seconds": 35.5,
+      "speaker_directions": "Four verbs, each faster than the last, mirroring the test bar cycling. Then a full stop and a long hold on green.",
+      "delivery_cues": {
+        "pace": "brisk",
+        "energy": "the only accelerating line in the piece",
+        "emphasis_words": [
+          "يعيد التشغيل"
+        ],
+        "pause_before_seconds": 0.3,
+        "pause_after_seconds": 1.0,
+        "delivery_note": "Four verbs, each faster than the last, mirroring the test bar cycling. Then a full stop and a long hold on green.",
+        "provider_text": "يتحقّق: يشغّل الاختبارات، يقرأ الخطأ، يصلحه، <break time=\"0.2s\"/> ويعيد التشغيل."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "Cycle rotates to «يتحقّق». A test bar flips red, then red again, then green — each flip landing on a verb, the gaps shortening. Holds on green longer than feels comfortable.",
+          "timestamp_seconds": 28.0
+        }
+      ],
+      "source_ref": "data_point: when tests fail it reads the errors, fixes, and runs the suite again — code.claude.com/docs/en/how-claude-code-works"
+    },
+    {
+      "id": "s7",
+      "label": "نصف العمل",
+      "text": "هذا النصف الذي لا يظهر في الفيديوهات — وهو نصف العمل.",
+      "start_seconds": 35.5,
+      "end_seconds": 42.0,
+      "speaker_directions": "The one place the video has an opinion. Slow it right down and let the second half of the sentence sit alone.",
+      "delivery_cues": {
+        "pace": "slow",
+        "energy": "drops deliberately — the editorial line of the piece",
+        "emphasis_words": [
+          "نصف العمل"
+        ],
+        "pause_before_seconds": 0.6,
+        "pause_after_seconds": 0.9,
+        "delivery_note": "The one place the video has an opinion. Slow it right down and let the second half of the sentence sit alone.",
+        "provider_text": "هذا النصف الذي لا يظهر في الفيديوهات <break time=\"0.45s\"/> وهو نصف العمل."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "The ring splits: the «يقرأ/ينفّذ» half stays paper-white, the «يتحقّق» half fills solid accent yellow. Held as a single still frame — the most screenshot-able beat in the video.",
+          "timestamp_seconds": 35.5
+        }
+      ],
+      "source_ref": "research underserved_gap: the verification half is almost never shown"
+    },
+    {
+      "id": "s8",
+      "label": "حتى تنتهي المهمة",
+      "text": "وتدور الحلقة من جديد، حتى تنتهي المهمة.",
+      "start_seconds": 42.0,
+      "end_seconds": 47.5,
+      "speaker_directions": "Ride the acceleration of the visual rather than pushing the voice. Finish clean so the final rotation can land in silence.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "builds with the rotation",
+        "emphasis_words": [
+          "من جديد"
+        ],
+        "pause_before_seconds": 0.3,
+        "pause_after_seconds": 0.6,
+        "delivery_note": "Ride the acceleration of the visual rather than pushing the voice. Finish clean so the final rotation can land in silence.",
+        "provider_text": "وتدور الحلقة من جديد، حتى تنتهي المهمة."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "The ring spins through several revolutions, each faster and each leaving a faint stepped trail, until it stops hard on a green frame.",
+          "timestamp_seconds": 42.0
+        }
+      ],
+      "source_ref": "data_point: repeating until the task is complete — code.claude.com/docs/en/how-claude-code-works"
+    },
+    {
+      "id": "s9",
+      "label": "مقاطعة · تعديلات محفوظة",
+      "text": "وأنت داخلها: تقدر أن تقاطعه في أي لحظة، والتعديلات محفوظة قبل أن تحدث.",
+      "start_seconds": 47.5,
+      "end_seconds": 55.0,
+      "speaker_directions": "Answers the 'what if it wrecks my project' fear. Say it plainly, like someone handing over a key.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "warms — this is the reassurance beat",
+        "emphasis_words": [
+          "داخلها",
+          "قبل أن تحدث"
+        ],
+        "pause_before_seconds": 0.4,
+        "pause_after_seconds": 0.7,
+        "delivery_note": "Answers the 'what if it wrecks my project' fear. Say it plainly, like someone handing over a key.",
+        "provider_text": "وأنت داخلها: <break time=\"0.2s\"/> تقدر أن تقاطعه في أي لحظة، والتعديلات محفوظة قبل أن تحدث."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "A human figure-marker drops into the centre of the ring. Two small labels flick on beside it, one per clause, then the ring dims behind them.",
+          "timestamp_seconds": 47.5
+        }
+      ],
+      "source_ref": "data_point: snapshots before editing; the user can interrupt at any point — code.claude.com/docs/en/how-claude-code-works"
+    },
+    {
+      "id": "s10",
+      "label": "حلقة، لا أمر",
+      "text": "ليس أمراً واحداً ينفَّذ. حلقة تدور، وأنت فيها.",
+      "start_seconds": 55.0,
+      "end_seconds": 60.0,
+      "speaker_directions": "Mirror the opening's flatness. No upward lift, no call to excitement. The last word lands and the frame holds past it.",
+      "delivery_cues": {
+        "pace": "slow",
+        "energy": "closes down to near-silence",
+        "emphasis_words": [
+          "حلقة"
+        ],
+        "pause_before_seconds": 0.5,
+        "pause_after_seconds": 0.0,
+        "delivery_note": "Mirror the opening's flatness. No upward lift, no call to excitement. The last word lands and the frame holds past it.",
+        "provider_text": "ليس أمراً واحداً ينفَّذ. <break time=\"0.35s\"/> حلقة تدور، وأنت فيها."
+      },
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "Back to full-frame type for the first time since the opening. The ring shrinks to a small mark beside the final line. Watermark fades in at the end of the hold.",
+          "timestamp_seconds": 55.0
+        }
+      ],
+      "source_ref": "selected_concept.core_message (c1)"
+    }
+  ],
+  "metadata": {
+    "pipeline": "animation",
+    "stage": "script",
+    "concept_id": "c1",
+    "narration_language": "ar",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_runtime": "hyperframes",
+    "composition_mode": "atelier",
+    "narrative_structure": "problem_solution",
+    "section_metadata": {
+      "s1": {
+        "beat_type": "statement",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the type",
+        "hold_time_seconds": 1.2,
+        "on_screen_label": "أنت",
+        "visual": "Full-frame typographic assertion: one short Arabic prompt line, paper-white on near-black ink, stamped in word by word with no blur. A cursor holds at the end of the line and does nothing — the stillness is the point.",
+        "data_source": "selected_concept.hook (c1)"
+      },
+      "s2": {
+        "beat_type": "statement",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the type",
+        "hold_time_seconds": 1.0,
+        "on_screen_label": "ما حدث فعلاً",
+        "visual": "The same line, now with a single flat arrow pointing to an empty box labelled «أمر واحد» — the box is struck through in the accent yellow on the beat of «لم يفعل».",
+        "data_source": "audience_insights.misconceptions — 'you describe it once and it comes out finished'"
+      },
+      "s3": {
+        "beat_type": "demonstration",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the animation",
+        "hold_time_seconds": 2.0,
+        "on_screen_label": "يقرأ · ينفّذ · يتحقّق",
+        "visual": "Annotated object: three nodes snap into a triangle, one per narrated phase, then the whole cycle rotates once — stepped, roughly twelve frames a second, no motion blur. Holds on the completed ring.",
+        "data_source": "data_point: three blending phases repeating until complete — code.claude.com/docs/en/how-claude-code-works"
+      },
+      "s4": {
+        "beat_type": "demonstration",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the animation",
+        "hold_time_seconds": 1.5,
+        "on_screen_label": "grep",
+        "visual": "The cycle rotates to put «يقرأ» on top. A dense file tree fills the frame; a search sweep crosses it and four files ignite in accent yellow while the rest stay near-black.",
+        "data_source": "data_point: no vector database, no embeddings — grep plus file reads (secondary, phrased as behaviour not architecture)"
+      },
+      "s5": {
+        "beat_type": "transformation",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the animation",
+        "hold_time_seconds": 1.3,
+        "on_screen_label": "يعدّل، لا يقترح",
+        "visual": "Cycle rotates to «ينفّذ». A diff stamps into the frame line by line — added lines in accent yellow, removed lines struck through — with no easing, each line arriving on a single step.",
+        "data_source": "data_point: it edits the file directly rather than giving you a snippet — code.claude.com/docs/en/how-claude-code-works"
+      },
+      "s6": {
+        "beat_type": "demonstration",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the animation",
+        "hold_time_seconds": 2.2,
+        "on_screen_label": "أحمر ← أخضر",
+        "visual": "Cycle rotates to «يتحقّق». A test bar flips red, then red again, then green — each flip landing on a verb, the gaps shortening. Holds on green longer than feels comfortable.",
+        "data_source": "data_point: when tests fail it reads the errors, fixes, and runs the suite again — code.claude.com/docs/en/how-claude-code-works"
+      },
+      "s7": {
+        "beat_type": "comparison",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the type",
+        "hold_time_seconds": 1.8,
+        "on_screen_label": "نصف العمل",
+        "visual": "The ring splits: the «يقرأ/ينفّذ» half stays paper-white, the «يتحقّق» half fills solid accent yellow. Held as a single still frame — the most screenshot-able beat in the video.",
+        "data_source": "research underserved_gap: the verification half is almost never shown"
+      },
+      "s8": {
+        "beat_type": "demonstration",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the animation",
+        "hold_time_seconds": 1.5,
+        "on_screen_label": "حتى تنتهي المهمة",
+        "visual": "The ring spins through several revolutions, each faster and each leaving a faint stepped trail, until it stops hard on a green frame.",
+        "data_source": "data_point: repeating until the task is complete — code.claude.com/docs/en/how-claude-code-works"
+      },
+      "s9": {
+        "beat_type": "statement",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "complements",
+        "visual_priority": "the type",
+        "hold_time_seconds": 1.6,
+        "on_screen_label": "مقاطعة · تعديلات محفوظة",
+        "visual": "A human figure-marker drops into the centre of the ring. Two small labels flick on beside it, one per clause, then the ring dims behind them.",
+        "data_source": "data_point: snapshots before editing; the user can interrupt at any point — code.claude.com/docs/en/how-claude-code-works"
+      },
+      "s10": {
+        "beat_type": "conclusion",
+        "animation_mode": "motion_graphics",
+        "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+        "narration_plan": "lands",
+        "visual_priority": "the type",
+        "hold_time_seconds": 2.5,
+        "on_screen_label": "حلقة، لا أمر",
+        "visual": "Back to full-frame type for the first time since the opening. The ring shrinks to a small mark beside the final line. Watermark fades in at the end of the hold.",
+        "data_source": "selected_concept.core_message (c1)"
+      }
+    },
+    "schema_note": "script.schema.json sets additionalProperties:false on section items, so the per-section metadata keys the script-director recommends (beat_type, animation_mode, hold_time_seconds, visual_priority, narration_plan, text_constraints) are carried here in metadata.section_metadata, keyed by section id, rather than dropped.",
+    "word_budget": {
+      "arabic_words": 83,
+      "narration_seconds_at_2.2_wps": 37.7,
+      "visual_hold_seconds_budgeted": 16.6,
+      "note": "The script-director's budget formula (target_seconds × 2.5 words/sec) assumes English at 150 WPM and yields 150 words for 60s. Arabic carries more per word and runs nearer 2.0-2.2 words/sec, and the same skill's breathing-room rule (a 90s video holds ~60-65s of narration) implies ~42s of narration here, not 60s. 83 Arabic words at ~2.2 wps is ~37.7s of speech against ~16.6s of budgeted holds. Applying the raw 150-word figure would overrun the piece by roughly half. Flagging the deviation rather than silently failing the ±10% check.",
+      "verdict": "deliberate deviation from the English-calibrated formula, documented"
+    },
+    "arabic_text_rules": [
+      "Every reveal is word-level — split on spaces only, never per glyph",
+      "No letterSpacing on any Arabic text",
+      "Arabic containers dir=rtl; Latin tokens (grep, Claude Code) dir=ltr in the Latin face",
+      "Reveal direction verified under RTL before the build — LTR-authored typewriter presets run backwards"
+    ],
+    "accuracy_guardrails_applied": [
+      "Every factual claim carries a source_ref; four of the five mechanism claims trace to the primary Claude Code documentation",
+      "The no-index claim (s4) is phrased as observed behaviour — 'does not memorize, searches' — not as an internal architecture claim, because its source is secondary",
+      "No model performance numbers, prices or digital specs anywhere in the script",
+      "No survey percentages used in this concept, so no attribution burden on screen",
+      "s7 is the only line carrying an opinion, and it is labelled as editorial rather than sourced"
+    ],
+    "timings_provisional": "start/end are structural, not calibrated. Once the narration audio exists, re-cut every boundary against the real waveform — the same discipline as the tasmeem project. transcriber (faster-whisper) is missing its python dependency and must be installed before that calibration."
+  }
+}

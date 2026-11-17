@@ -1,0 +1,469 @@
+{
+  "version": "1.0",
+  "project_id": "vox-claude-webapp-ar",
+  "pipeline_type": "animation",
+  "stage": "script",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-17T15:09:48.987325+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "\u0627\u0644\u062d\u0644\u0642\u0629 \u0627\u0644\u062a\u064a \u0644\u0627 \u062a\u0631\u0627\u0647\u0627 \u2014 The Loop You Never See",
+      "total_duration_seconds": 60,
+      "voice_performance": {
+        "performance_intent": "Arabic newsroom explainer, not a product pitch. A narrator who already knows the answer and is unhurried about it \u2014 authority from the mechanism, never from adjectives. No vocal smile, no hype, no rising sell on any line.",
+        "pacing_profile": "technical",
+        "energy_curve": "Flat and cold on the open (s1-s2), lifting into the reveal (s3), level and explanatory through the three phases (s4-s6) with s6 as the only accelerating line, dropping deliberately for the editorial beat (s7), building with the rotation (s8), warming for the reassurance (s9), then closing back down to the flatness it started on (s10).",
+        "pause_policy": "Silence belongs to the animation. Every beat ends with a pause long enough for its visual to finish \u2014 longest after s3 (the cycle turns once unspoken), s6 (holding on green) and s7 (the split-ring still frame). Never speak over a reveal.",
+        "sample_section_id": "s6",
+        "provider_notes": {
+          "elevenlabs": "Audition on s6 first \u2014 four verbs accelerating is where Arabic TTS prosody fails most audibly. Pick a voice with a neutral pan-Arab register, not a regional broadcast accent. provider_text carries SSML break tags; drop to plain punctuation if the chosen model ignores them.",
+          "piper_fallback": "If the ar_JO-kareem fallback is ever approved, expect the SSML breaks to be ignored and the accent to read as Jordanian \u2014 s6 and s7 would need their timings re-cut by hand against the flat delivery."
+        }
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "label": "\u0623\u0646\u062a",
+          "text": "\u0643\u062a\u0628\u062a\u064e \u0633\u0637\u0631\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b\u060c \u062b\u0645 \u0627\u0646\u062a\u0638\u0631\u062a.",
+          "start_seconds": 0.0,
+          "end_seconds": 4.5,
+          "speaker_directions": "Open cold. No rising inflection. The whole hook is the smallness of the thing you did.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "low, almost flat \u2014 a stated fact, not a tease",
+            "emphasis_words": [
+              "\u0633\u0637\u0631\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.6,
+            "delivery_note": "Open cold. No rising inflection. The whole hook is the smallness of the thing you did.",
+            "provider_text": "\u0643\u062a\u0628\u062a\u064e \u0633\u0637\u0631\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b\u060c \u062b\u0645 \u0627\u0646\u062a\u0638\u0631\u062a."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "Full-frame typographic assertion: one short Arabic prompt line, paper-white on near-black ink, stamped in word by word with no blur. A cursor holds at the end of the line and does nothing \u2014 the stillness is the point.",
+              "timestamp_seconds": 0.0
+            }
+          ],
+          "source_ref": "selected_concept.hook (c1)"
+        },
+        {
+          "id": "s2",
+          "label": "\u0645\u0627 \u062d\u062f\u062b \u0641\u0639\u0644\u0627\u064b",
+          "text": "\u062a\u0638\u0646\u0651 \u0623\u0646\u0647 \u0646\u0641\u0651\u0630 \u0623\u0645\u0631\u0627\u064b. \u0644\u0645 \u064a\u0641\u0639\u0644.",
+          "start_seconds": 4.5,
+          "end_seconds": 9.0,
+          "speaker_directions": "The second sentence is the turn. Land \u00ab\u0644\u0645 \u064a\u0641\u0639\u0644\u00bb short and closed, then let the pause carry it.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "slight drop on the correction",
+            "emphasis_words": [
+              "\u0644\u0645 \u064a\u0641\u0639\u0644"
+            ],
+            "pause_before_seconds": 0.3,
+            "pause_after_seconds": 0.7,
+            "delivery_note": "The second sentence is the turn. Land \u00ab\u0644\u0645 \u064a\u0641\u0639\u0644\u00bb short and closed, then let the pause carry it.",
+            "provider_text": "\u062a\u0638\u0646\u0651 \u0623\u0646\u0647 \u0646\u0641\u0651\u0630 \u0623\u0645\u0631\u0627\u064b. <break time=\"0.4s\"/> \u0644\u0645 \u064a\u0641\u0639\u0644."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "The same line, now with a single flat arrow pointing to an empty box labelled \u00ab\u0623\u0645\u0631 \u0648\u0627\u062d\u062f\u00bb \u2014 the box is struck through in the accent yellow on the beat of \u00ab\u0644\u0645 \u064a\u0641\u0639\u0644\u00bb.",
+              "timestamp_seconds": 4.5
+            }
+          ],
+          "source_ref": "audience_insights.misconceptions \u2014 'you describe it once and it comes out finished'"
+        },
+        {
+          "id": "s3",
+          "label": "\u064a\u0642\u0631\u0623 \u00b7 \u064a\u0646\u0641\u0651\u0630 \u00b7 \u064a\u062a\u062d\u0642\u0651\u0642",
+          "text": "\u0623\u062f\u0627\u0631 \u062d\u0644\u0642\u0629: \u064a\u0642\u0631\u0623\u060c \u064a\u0646\u0641\u0651\u0630\u060c \u064a\u062a\u062d\u0642\u0651\u0642 \u2014 \u0648\u062a\u062a\u0643\u0631\u0651\u0631.",
+          "start_seconds": 9.0,
+          "end_seconds": 15.5,
+          "speaker_directions": "Name the three phases on three distinct beats, evenly spaced, so each node can land under its own word. Then stop talking and let the cycle turn once in silence.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "lifts \u2014 this is the reveal the whole piece rests on",
+            "emphasis_words": [
+              "\u062d\u0644\u0642\u0629"
+            ],
+            "pause_before_seconds": 0.4,
+            "pause_after_seconds": 1.0,
+            "delivery_note": "Name the three phases on three distinct beats, evenly spaced, so each node can land under its own word. Then stop talking and let the cycle turn once in silence.",
+            "provider_text": "\u0623\u062f\u0627\u0631 \u062d\u0644\u0642\u0629: <break time=\"0.25s\"/> \u064a\u0642\u0631\u0623\u060c <break time=\"0.25s\"/> \u064a\u0646\u0641\u0651\u0630\u060c <break time=\"0.25s\"/> \u064a\u062a\u062d\u0642\u0651\u0642 \u2014 \u0648\u062a\u062a\u0643\u0631\u0651\u0631."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "Annotated object: three nodes snap into a triangle, one per narrated phase, then the whole cycle rotates once \u2014 stepped, roughly twelve frames a second, no motion blur. Holds on the completed ring.",
+              "timestamp_seconds": 9.0
+            }
+          ],
+          "source_ref": "data_point: three blending phases repeating until complete \u2014 code.claude.com/docs/en/how-claude-code-works"
+        },
+        {
+          "id": "s4",
+          "label": "grep",
+          "text": "\u064a\u0642\u0631\u0623: \u0644\u0627 \u064a\u062d\u0641\u0638 \u0645\u0634\u0631\u0648\u0639\u0643\u060c \u0628\u0644 \u064a\u0628\u062d\u062b \u0641\u064a\u0647 \u0648\u064a\u0641\u062a\u062d \u0645\u0627 \u064a\u062d\u062a\u0627\u062c\u0647.",
+          "start_seconds": 15.5,
+          "end_seconds": 22.0,
+          "speaker_directions": "This corrects the audience's biggest wrong assumption, so keep it generous rather than clever. No smugness on \u00ab\u0644\u0627 \u064a\u062d\u0641\u0638\u00bb.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "matter-of-fact, explanatory",
+            "emphasis_words": [
+              "\u0644\u0627 \u064a\u062d\u0641\u0638",
+              "\u064a\u0628\u062d\u062b"
+            ],
+            "pause_before_seconds": 0.3,
+            "pause_after_seconds": 0.5,
+            "delivery_note": "This corrects the audience's biggest wrong assumption, so keep it generous rather than clever. No smugness on \u00ab\u0644\u0627 \u064a\u062d\u0641\u0638\u00bb.",
+            "provider_text": "\u064a\u0642\u0631\u0623: <break time=\"0.2s\"/> \u0644\u0627 \u064a\u062d\u0641\u0638 \u0645\u0634\u0631\u0648\u0639\u0643\u060c \u0628\u0644 \u064a\u0628\u062d\u062b \u0641\u064a\u0647 \u0648\u064a\u0641\u062a\u062d \u0645\u0627 \u064a\u062d\u062a\u0627\u062c\u0647."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "The cycle rotates to put \u00ab\u064a\u0642\u0631\u0623\u00bb on top. A dense file tree fills the frame; a search sweep crosses it and four files ignite in accent yellow while the rest stay near-black.",
+              "timestamp_seconds": 15.5
+            }
+          ],
+          "source_ref": "data_point: no vector database, no embeddings \u2014 grep plus file reads (secondary, phrased as behaviour not architecture)"
+        },
+        {
+          "id": "s5",
+          "label": "\u064a\u0639\u062f\u0651\u0644\u060c \u0644\u0627 \u064a\u0642\u062a\u0631\u062d",
+          "text": "\u064a\u0646\u0641\u0651\u0630: \u064a\u0639\u062f\u0651\u0644 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0646\u0641\u0633\u0647\u0627\u060c \u0644\u0627 \u064a\u0642\u062a\u0631\u062d \u0646\u0635\u0627\u064b \u062a\u0646\u0633\u062e\u0647.",
+          "start_seconds": 22.0,
+          "end_seconds": 28.0,
+          "speaker_directions": "Short and unceremonious. This beat is the least surprising, so do not inflate it.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "steady",
+            "emphasis_words": [
+              "\u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0646\u0641\u0633\u0647\u0627"
+            ],
+            "pause_before_seconds": 0.3,
+            "pause_after_seconds": 0.5,
+            "delivery_note": "Short and unceremonious. This beat is the least surprising, so do not inflate it.",
+            "provider_text": "\u064a\u0646\u0641\u0651\u0630: \u064a\u0639\u062f\u0651\u0644 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0646\u0641\u0633\u0647\u0627\u060c \u0644\u0627 \u064a\u0642\u062a\u0631\u062d \u0646\u0635\u0627\u064b \u062a\u0646\u0633\u062e\u0647."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "Cycle rotates to \u00ab\u064a\u0646\u0641\u0651\u0630\u00bb. A diff stamps into the frame line by line \u2014 added lines in accent yellow, removed lines struck through \u2014 with no easing, each line arriving on a single step.",
+              "timestamp_seconds": 22.0
+            }
+          ],
+          "source_ref": "data_point: it edits the file directly rather than giving you a snippet \u2014 code.claude.com/docs/en/how-claude-code-works"
+        },
+        {
+          "id": "s6",
+          "label": "\u0623\u062d\u0645\u0631 \u2190 \u0623\u062e\u0636\u0631",
+          "text": "\u064a\u062a\u062d\u0642\u0651\u0642: \u064a\u0634\u063a\u0651\u0644 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a\u060c \u064a\u0642\u0631\u0623 \u0627\u0644\u062e\u0637\u0623\u060c \u064a\u0635\u0644\u062d\u0647\u060c \u0648\u064a\u0639\u064a\u062f \u0627\u0644\u062a\u0634\u063a\u064a\u0644.",
+          "start_seconds": 28.0,
+          "end_seconds": 35.5,
+          "speaker_directions": "Four verbs, each faster than the last, mirroring the test bar cycling. Then a full stop and a long hold on green.",
+          "delivery_cues": {
+            "pace": "brisk",
+            "energy": "the only accelerating line in the piece",
+            "emphasis_words": [
+              "\u064a\u0639\u064a\u062f \u0627\u0644\u062a\u0634\u063a\u064a\u0644"
+            ],
+            "pause_before_seconds": 0.3,
+            "pause_after_seconds": 1.0,
+            "delivery_note": "Four verbs, each faster than the last, mirroring the test bar cycling. Then a full stop and a long hold on green.",
+            "provider_text": "\u064a\u062a\u062d\u0642\u0651\u0642: \u064a\u0634\u063a\u0651\u0644 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a\u060c \u064a\u0642\u0631\u0623 \u0627\u0644\u062e\u0637\u0623\u060c \u064a\u0635\u0644\u062d\u0647\u060c <break time=\"0.2s\"/> \u0648\u064a\u0639\u064a\u062f \u0627\u0644\u062a\u0634\u063a\u064a\u0644."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "Cycle rotates to \u00ab\u064a\u062a\u062d\u0642\u0651\u0642\u00bb. A test bar flips red, then red again, then green \u2014 each flip landing on a verb, the gaps shortening. Holds on green longer than feels comfortable.",
+              "timestamp_seconds": 28.0
+            }
+          ],
+          "source_ref": "data_point: when tests fail it reads the errors, fixes, and runs the suite again \u2014 code.claude.com/docs/en/how-claude-code-works"
+        },
+        {
+          "id": "s7",
+          "label": "\u0646\u0635\u0641 \u0627\u0644\u0639\u0645\u0644",
+          "text": "\u0647\u0630\u0627 \u0627\u0644\u0646\u0635\u0641 \u0627\u0644\u0630\u064a \u0644\u0627 \u064a\u0638\u0647\u0631 \u0641\u064a \u0627\u0644\u0641\u064a\u062f\u064a\u0648\u0647\u0627\u062a \u2014 \u0648\u0647\u0648 \u0646\u0635\u0641 \u0627\u0644\u0639\u0645\u0644.",
+          "start_seconds": 35.5,
+          "end_seconds": 42.0,
+          "speaker_directions": "The one place the video has an opinion. Slow it right down and let the second half of the sentence sit alone.",
+          "delivery_cues": {
+            "pace": "slow",
+            "energy": "drops deliberately \u2014 the editorial line of the piece",
+            "emphasis_words": [
+              "\u0646\u0635\u0641 \u0627\u0644\u0639\u0645\u0644"
+            ],
+            "pause_before_seconds": 0.6,
+            "pause_after_seconds": 0.9,
+            "delivery_note": "The one place the video has an opinion. Slow it right down and let the second half of the sentence sit alone.",
+            "provider_text": "\u0647\u0630\u0627 \u0627\u0644\u0646\u0635\u0641 \u0627\u0644\u0630\u064a \u0644\u0627 \u064a\u0638\u0647\u0631 \u0641\u064a \u0627\u0644\u0641\u064a\u062f\u064a\u0648\u0647\u0627\u062a <break time=\"0.45s\"/> \u0648\u0647\u0648 \u0646\u0635\u0641 \u0627\u0644\u0639\u0645\u0644."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "The ring splits: the \u00ab\u064a\u0642\u0631\u0623/\u064a\u0646\u0641\u0651\u0630\u00bb half stays paper-white, the \u00ab\u064a\u062a\u062d\u0642\u0651\u0642\u00bb half fills solid accent yellow. Held as a single still frame \u2014 the most screenshot-able beat in the video.",
+              "timestamp_seconds": 35.5
+            }
+          ],
+          "source_ref": "research underserved_gap: the verification half is almost never shown"
+        },
+        {
+          "id": "s8",
+          "label": "\u062d\u062a\u0649 \u062a\u0646\u062a\u0647\u064a \u0627\u0644\u0645\u0647\u0645\u0629",
+          "text": "\u0648\u062a\u062f\u0648\u0631 \u0627\u0644\u062d\u0644\u0642\u0629 \u0645\u0646 \u062c\u062f\u064a\u062f\u060c \u062d\u062a\u0649 \u062a\u0646\u062a\u0647\u064a \u0627\u0644\u0645\u0647\u0645\u0629.",
+          "start_seconds": 42.0,
+          "end_seconds": 47.5,
+          "speaker_directions": "Ride the acceleration of the visual rather than pushing the voice. Finish clean so the final rotation can land in silence.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "builds with the rotation",
+            "emphasis_words": [
+              "\u0645\u0646 \u062c\u062f\u064a\u062f"
+            ],
+            "pause_before_seconds": 0.3,
+            "pause_after_seconds": 0.6,
+            "delivery_note": "Ride the acceleration of the visual rather than pushing the voice. Finish clean so the final rotation can land in silence.",
+            "provider_text": "\u0648\u062a\u062f\u0648\u0631 \u0627\u0644\u062d\u0644\u0642\u0629 \u0645\u0646 \u062c\u062f\u064a\u062f\u060c \u062d\u062a\u0649 \u062a\u0646\u062a\u0647\u064a \u0627\u0644\u0645\u0647\u0645\u0629."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "The ring spins through several revolutions, each faster and each leaving a faint stepped trail, until it stops hard on a green frame.",
+              "timestamp_seconds": 42.0
+            }
+          ],
+          "source_ref": "data_point: repeating until the task is complete \u2014 code.claude.com/docs/en/how-claude-code-works"
+        },
+        {
+          "id": "s9",
+          "label": "\u0645\u0642\u0627\u0637\u0639\u0629 \u00b7 \u062a\u0639\u062f\u064a\u0644\u0627\u062a \u0645\u062d\u0641\u0648\u0638\u0629",
+          "text": "\u0648\u0623\u0646\u062a \u062f\u0627\u062e\u0644\u0647\u0627: \u062a\u0642\u062f\u0631 \u0623\u0646 \u062a\u0642\u0627\u0637\u0639\u0647 \u0641\u064a \u0623\u064a \u0644\u062d\u0638\u0629\u060c \u0648\u0627\u0644\u062a\u0639\u062f\u064a\u0644\u0627\u062a \u0645\u062d\u0641\u0648\u0638\u0629 \u0642\u0628\u0644 \u0623\u0646 \u062a\u062d\u062f\u062b.",
+          "start_seconds": 47.5,
+          "end_seconds": 55.0,
+          "speaker_directions": "Answers the 'what if it wrecks my project' fear. Say it plainly, like someone handing over a key.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "warms \u2014 this is the reassurance beat",
+            "emphasis_words": [
+              "\u062f\u0627\u062e\u0644\u0647\u0627",
+              "\u0642\u0628\u0644 \u0623\u0646 \u062a\u062d\u062f\u062b"
+            ],
+            "pause_before_seconds": 0.4,
+            "pause_after_seconds": 0.7,
+            "delivery_note": "Answers the 'what if it wrecks my project' fear. Say it plainly, like someone handing over a key.",
+            "provider_text": "\u0648\u0623\u0646\u062a \u062f\u0627\u062e\u0644\u0647\u0627: <break time=\"0.2s\"/> \u062a\u0642\u062f\u0631 \u0623\u0646 \u062a\u0642\u0627\u0637\u0639\u0647 \u0641\u064a \u0623\u064a \u0644\u062d\u0638\u0629\u060c \u0648\u0627\u0644\u062a\u0639\u062f\u064a\u0644\u0627\u062a \u0645\u062d\u0641\u0648\u0638\u0629 \u0642\u0628\u0644 \u0623\u0646 \u062a\u062d\u062f\u062b."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "A human figure-marker drops into the centre of the ring. Two small labels flick on beside it, one per clause, then the ring dims behind them.",
+              "timestamp_seconds": 47.5
+            }
+          ],
+          "source_ref": "data_point: snapshots before editing; the user can interrupt at any point \u2014 code.claude.com/docs/en/how-claude-code-works"
+        },
+        {
+          "id": "s10",
+          "label": "\u062d\u0644\u0642\u0629\u060c \u0644\u0627 \u0623\u0645\u0631",
+          "text": "\u0644\u064a\u0633 \u0623\u0645\u0631\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b \u064a\u0646\u0641\u064e\u0651\u0630. \u062d\u0644\u0642\u0629 \u062a\u062f\u0648\u0631\u060c \u0648\u0623\u0646\u062a \u0641\u064a\u0647\u0627.",
+          "start_seconds": 55.0,
+          "end_seconds": 60.0,
+          "speaker_directions": "Mirror the opening's flatness. No upward lift, no call to excitement. The last word lands and the frame holds past it.",
+          "delivery_cues": {
+            "pace": "slow",
+            "energy": "closes down to near-silence",
+            "emphasis_words": [
+              "\u062d\u0644\u0642\u0629"
+            ],
+            "pause_before_seconds": 0.5,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Mirror the opening's flatness. No upward lift, no call to excitement. The last word lands and the frame holds past it.",
+            "provider_text": "\u0644\u064a\u0633 \u0623\u0645\u0631\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b \u064a\u0646\u0641\u064e\u0651\u0630. <break time=\"0.35s\"/> \u062d\u0644\u0642\u0629 \u062a\u062f\u0648\u0631\u060c \u0648\u0623\u0646\u062a \u0641\u064a\u0647\u0627."
+          },
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "Back to full-frame type for the first time since the opening. The ring shrinks to a small mark beside the final line. Watermark fades in at the end of the hold.",
+              "timestamp_seconds": 55.0
+            }
+          ],
+          "source_ref": "selected_concept.core_message (c1)"
+        }
+      ],
+      "metadata": {
+        "pipeline": "animation",
+        "stage": "script",
+        "concept_id": "c1",
+        "narration_language": "ar",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "render_runtime": "hyperframes",
+        "composition_mode": "atelier",
+        "narrative_structure": "problem_solution",
+        "section_metadata": {
+          "s1": {
+            "beat_type": "statement",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the type",
+            "hold_time_seconds": 1.2,
+            "on_screen_label": "\u0623\u0646\u062a",
+            "visual": "Full-frame typographic assertion: one short Arabic prompt line, paper-white on near-black ink, stamped in word by word with no blur. A cursor holds at the end of the line and does nothing \u2014 the stillness is the point.",
+            "data_source": "selected_concept.hook (c1)"
+          },
+          "s2": {
+            "beat_type": "statement",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the type",
+            "hold_time_seconds": 1.0,
+            "on_screen_label": "\u0645\u0627 \u062d\u062f\u062b \u0641\u0639\u0644\u0627\u064b",
+            "visual": "The same line, now with a single flat arrow pointing to an empty box labelled \u00ab\u0623\u0645\u0631 \u0648\u0627\u062d\u062f\u00bb \u2014 the box is struck through in the accent yellow on the beat of \u00ab\u0644\u0645 \u064a\u0641\u0639\u0644\u00bb.",
+            "data_source": "audience_insights.misconceptions \u2014 'you describe it once and it comes out finished'"
+          },
+          "s3": {
+            "beat_type": "demonstration",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the animation",
+            "hold_time_seconds": 2.0,
+            "on_screen_label": "\u064a\u0642\u0631\u0623 \u00b7 \u064a\u0646\u0641\u0651\u0630 \u00b7 \u064a\u062a\u062d\u0642\u0651\u0642",
+            "visual": "Annotated object: three nodes snap into a triangle, one per narrated phase, then the whole cycle rotates once \u2014 stepped, roughly twelve frames a second, no motion blur. Holds on the completed ring.",
+            "data_source": "data_point: three blending phases repeating until complete \u2014 code.claude.com/docs/en/how-claude-code-works"
+          },
+          "s4": {
+            "beat_type": "demonstration",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the animation",
+            "hold_time_seconds": 1.5,
+            "on_screen_label": "grep",
+            "visual": "The cycle rotates to put \u00ab\u064a\u0642\u0631\u0623\u00bb on top. A dense file tree fills the frame; a search sweep crosses it and four files ignite in accent yellow while the rest stay near-black.",
+            "data_source": "data_point: no vector database, no embeddings \u2014 grep plus file reads (secondary, phrased as behaviour not architecture)"
+          },
+          "s5": {
+            "beat_type": "transformation",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the animation",
+            "hold_time_seconds": 1.3,
+            "on_screen_label": "\u064a\u0639\u062f\u0651\u0644\u060c \u0644\u0627 \u064a\u0642\u062a\u0631\u062d",
+            "visual": "Cycle rotates to \u00ab\u064a\u0646\u0641\u0651\u0630\u00bb. A diff stamps into the frame line by line \u2014 added lines in accent yellow, removed lines struck through \u2014 with no easing, each line arriving on a single step.",
+            "data_source": "data_point: it edits the file directly rather than giving you a snippet \u2014 code.claude.com/docs/en/how-claude-code-works"
+          },
+          "s6": {
+            "beat_type": "demonstration",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the animation",
+            "hold_time_seconds": 2.2,
+            "on_screen_label": "\u0623\u062d\u0645\u0631 \u2190 \u0623\u062e\u0636\u0631",
+            "visual": "Cycle rotates to \u00ab\u064a\u062a\u062d\u0642\u0651\u0642\u00bb. A test bar flips red, then red again, then green \u2014 each flip landing on a verb, the gaps shortening. Holds on green longer than feels comfortable.",
+            "data_source": "data_point: when tests fail it reads the errors, fixes, and runs the suite again \u2014 code.claude.com/docs/en/how-claude-code-works"
+          },
+          "s7": {
+            "beat_type": "comparison",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the type",
+            "hold_time_seconds": 1.8,
+            "on_screen_label": "\u0646\u0635\u0641 \u0627\u0644\u0639\u0645\u0644",
+            "visual": "The ring splits: the \u00ab\u064a\u0642\u0631\u0623/\u064a\u0646\u0641\u0651\u0630\u00bb half stays paper-white, the \u00ab\u064a\u062a\u062d\u0642\u0651\u0642\u00bb half fills solid accent yellow. Held as a single still frame \u2014 the most screenshot-able beat in the video.",
+            "data_source": "research underserved_gap: the verification half is almost never shown"
+          },
+          "s8": {
+            "beat_type": "demonstration",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the animation",
+            "hold_time_seconds": 1.5,
+            "on_screen_label": "\u062d\u062a\u0649 \u062a\u0646\u062a\u0647\u064a \u0627\u0644\u0645\u0647\u0645\u0629",
+            "visual": "The ring spins through several revolutions, each faster and each leaving a faint stepped trail, until it stops hard on a green frame.",
+            "data_source": "data_point: repeating until the task is complete \u2014 code.claude.com/docs/en/how-claude-code-works"
+          },
+          "s9": {
+            "beat_type": "statement",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "complements",
+            "visual_priority": "the type",
+            "hold_time_seconds": 1.6,
+            "on_screen_label": "\u0645\u0642\u0627\u0637\u0639\u0629 \u00b7 \u062a\u0639\u062f\u064a\u0644\u0627\u062a \u0645\u062d\u0641\u0648\u0638\u0629",
+            "visual": "A human figure-marker drops into the centre of the ring. Two small labels flick on beside it, one per clause, then the ring dims behind them.",
+            "data_source": "data_point: snapshots before editing; the user can interrupt at any point \u2014 code.claude.com/docs/en/how-claude-code-works"
+          },
+          "s10": {
+            "beat_type": "conclusion",
+            "animation_mode": "motion_graphics",
+            "text_constraints": "on-screen label max 8 words; must not restate the narration line",
+            "narration_plan": "lands",
+            "visual_priority": "the type",
+            "hold_time_seconds": 2.5,
+            "on_screen_label": "\u062d\u0644\u0642\u0629\u060c \u0644\u0627 \u0623\u0645\u0631",
+            "visual": "Back to full-frame type for the first time since the opening. The ring shrinks to a small mark beside the final line. Watermark fades in at the end of the hold.",
+            "data_source": "selected_concept.core_message (c1)"
+          }
+        },
+        "schema_note": "script.schema.json sets additionalProperties:false on section items, so the per-section metadata keys the script-director recommends (beat_type, animation_mode, hold_time_seconds, visual_priority, narration_plan, text_constraints) are carried here in metadata.section_metadata, keyed by section id, rather than dropped.",
+        "word_budget": {
+          "arabic_words": 83,
+          "narration_seconds_at_2.2_wps": 37.7,
+          "visual_hold_seconds_budgeted": 16.6,
+          "note": "The script-director's budget formula (target_seconds \u00d7 2.5 words/sec) assumes English at 150 WPM and yields 150 words for 60s. Arabic carries more per word and runs nearer 2.0-2.2 words/sec, and the same skill's breathing-room rule (a 90s video holds ~60-65s of narration) implies ~42s of narration here, not 60s. 83 Arabic words at ~2.2 wps is ~37.7s of speech against ~16.6s of budgeted holds. Applying the raw 150-word figure would overrun the piece by roughly half. Flagging the deviation rather than silently failing the \u00b110% check.",
+          "verdict": "deliberate deviation from the English-calibrated formula, documented"
+        },
+        "arabic_text_rules": [
+          "Every reveal is word-level \u2014 split on spaces only, never per glyph",
+          "No letterSpacing on any Arabic text",
+          "Arabic containers dir=rtl; Latin tokens (grep, Claude Code) dir=ltr in the Latin face",
+          "Reveal direction verified under RTL before the build \u2014 LTR-authored typewriter presets run backwards"
+        ],
+        "accuracy_guardrails_applied": [
+          "Every factual claim carries a source_ref; four of the five mechanism claims trace to the primary Claude Code documentation",
+          "The no-index claim (s4) is phrased as observed behaviour \u2014 'does not memorize, searches' \u2014 not as an internal architecture claim, because its source is secondary",
+          "No model performance numbers, prices or digital specs anywhere in the script",
+          "No survey percentages used in this concept, so no attribution burden on screen",
+          "s7 is the only line carrying an opinion, and it is labelled as editorial rather than sourced"
+        ],
+        "timings_provisional": "start/end are structural, not calibrated. Once the narration audio exists, re-cut every boundary against the real waveform \u2014 the same discipline as the tasmeem project. transcriber (faster-whisper) is missing its python dependency and must be installed before that calibration."
+      }
+    }
+  },
+  "review": {
+    "reviewer": "script-director self-review",
+    "verdict": "pass_awaiting_human",
+    "notes": [
+      "Every one of the 10 sections carries exactly one visual idea \u2014 PASS",
+      "On-screen labels all under 8 words and none restates its narration line \u2014 PASS",
+      "Visual holds budgeted per section: 16.6s total against ~37.7s of narration in a 60s frame \u2014 PASS (within the skill's 3-4s per 10s rule)",
+      "voice_performance written with intent, energy curve, pause policy, sample section (s6) and provider notes for both the approved and fallback TTS paths; every section has structured delivery_cues with provider_text \u2014 PASS",
+      "All 10 sections have source_ref; 4 of 5 mechanism claims trace to primary Claude Code documentation \u2014 PASS",
+      "Addresses the audience misconception 'you describe it once and it comes out finished' head-on at s2 \u2014 PASS",
+      "Animation mode respected: written as diagram-led motion graphics, each beat mapping to one staged transformation \u2014 PASS",
+      "DELIBERATE DEVIATION: 83 Arabic words, not the 150 the skill's target_seconds \u00d7 2.5 formula gives. That formula assumes English at 150 WPM; Arabic runs ~2.0-2.2 words/sec, and the same skill's breathing-room rule implies ~42s of narration in a 60s piece. 150 words would overrun by roughly half. Documented in metadata.word_budget rather than silently failing the \u00b110% check.",
+      "SCHEMA GAP: section items set additionalProperties:false, so the per-section metadata keys the skill recommends are carried in metadata.section_metadata keyed by id rather than dropped.",
+      "Timings are structural only \u2014 flagged provisional pending calibration against real narration audio, which also needs faster-whisper installed."
+    ]
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.255,
+    "budget_remaining_usd": 1.745
+  }
+}

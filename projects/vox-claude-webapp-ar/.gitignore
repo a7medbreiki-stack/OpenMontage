@@ -1,0 +1,11 @@
+# Audio intermediates — regenerable from build/build_score.py (see build/README.md)
+hyperframes/assets/score.wav
+hyperframes/assets/score_mix.wav
+
+# HyperFrames CLI cache and snapshot artifacts
+hyperframes/.hyperframes/
+
+# Render scratch (the finished mp4 IS committed — it is the deliverable archive)
+renders/work-*/
+renders/.*-transaction-*/
+renders/*.srt.tmp

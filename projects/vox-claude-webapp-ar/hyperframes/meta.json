@@ -1,0 +1,8 @@
+{
+  "name": "vox-claude-webapp-ar",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 60,
+  "composition": "index.html"
+}
